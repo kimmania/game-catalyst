@@ -23,14 +23,24 @@ export function getCapacity(beaker: Beaker, height: number): number {
 
 /* For a beaker to be "won", all layers must be identical, all crystals must
    match those layers (or be empty), and crystals must be at the bottom. */
-export function isBeakerUniform(beaker: Beaker): boolean {
-  if (beaker.layers.length === 0) return true;  // empty OK
-  const top = beaker.layers[beaker.layers.length - 1];
-  for (const layer of beaker.layers) {
-    if (layer !== top) return false;
+function isBeakerUniform(beaker: Beaker): boolean {
+  // Empty beaker is always fine
+  if (beaker.layers.length === 0 && beaker.crystals.length === 0) return true;
+  // Layers present: all layers same, crystals match
+  if (beaker.layers.length > 0) {
+    const color = beaker.layers[beaker.layers.length - 1];
+    for (const layer of beaker.layers) {
+      if (layer !== color) return false;
+    }
+    for (const c of beaker.crystals) {
+      if (c !== color) return false;
+    }
+    return true;
   }
+  // Layers empty, crystals present: all crystals must be same color
+  const color = beaker.crystals[0];
   for (const c of beaker.crystals) {
-    if (c !== top) return false;
+    if (c !== color) return false;
   }
   return true;
 }

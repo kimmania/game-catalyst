@@ -401,12 +401,16 @@ function computeStars(): number {
 }
 
 function showWin(stars: number) {
+  if (!state) return;
   const starText = ['⭐', '⭐⭐', '⭐⭐⭐'][Math.max(0, Math.min(2, stars - 1))] || '⭐';
   els.lcStars().textContent = starText;
-  if (els.lcStarsVal()) els.lcStarsVal().textContent = String(stars);
-  els.lcMoves().textContent = String(state!.moves);
-  if (els.lcTarget()) els.lcTarget().textContent = String(state!.targetMoves);
-  if (els.lcSolidify()) els.lcSolidify().textContent = state!.solidificationOccurred ? 'Yes' : 'None';
+  const lcStarsVal = els.lcStarsVal();
+  if (lcStarsVal) lcStarsVal.textContent = String(stars);
+  els.lcMoves().textContent = String(state.moves);
+  const lcTarget = els.lcTarget();
+  if (lcTarget) lcTarget.textContent = String(state.targetMoves);
+  const lcSolidify = els.lcSolidify();
+  if (lcSolidify) lcSolidify.textContent = state.solidificationOccurred ? 'Yes' : 'None';
 
   const prevBest = saveData.progress.completed[state!.levelId] || 0;
   const newBest = Math.max(prevBest, stars);
