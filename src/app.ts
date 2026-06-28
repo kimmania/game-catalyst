@@ -49,7 +49,10 @@ const els = {
   levelCompleteOverlay: () => document.getElementById('level-complete-overlay')!,
   lcTitle: () => document.getElementById('lc-title')!,
   lcStars: () => document.getElementById('lc-stars')!,
+  lcStarsVal: () => document.getElementById('lc-stars-val')?.querySelector('.value') as HTMLElement | null,
   lcMoves: () => document.getElementById('lc-moves')!.querySelector('.value') as HTMLElement,
+  lcTarget: () => document.getElementById('lc-target')?.querySelector('.value') as HTMLElement | null,
+  lcSolidify: () => document.getElementById('lc-solidify')?.querySelector('.value') as HTMLElement | null,
   lcBest: () => document.getElementById('lc-best')!.querySelector('.value') as HTMLElement,
   lcMessage: () => document.getElementById('lc-message')!,
   lcRetry: () => document.getElementById('lc-retry') as HTMLButtonElement,
@@ -398,10 +401,17 @@ function computeStars(): number {
 }
 
 function showWin(stars: number) {
-  els.lcStars().textContent = ['⭐', '⭐⭐', '⭐⭐⭐'][Math.max(0, Math.min(2, stars - 1))] || '⭐';
+  const starText = ['⭐', '⭐⭐', '⭐⭐⭐'][Math.max(0, Math.min(2, stars - 1))] || '⭐';
+  els.lcStars().textContent = starText;
+  if (els.lcStarsVal()) els.lcStarsVal().textContent = String(stars);
   els.lcMoves().textContent = String(state!.moves);
-  const best = saveData.progress.completed[state!.levelId] || 0;
-  els.lcBest().textContent = best >= stars ? String(best) : String(stars);
+  if (els.lcTarget()) els.lcTarget().textContent = String(state!.targetMoves);
+  if (els.lcSolidify()) els.lcSolidify().textContent = state!.solidificationOccurred ? 'Yes' : 'None';
+
+  const prevBest = saveData.progress.completed[state!.levelId] || 0;
+  const newBest = Math.max(prevBest, stars);
+  els.lcBest().textContent = String(newBest);
+
   if (stars === 3) {
     els.lcMessage().textContent = 'Purity preserved. The Guild is overjoyed. A perfect solve!';
   } else if (stars === 2) {
