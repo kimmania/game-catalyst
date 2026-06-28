@@ -6,20 +6,41 @@
     "beakers": [
       {
         "layers": [
+          "cobalt",
+          "violet",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "viridian",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron"
         ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "crimson",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
           "amber",
           "amber"
         ]
@@ -29,9 +50,9 @@
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
+          "amber",
+          "amber",
+          "amber",
           "violet",
           "violet",
           "violet"
@@ -39,48 +60,27 @@
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "violet",
+          "crimson",
+          "crimson",
+          "crimson",
+          "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "saffron"
+        ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
+          "violet",
+          "crimson",
           "cobalt",
           "cobalt",
           "cobalt",
           "cobalt"
         ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
@@ -94,11 +94,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 92
+    "targetMoves": 34
   },
   {
     "id": "e2",
@@ -106,66 +105,7 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
           "viridian",
           "viridian",
           "viridian",
@@ -176,11 +116,72 @@
       {
         "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "amber",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
           "saffron",
           "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "amber",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "crimson",
+          "crimson",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber"
         ]
       }
     ],
@@ -195,11 +196,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 30
   },
   {
     "id": "e3",
@@ -207,82 +207,84 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "violet"
+        ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "crimson",
+          "violet",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "violet",
           "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "saffron",
           "cobalt",
           "cobalt"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "amber",
+          "cobalt",
+          "crimson",
+          "crimson",
           "viridian"
         ]
       },
       {
         "layers": [
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
           "crimson"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "saffron",
+          "viridian",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "amber",
+          "amber"
+        ]
       },
       {
         "layers": [
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "viridian",
+          "viridian",
+          "viridian"
         ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
@@ -296,11 +298,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 33
   },
   {
     "id": "e4",
@@ -309,57 +310,54 @@
     "beakers": [
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "viridian",
+          "cobalt",
+          "cobalt",
+          "amber",
+          "amber"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "amber",
+          "amber"
+        ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron",
+          "amber"
+        ]
       },
       {
         "layers": [
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "crimson",
+          "crimson",
+          "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
           "crimson",
           "crimson"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "cobalt",
           "viridian",
           "viridian"
         ]
       },
       {
+        "layers": []
+      },
+      {
         "layers": [
-          "saffron",
-          "saffron",
+          "viridian",
+          "viridian",
           "saffron",
           "saffron",
           "saffron",
@@ -367,23 +365,27 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "violet",
+          "violet",
+          "crimson"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "viridian",
+          "violet",
+          "violet"
+        ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson",
+          "cobalt",
+          "cobalt",
+          "violet",
+          "violet"
+        ]
       }
     ],
     "heights": [
@@ -397,11 +399,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 90
+    "targetMoves": 36
   },
   {
     "id": "e5",
@@ -410,63 +411,23 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "cobalt",
           "crimson"
         ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
           "amber",
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
           "viridian",
           "viridian",
           "viridian",
@@ -474,16 +435,58 @@
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson",
+          "violet",
+          "violet",
+          "violet",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "violet",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "crimson"
+        ]
       },
       {
         "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "crimson"
         ]
       }
     ],
@@ -498,11 +501,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 38
   },
   {
     "id": "e6",
@@ -511,21 +513,7 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
+          "saffron",
           "violet",
           "violet",
           "violet",
@@ -534,25 +522,18 @@
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "amber"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "saffron",
+          "violet"
         ]
       },
       {
@@ -560,31 +541,54 @@
           "cobalt",
           "cobalt",
           "cobalt",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
           "cobalt",
           "cobalt",
           "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "saffron",
+          "saffron",
+          "crimson",
+          "saffron",
+          "viridian",
+          "viridian"
+        ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "crimson",
+          "saffron",
+          "violet",
+          "viridian"
         ]
       }
     ],
@@ -599,11 +603,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 86
+    "targetMoves": 30
   },
   {
     "id": "e7",
@@ -612,81 +615,83 @@
     "beakers": [
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "amber",
           "saffron",
           "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian",
+          "viridian",
+          "saffron",
           "cobalt",
           "cobalt"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "viridian",
+          "viridian",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "amber",
+          "amber",
+          "viridian"
+        ]
       },
       {
         "layers": [
           "violet",
-          "violet",
-          "violet",
-          "violet",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "saffron",
+          "saffron",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
           "violet",
           "violet"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson",
+          "crimson",
+          "violet",
+          "amber",
+          "amber",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson"
+        ]
       },
       {
         "layers": [
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "violet",
+          "violet"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "cobalt"
+        ]
       }
     ],
     "heights": [
@@ -700,11 +705,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 34
   },
   {
     "id": "e8",
@@ -713,53 +717,7 @@
     "beakers": [
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
+          "amber",
           "saffron",
           "saffron",
           "saffron",
@@ -772,18 +730,64 @@
           "amber",
           "amber",
           "amber",
-          "amber",
-          "amber"
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "crimson",
+          "crimson",
+          "crimson"
         ]
       },
       {
         "layers": [
           "crimson",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "saffron",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
           "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "cobalt",
+          "cobalt",
+          "cobalt"
         ]
       },
       {
@@ -801,11 +805,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 38
   },
   {
     "id": "e9",
@@ -814,8 +817,58 @@
     "beakers": [
       {
         "layers": [
+          "crimson",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "amber",
+          "amber",
+          "crimson",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
           "viridian",
           "viridian",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "amber",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
           "viridian",
           "viridian",
           "viridian",
@@ -826,42 +879,7 @@
         "layers": [
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
+          "cobalt",
           "amber",
           "amber",
           "amber"
@@ -869,25 +887,11 @@
       },
       {
         "layers": [
+          "violet",
+          "violet",
+          "crimson",
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "violet"
         ]
       }
     ],
@@ -902,11 +906,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 35
   },
   {
     "id": "e10",
@@ -915,47 +918,40 @@
     "beakers": [
       {
         "layers": [
+          "crimson",
           "saffron",
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "viridian"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "crimson",
+          "saffron",
+          "viridian",
+          "viridian",
+          "viridian",
           "amber"
         ]
       },
       {
         "layers": [
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "saffron",
+          "crimson"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "amber",
+          "crimson",
+          "cobalt"
+        ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "violet",
           "cobalt"
         ]
       },
@@ -963,32 +959,40 @@
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "violet",
+          "amber",
+          "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "saffron",
+          "saffron"
+        ]
       },
       {
         "layers": [
+          "viridian",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "amber",
           "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian"
         ]
       }
     ],
@@ -1003,11 +1007,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 41
   },
   {
     "id": "e11",
@@ -1015,81 +1018,80 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
+          "saffron",
           "crimson",
           "crimson",
           "crimson"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "violet",
+          "saffron"
+        ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "cobalt",
+          "cobalt",
+          "crimson",
+          "crimson",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "amber",
+          "amber",
+          "crimson",
+          "violet",
+          "violet"
         ]
       },
       {
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "violet",
+          "saffron",
+          "saffron",
+          "saffron",
           "viridian",
           "viridian"
         ]
       },
       {
         "layers": [
+          "viridian",
+          "viridian",
+          "amber",
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "viridian",
+          "saffron"
         ]
       }
     ],
@@ -1104,11 +1106,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 40
   },
   {
     "id": "e12",
@@ -1117,47 +1118,6 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
           "saffron",
           "saffron",
           "saffron",
@@ -1165,33 +1125,76 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "saffron"
+        ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "viridian",
           "violet",
           "violet"
         ]
       },
       {
         "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "crimson",
+          "crimson",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
           "viridian",
           "viridian",
           "viridian",
-          "viridian",
-          "viridian",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "violet",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
           "viridian"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson"
+        ]
       }
     ],
     "heights": [
@@ -1205,11 +1208,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 90
+    "targetMoves": 36
   },
   {
     "id": "e13",
@@ -1218,7 +1220,18 @@
     "beakers": [
       {
         "layers": [
-          "cobalt",
+          "saffron",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
           "cobalt",
           "cobalt",
           "cobalt",
@@ -1228,71 +1241,62 @@
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "violet",
+          "violet",
+          "viridian",
           "saffron"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson",
+          "crimson",
+          "viridian",
+          "saffron",
+          "amber",
+          "amber"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "saffron",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson"
         ]
       },
       {
         "layers": [
           "violet",
-          "violet",
-          "violet",
+          "amber",
+          "amber",
           "violet",
           "violet",
           "violet"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
+          "cobalt",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "saffron"
         ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "viridian",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "saffron",
+          "viridian",
+          "viridian"
+        ]
       }
     ],
     "heights": [
@@ -1306,11 +1310,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 92
+    "targetMoves": 34
   },
   {
     "id": "e14",
@@ -1318,40 +1321,20 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron"
+        ]
       },
       {
         "layers": [
           "amber",
-          "amber",
-          "amber",
-          "amber",
+          "cobalt",
+          "saffron",
           "amber",
           "amber"
         ]
@@ -1361,8 +1344,14 @@
           "violet",
           "violet",
           "violet",
-          "violet",
-          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
           "violet"
         ]
       },
@@ -1370,29 +1359,45 @@
         "layers": [
           "saffron",
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "viridian",
+          "viridian"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "saffron",
+          "cobalt"
+        ]
       },
       {
         "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
           "cobalt",
           "cobalt",
-          "cobalt",
-          "cobalt",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "amber",
+          "amber",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
           "cobalt",
           "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson"
         ]
       }
     ],
@@ -1407,11 +1412,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 92
+    "targetMoves": 33
   },
   {
     "id": "e15",
@@ -1420,66 +1424,21 @@
     "beakers": [
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
           "crimson",
-          "crimson",
-          "crimson",
+          "amber",
+          "amber",
           "crimson",
           "crimson",
           "crimson"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "crimson"
+        ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
           "cobalt",
           "cobalt",
           "cobalt",
@@ -1488,12 +1447,59 @@
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "viridian",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
           "violet",
           "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "amber",
+          "amber",
+          "cobalt",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "viridian",
+          "viridian",
+          "viridian",
+          "saffron"
         ]
       }
     ],
@@ -1508,11 +1514,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 30
   },
   {
     "id": "e16",
@@ -1520,58 +1525,41 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "viridian",
+          "violet",
+          "violet"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "crimson",
+          "viridian"
+        ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
+          "saffron",
+          "viridian",
+          "viridian",
+          "viridian",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
           "amber",
           "amber",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "violet",
+          "violet"
         ]
       },
       {
@@ -1581,20 +1569,37 @@
         "layers": [
           "cobalt",
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "saffron",
+          "saffron",
           "cobalt"
         ]
       },
       {
+        "layers": []
+      },
+      {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "amber",
+          "amber",
+          "amber",
+          "cobalt",
+          "cobalt",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "viridian",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
         ]
       }
     ],
@@ -1609,11 +1614,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 34
   },
   {
     "id": "e17",
@@ -1622,18 +1626,8 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
+          "violet",
+          "violet",
           "amber",
           "amber",
           "amber",
@@ -1641,62 +1635,73 @@
         ]
       },
       {
+        "layers": [
+          "amber",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
         "layers": []
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian",
+          "crimson",
           "cobalt"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "cobalt",
+          "cobalt",
           "saffron",
           "saffron"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "viridian",
+          "viridian",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "cobalt"
+        ]
       }
     ],
     "heights": [
@@ -1710,11 +1715,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 42
   },
   {
     "id": "e18",
@@ -1725,12 +1729,31 @@
         "layers": []
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "amber",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "amber"
+        ]
       },
       {
         "layers": [
           "cobalt",
-          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
           "cobalt",
           "cobalt",
           "cobalt",
@@ -1739,55 +1762,19 @@
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
+          "amber",
+          "saffron",
           "viridian",
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
           "amber"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "viridian",
+          "violet",
+          "cobalt"
         ]
-      },
-      {
-        "layers": []
       },
       {
         "layers": [
@@ -1795,7 +1782,24 @@
           "crimson",
           "crimson",
           "crimson",
-          "crimson",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
           "crimson"
         ]
       }
@@ -1811,11 +1815,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 41
   },
   {
     "id": "e19",
@@ -1823,7 +1826,52 @@
     "tier": "expert",
     "beakers": [
       {
+        "layers": [
+          "cobalt",
+          "amber",
+          "crimson",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "cobalt",
+          "crimson",
+          "saffron",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian"
+        ]
+      },
+      {
         "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "cobalt",
+          "cobalt"
+        ]
       },
       {
         "layers": [
@@ -1836,52 +1884,17 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
+          "viridian",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "amber",
+          "amber"
         ]
       },
       {
         "layers": [
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
+          "saffron",
           "amber",
           "amber",
           "amber"
@@ -1889,16 +1902,6 @@
       },
       {
         "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
       }
     ],
     "heights": [
@@ -1912,11 +1915,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 35
   },
   {
     "id": "e20",
@@ -1925,65 +1927,21 @@
     "beakers": [
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "amber",
+          "violet",
+          "crimson",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
           "saffron",
           "saffron"
         ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
           "viridian",
           "viridian",
           "viridian",
@@ -1993,12 +1951,58 @@
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "saffron",
+          "crimson",
+          "viridian",
+          "crimson",
           "amber"
+        ]
+      },
+      {
+        "layers": [
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "crimson",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "amber",
+          "crimson",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
         ]
       }
     ],
@@ -2013,11 +2017,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 30
   },
   {
     "id": "e21",
@@ -2026,63 +2029,9 @@
     "beakers": [
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "saffron",
+          "amber",
           "viridian"
         ]
       },
@@ -2091,8 +2040,58 @@
       },
       {
         "layers": [
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "viridian",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "saffron",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
           "crimson",
-          "crimson",
+          "saffron",
           "crimson",
           "crimson",
           "crimson",
@@ -2100,7 +2099,11 @@
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron",
+          "saffron",
+          "crimson"
+        ]
       }
     ],
     "heights": [
@@ -2114,11 +2117,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 37
   },
   {
     "id": "e22",
@@ -2126,60 +2128,46 @@
     "tier": "expert",
     "beakers": [
       {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "cobalt"
+        ]
+      },
+      {
         "layers": []
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "violet",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "crimson",
+          "crimson",
           "cobalt"
         ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "saffron"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
           "amber",
           "amber",
           "amber",
@@ -2189,19 +2177,33 @@
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "violet",
+          "violet"
         ]
       },
       {
         "layers": []
       },
       {
-        "layers": []
+        "layers": [
+          "violet",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "violet"
+        ]
       }
     ],
     "heights": [
@@ -2215,11 +2217,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 30
   },
   {
     "id": "e23",
@@ -2227,42 +2228,17 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "saffron",
+          "amber",
+          "amber",
+          "amber",
+          "viridian",
+          "viridian"
         ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
           "crimson",
           "crimson",
           "crimson"
@@ -2273,35 +2249,61 @@
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
           "saffron",
           "saffron"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron",
+          "violet",
+          "violet",
+          "cobalt",
+          "violet"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
+          "crimson",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "crimson",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "violet",
+          "amber",
           "viridian",
           "viridian",
           "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson"
         ]
       }
     ],
@@ -2316,11 +2318,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 35
   },
   {
     "id": "e24",
@@ -2328,17 +2329,10 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "saffron",
+          "saffron",
+          "cobalt",
           "amber",
           "amber"
         ]
@@ -2346,28 +2340,38 @@
       {
         "layers": [
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian"
         ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "viridian",
+          "violet",
+          "saffron",
+          "viridian",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson"
         ]
       },
       {
         "layers": [
           "violet",
           "violet",
-          "violet",
+          "viridian",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "cobalt",
           "violet",
           "violet",
           "violet"
@@ -2375,35 +2379,32 @@
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "amber",
+          "cobalt",
+          "cobalt",
+          "cobalt"
         ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "amber",
+          "amber",
+          "cobalt",
+          "crimson",
           "saffron"
         ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
       }
     ],
     "heights": [
@@ -2417,11 +2418,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 33
   },
   {
     "id": "e25",
@@ -2430,56 +2430,42 @@
     "beakers": [
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "viridian",
+          "crimson",
           "saffron",
           "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "violet",
+          "viridian",
+          "amber",
+          "amber"
         ]
       },
       {
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "saffron",
+          "violet",
+          "violet",
           "viridian",
           "viridian"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
-          "crimson",
           "crimson",
           "crimson",
           "crimson",
@@ -2488,7 +2474,10 @@
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "amber"
+        ]
       },
       {
         "layers": [
@@ -2496,15 +2485,27 @@
           "cobalt",
           "cobalt",
           "cobalt",
-          "cobalt",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
           "cobalt"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "violet",
+          "violet"
+        ]
       },
       {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "violet"
+        ]
       }
     ],
     "heights": [
@@ -2518,11 +2519,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 30
   },
   {
     "id": "e26",
@@ -2530,55 +2530,33 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "amber",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
           "saffron"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "amber",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "amber",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson"
         ]
       },
       {
@@ -2586,11 +2564,32 @@
       },
       {
         "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "saffron",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
           "cobalt"
         ]
       },
@@ -2598,14 +2597,16 @@
         "layers": [
           "amber",
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "viridian"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "cobalt",
+          "viridian",
+          "viridian"
+        ]
       }
     ],
     "heights": [
@@ -2619,11 +2620,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 36
   },
   {
     "id": "e27",
@@ -2632,36 +2632,23 @@
     "beakers": [
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "cobalt",
+          "cobalt",
+          "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "amber",
+          "crimson",
+          "amber",
+          "amber",
+          "cobalt",
+          "cobalt"
+        ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
           "crimson",
           "crimson",
           "crimson",
@@ -2669,9 +2656,17 @@
         ]
       },
       {
+        "layers": []
+      },
+      {
         "layers": [
-          "saffron",
-          "saffron",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
           "saffron",
           "saffron",
           "saffron",
@@ -2680,18 +2675,16 @@
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "saffron",
+          "saffron",
+          "crimson",
+          "violet"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
+          "violet",
+          "violet",
           "viridian",
           "viridian",
           "viridian",
@@ -2700,9 +2693,16 @@
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
           "violet",
           "violet",
           "violet"
@@ -2720,11 +2720,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 33
   },
   {
     "id": "e28",
@@ -2732,10 +2731,19 @@
     "tier": "expert",
     "beakers": [
       {
+        "layers": []
+      },
+      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
+          "cobalt",
+          "cobalt",
+          "saffron",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
           "crimson",
           "crimson",
           "crimson"
@@ -2743,71 +2751,63 @@
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "amber",
+          "amber",
+          "amber",
+          "saffron"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian",
           "viridian",
           "viridian"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "violet",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "saffron",
+          "crimson",
+          "cobalt"
+        ]
       },
       {
         "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
           "saffron",
           "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "violet",
           "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "violet",
+          "violet",
+          "violet",
+          "crimson",
           "amber",
           "amber"
         ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
@@ -2821,11 +2821,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 32
   },
   {
     "id": "e29",
@@ -2833,72 +2832,20 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "violet",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
           "cobalt"
         ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
+          "crimson",
           "viridian",
           "viridian",
           "viridian"
@@ -2908,7 +2855,60 @@
         "layers": []
       },
       {
-        "layers": []
+        "layers": [
+          "crimson",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "violet",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
       }
     ],
     "heights": [
@@ -2922,11 +2922,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 30
   },
   {
     "id": "e30",
@@ -2934,48 +2933,23 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "crimson",
+          "crimson",
+          "crimson"
         ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian",
           "cobalt"
         ]
       },
       {
         "layers": [
+          "cobalt",
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
           "amber"
         ]
       },
@@ -2983,33 +2957,58 @@
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
+          "cobalt",
+          "violet",
+          "cobalt",
+          "saffron",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian"
         ]
       },
       {
+        "layers": [
+          "amber",
+          "viridian",
+          "viridian",
+          "viridian",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "viridian",
+          "saffron",
+          "saffron",
+          "amber"
+        ]
+      },
+      {
         "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "amber",
+          "amber",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "amber",
+          "cobalt",
+          "violet"
+        ]
       }
     ],
     "heights": [
@@ -3023,11 +3022,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 35
   },
   {
     "id": "e31",
@@ -3036,19 +3034,43 @@
     "beakers": [
       {
         "layers": [
+          "cobalt",
+          "cobalt",
           "crimson",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "violet"
         ]
       },
       {
         "layers": [
           "saffron",
           "saffron",
-          "saffron",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "crimson",
           "saffron",
           "saffron",
           "saffron"
@@ -3059,24 +3081,21 @@
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "amber",
+          "amber",
+          "crimson",
+          "crimson"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "crimson"
+        ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian",
+          "saffron",
           "cobalt"
         ]
       },
@@ -3085,32 +3104,11 @@
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
           "amber",
           "amber",
           "amber",
           "amber"
         ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
@@ -3124,11 +3122,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 33
   },
   {
     "id": "e32",
@@ -3137,11 +3134,37 @@
     "beakers": [
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "cobalt",
+          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "crimson",
+          "crimson",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
           "saffron"
         ]
       },
@@ -3150,9 +3173,13 @@
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
+          "saffron",
+          "saffron",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
           "viridian",
           "viridian",
           "viridian"
@@ -3160,9 +3187,9 @@
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "amber",
+          "saffron",
+          "saffron",
           "cobalt",
           "cobalt",
           "cobalt"
@@ -3170,11 +3197,8 @@
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "violet",
+          "violet",
           "crimson"
         ]
       },
@@ -3182,35 +3206,9 @@
         "layers": [
           "amber",
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "crimson",
+          "crimson",
+          "cobalt"
         ]
       }
     ],
@@ -3225,11 +3223,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 86
+    "targetMoves": 35
   },
   {
     "id": "e33",
@@ -3237,64 +3234,63 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "crimson"
+        ]
       },
       {
         "layers": []
       },
       {
         "layers": [
+          "violet",
+          "violet",
+          "saffron",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
           "viridian",
           "viridian",
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "amber",
+          "amber"
         ]
       },
       {
         "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "crimson",
+          "viridian",
+          "crimson",
           "saffron"
         ]
       },
       {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
+        "layers": []
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
           "amber",
           "amber",
           "amber"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "violet",
+          "cobalt",
+          "crimson",
+          "crimson",
+          "violet"
+        ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
           "crimson"
         ]
       },
@@ -3304,15 +3300,16 @@
           "cobalt",
           "cobalt",
           "cobalt",
-          "cobalt",
-          "cobalt"
+          "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "violet",
+          "violet",
+          "viridian",
+          "viridian"
+        ]
       }
     ],
     "heights": [
@@ -3326,11 +3323,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 38
   },
   {
     "id": "e34",
@@ -3339,57 +3335,48 @@
     "beakers": [
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "crimson",
+          "crimson",
+          "crimson",
+          "violet",
           "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
           "violet",
           "violet"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "cobalt",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "cobalt"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "violet",
+          "amber"
+        ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "viridian",
+          "crimson",
+          "crimson",
+          "viridian",
+          "viridian",
           "amber"
         ]
       },
@@ -3400,19 +3387,28 @@
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "crimson",
+          "viridian",
+          "cobalt",
+          "violet"
+        ]
       },
       {
         "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "cobalt",
+          "saffron",
+          "cobalt"
         ]
       }
     ],
@@ -3427,11 +3423,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 36
   },
   {
     "id": "e35",
@@ -3439,41 +3434,23 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
         "layers": [
+          "cobalt",
+          "cobalt",
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
           "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian"
         ]
       },
@@ -3482,37 +3459,56 @@
       },
       {
         "layers": [
+          "cobalt",
+          "cobalt",
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
           "crimson",
           "crimson"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "violet"
+        ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "crimson",
+          "crimson",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "violet",
+          "violet",
           "cobalt"
         ]
       }
@@ -3528,11 +3524,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 37
   },
   {
     "id": "e36",
@@ -3541,77 +3536,77 @@
     "beakers": [
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "crimson",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "violet",
           "cobalt",
           "cobalt",
           "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "violet",
+          "violet",
+          "amber"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
+          "amber",
+          "violet",
+          "crimson",
+          "crimson",
+          "crimson",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "crimson",
+          "saffron",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
           "viridian",
           "viridian",
           "viridian"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
         "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "viridian"
         ]
       },
       {
@@ -3629,11 +3624,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 86
+    "targetMoves": 38
   },
   {
     "id": "e37",
@@ -3642,21 +3636,64 @@
     "beakers": [
       {
         "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
+          "cobalt",
+          "cobalt",
           "violet"
         ]
       },
       {
         "layers": [
+          "cobalt",
+          "cobalt",
+          "amber",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "saffron",
+          "saffron",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "crimson",
+          "crimson",
+          "crimson",
           "viridian"
         ]
       },
@@ -3665,57 +3702,15 @@
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "saffron",
+          "saffron",
+          "violet",
+          "violet"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "violet"
         ]
       }
     ],
@@ -3730,11 +3725,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 38
   },
   {
     "id": "e38",
@@ -3743,80 +3737,80 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
           "violet",
           "violet"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
           "viridian",
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "amber",
+          "amber"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron",
+          "saffron",
+          "crimson"
+        ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
+          "crimson",
           "amber",
           "amber",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "cobalt"
+        ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "viridian",
+          "saffron",
+          "viridian",
+          "viridian",
+          "viridian",
+          "crimson"
         ]
       },
       {
         "layers": []
       },
       {
+        "layers": []
+      },
+      {
         "layers": [
+          "crimson",
           "saffron",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "crimson",
           "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "cobalt",
+          "amber",
+          "cobalt",
+          "crimson"
         ]
       }
     ],
@@ -3831,11 +3825,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 92
+    "targetMoves": 37
   },
   {
     "id": "e39",
@@ -3843,65 +3836,69 @@
     "tier": "expert",
     "beakers": [
       {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
         "layers": [
+          "violet",
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
           "crimson",
           "crimson",
           "crimson"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
+          "saffron",
+          "crimson",
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "cobalt"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
+          "cobalt",
+          "violet",
+          "viridian",
+          "crimson",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "violet",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
           "saffron",
           "saffron",
           "saffron"
@@ -3909,16 +3906,12 @@
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "violet"
         ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
@@ -3932,11 +3925,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 86
+    "targetMoves": 37
   },
   {
     "id": "e40",
@@ -3945,71 +3937,27 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "cobalt",
+          "cobalt",
+          "cobalt",
           "amber"
         ]
       },
       {
         "layers": [
+          "amber",
+          "amber",
+          "saffron",
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "viridian"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "amber",
+          "crimson",
+          "crimson"
         ]
-      },
-      {
-        "layers": []
       },
       {
         "layers": [
@@ -4019,6 +3967,50 @@
           "violet",
           "violet",
           "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "cobalt",
+          "cobalt",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron"
         ]
       }
     ],
@@ -4033,11 +4025,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 86
+    "targetMoves": 32
   },
   {
     "id": "e41",
@@ -4045,9 +4036,44 @@
     "tier": "expert",
     "beakers": [
       {
+        "layers": []
+      },
+      {
         "layers": [
-          "crimson",
-          "crimson",
+          "viridian",
+          "viridian",
+          "violet",
+          "amber",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "viridian",
+          "viridian",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
           "crimson",
           "crimson",
           "crimson",
@@ -4055,58 +4081,24 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "amber",
           "viridian"
         ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "violet",
+          "violet",
+          "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
+          "cobalt",
           "violet",
           "violet",
           "violet"
@@ -4114,12 +4106,11 @@
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "viridian",
+          "crimson",
+          "saffron",
+          "saffron",
+          "saffron"
         ]
       }
     ],
@@ -4134,11 +4125,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 35
   },
   {
     "id": "e42",
@@ -4147,11 +4137,71 @@
     "beakers": [
       {
         "layers": [
+          "cobalt",
           "violet",
+          "cobalt",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "crimson",
+          "crimson",
+          "crimson",
+          "amber",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
           "violet",
-          "violet",
-          "violet",
-          "violet",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
           "violet"
         ]
       },
@@ -4159,68 +4209,9 @@
         "layers": [
           "viridian",
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
           "amber",
           "amber",
           "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
         ]
       }
     ],
@@ -4235,11 +4226,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 90
+    "targetMoves": 32
   },
   {
     "id": "e43",
@@ -4247,41 +4237,42 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
+        "layers": [
+          "saffron",
+          "violet"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "saffron",
+          "saffron",
+          "saffron",
+          "crimson",
           "viridian",
           "viridian"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
           "saffron",
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "amber",
+          "viridian"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "amber",
+          "amber",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
           "violet"
         ]
       },
@@ -4291,37 +4282,37 @@
           "cobalt",
           "cobalt",
           "cobalt",
-          "cobalt",
           "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "crimson",
+          "crimson",
+          "violet",
+          "violet",
+          "violet"
+        ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "crimson",
           "amber",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "violet",
+          "viridian",
+          "viridian",
+          "viridian"
         ]
       }
     ],
@@ -4336,11 +4327,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 32
   },
   {
     "id": "e44",
@@ -4349,8 +4339,30 @@
     "beakers": [
       {
         "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
           "crimson",
-          "crimson",
+          "cobalt",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
           "crimson",
           "crimson",
           "crimson",
@@ -4358,21 +4370,25 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "viridian"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "amber",
+          "amber",
+          "saffron",
+          "saffron",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "saffron",
+          "saffron",
+          "saffron",
           "viridian"
         ]
       },
@@ -4380,50 +4396,24 @@
         "layers": [
           "violet",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian",
+          "viridian",
           "cobalt",
           "cobalt"
         ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "amber",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
       }
     ],
     "heights": [
@@ -4437,11 +4427,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 33
   },
   {
     "id": "e45",
@@ -4450,59 +4439,43 @@
     "beakers": [
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian"
         ]
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "saffron",
+          "violet",
+          "viridian"
         ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "crimson"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "amber",
+          "amber",
+          "amber",
+          "violet",
+          "violet"
+        ]
       },
       {
         "layers": [
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
           "crimson"
         ]
       },
@@ -4512,18 +4485,36 @@
           "saffron",
           "saffron",
           "saffron",
-          "saffron",
           "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "viridian",
+          "viridian"
         ]
       },
       {
         "layers": [
           "violet",
           "violet",
+          "amber",
           "violet",
-          "violet",
-          "violet",
-          "violet"
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "cobalt",
+          "amber"
         ]
       }
     ],
@@ -4538,11 +4529,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 30
   },
   {
     "id": "e46",
@@ -4553,78 +4543,78 @@
         "layers": []
       },
       {
+        "layers": []
+      },
+      {
         "layers": [
           "saffron",
           "saffron",
-          "saffron",
-          "saffron",
+          "crimson",
+          "viridian",
+          "viridian",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
           "saffron",
           "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "violet",
+          "violet",
+          "cobalt",
+          "saffron",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "viridian",
           "violet",
           "violet"
         ]
       },
       {
         "layers": [
+          "violet",
+          "viridian",
+          "crimson",
+          "crimson",
+          "amber",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "crimson",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "saffron"
         ]
       }
     ],
@@ -4639,11 +4629,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 90
+    "targetMoves": 32
   },
   {
     "id": "e47",
@@ -4651,27 +4640,25 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
         "layers": [
           "cobalt",
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "crimson",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
           "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
+          "cobalt",
+          "violet",
+          "violet",
           "saffron",
           "saffron"
         ]
@@ -4680,12 +4667,28 @@
         "layers": []
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "saffron",
+          "saffron"
+        ]
       },
       {
         "layers": [
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
           "viridian",
           "viridian",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
           "viridian",
           "viridian",
           "viridian",
@@ -4693,39 +4696,26 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": [
+          "cobalt",
           "amber",
           "amber",
-          "amber",
-          "amber",
+          "saffron",
           "amber",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
           "crimson",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "saffron"
         ]
       }
     ],
@@ -4740,11 +4730,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 40
   },
   {
     "id": "e48",
@@ -4756,18 +4745,35 @@
       },
       {
         "layers": [
+          "crimson",
           "violet",
-          "violet",
-          "violet",
-          "violet",
+          "saffron",
           "violet",
           "violet"
         ]
       },
       {
         "layers": [
+          "cobalt",
+          "violet",
+          "crimson",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
           "saffron",
-          "saffron",
+          "viridian",
+          "viridian",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
           "saffron",
           "saffron",
           "saffron",
@@ -4776,20 +4782,6 @@
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
           "cobalt",
           "cobalt"
         ]
@@ -4798,35 +4790,32 @@
         "layers": []
       },
       {
-        "layers": []
+        "layers": [
+          "crimson",
+          "crimson",
+          "viridian",
+          "viridian"
+        ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "viridian",
+          "viridian",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "cobalt",
+          "cobalt",
+          "amber",
+          "amber"
         ]
       }
     ],
@@ -4841,11 +4830,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 86
+    "targetMoves": 39
   },
   {
     "id": "e49",
@@ -4854,9 +4842,9 @@
     "beakers": [
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian",
+          "viridian",
+          "saffron",
           "cobalt",
           "cobalt",
           "cobalt"
@@ -4864,71 +4852,73 @@
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "cobalt",
+          "amber",
+          "amber",
+          "cobalt",
+          "amber"
+        ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "violet",
+          "viridian",
           "crimson",
           "crimson"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "crimson",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
           "violet"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "viridian",
+          "saffron",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "cobalt",
+          "crimson",
+          "crimson",
+          "violet",
+          "violet"
+        ]
       }
     ],
     "heights": [
@@ -4942,11 +4932,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 37
   },
   {
     "id": "e50",
@@ -4954,18 +4943,19 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "amber",
+          "crimson",
+          "violet",
+          "crimson"
+        ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "viridian",
+          "viridian",
+          "saffron",
+          "saffron",
           "violet"
         ]
       },
@@ -4973,62 +4963,60 @@
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "viridian",
+          "viridian",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
       },
       {
         "layers": [
+          "amber",
+          "amber",
           "crimson",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "amber",
           "crimson"
         ]
       },
       {
         "layers": [
+          "viridian",
+          "saffron",
+          "saffron",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "cobalt",
+          "cobalt",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
+          "saffron",
           "amber"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "violet",
+          "violet",
           "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
         ]
       }
     ],
@@ -5043,11 +5031,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 38
   },
   {
     "id": "e51",
@@ -5055,41 +5042,37 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "amber",
+          "violet",
           "crimson"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "cobalt"
+        ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
           "violet",
           "violet"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
+          "viridian",
+          "viridian",
+          "cobalt",
+          "cobalt",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
           "saffron",
           "saffron",
           "saffron",
@@ -5097,39 +5080,44 @@
         ]
       },
       {
+        "layers": []
+      },
+      {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "amber",
+          "viridian",
+          "viridian",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "crimson",
+          "crimson",
+          "crimson",
+          "violet",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "viridian",
           "cobalt",
           "cobalt"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "violet"
         ]
       }
     ],
@@ -5144,11 +5132,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 38
   },
   {
     "id": "e52",
@@ -5156,56 +5143,10 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
           "saffron",
           "saffron",
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian",
           "viridian"
         ]
@@ -5214,8 +5155,55 @@
         "layers": []
       },
       {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "cobalt",
+          "cobalt",
+          "crimson",
+          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "cobalt",
+          "cobalt",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
         "layers": [
           "amber",
+          "viridian",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
           "amber",
           "amber",
           "amber",
@@ -5225,11 +5213,9 @@
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "viridian",
+          "viridian",
+          "viridian",
           "cobalt"
         ]
       }
@@ -5245,11 +5231,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 35
   },
   {
     "id": "e53",
@@ -5257,28 +5242,23 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
         "layers": [
+          "saffron",
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "viridian",
+          "viridian"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "violet",
+          "violet",
+          "crimson"
+        ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
+          "crimson",
           "saffron",
           "saffron",
           "saffron",
@@ -5287,32 +5267,16 @@
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
           "violet",
           "violet",
           "violet",
           "violet",
-          "violet",
-          "violet"
+          "cobalt",
+          "saffron"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian",
           "viridian",
           "viridian"
@@ -5322,17 +5286,39 @@
         "layers": [
           "crimson",
           "crimson",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
           "crimson",
           "crimson",
-          "crimson",
-          "crimson"
+          "cobalt"
         ]
       },
       {
         "layers": []
       },
       {
-        "layers": []
+        "layers": [
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
       }
     ],
     "heights": [
@@ -5346,11 +5332,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 87
+    "targetMoves": 30
   },
   {
     "id": "e54",
@@ -5358,29 +5343,68 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "crimson",
+          "crimson"
         ]
       },
       {
         "layers": [
+          "violet",
+          "viridian",
           "amber",
           "amber",
-          "amber",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "viridian",
+          "viridian",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "viridian",
+          "cobalt",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
+      },
+      {
+        "layers": [
           "amber",
           "amber",
           "amber"
@@ -5388,52 +5412,15 @@
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
           "violet"
         ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
@@ -5447,11 +5434,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 91
+    "targetMoves": 30
   },
   {
     "id": "e55",
@@ -5460,50 +5446,51 @@
     "beakers": [
       {
         "layers": [
+          "viridian",
           "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
           "cobalt",
           "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber"
         ]
       },
       {
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "saffron",
+          "saffron",
+          "cobalt",
+          "cobalt"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
+          "amber",
+          "amber",
           "viridian",
           "viridian"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "amber",
+          "viridian"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
+          "cobalt",
           "saffron",
           "saffron",
           "saffron",
@@ -5513,23 +5500,23 @@
       {
         "layers": [
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "violet",
+          "violet",
+          "violet",
+          "crimson"
         ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
       },
       {
         "layers": [
           "crimson",
-          "crimson",
+          "viridian",
+          "amber",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
           "crimson",
           "crimson",
           "crimson",
@@ -5548,11 +5535,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 39
   },
   {
     "id": "e56",
@@ -5561,50 +5547,6 @@
     "beakers": [
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
           "violet"
         ]
       },
@@ -5612,14 +5554,55 @@
         "layers": []
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "amber",
+          "amber",
+          "saffron",
+          "saffron"
+        ]
       },
       {
         "layers": [
+          "crimson",
+          "viridian",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
           "cobalt",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "saffron",
+          "viridian",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
           "cobalt",
           "cobalt",
           "cobalt",
@@ -5629,13 +5612,16 @@
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "saffron"
         ]
+      },
+      {
+        "layers": []
       }
     ],
     "heights": [
@@ -5649,11 +5635,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 90
+    "targetMoves": 34
   },
   {
     "id": "e57",
@@ -5662,20 +5647,36 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
           "crimson"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron"
+        ]
       },
       {
         "layers": [
-          "cobalt",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
           "cobalt",
           "cobalt",
           "cobalt",
@@ -5684,58 +5685,44 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "violet",
+          "crimson",
+          "violet",
+          "amber",
+          "crimson",
+          "crimson"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "viridian",
+          "viridian",
+          "amber"
+        ]
       },
       {
         "layers": [
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
+          "crimson",
+          "crimson",
           "violet"
         ]
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
           "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "violet"
+        ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "violet",
+          "cobalt"
         ]
       }
     ],
@@ -5750,11 +5737,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 86
+    "targetMoves": 31
   },
   {
     "id": "e58",
@@ -5769,9 +5755,22 @@
       },
       {
         "layers": [
+          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
           "amber",
           "amber",
-          "amber",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "viridian",
           "amber",
           "amber",
           "amber"
@@ -5779,65 +5778,52 @@
       },
       {
         "layers": [
+          "viridian",
           "crimson",
+          "cobalt",
+          "saffron",
           "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "violet"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
           "viridian",
           "viridian"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "crimson",
+          "crimson",
+          "violet",
+          "violet",
           "cobalt",
           "cobalt"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "amber",
+          "cobalt",
+          "saffron"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "violet",
+          "violet",
+          "saffron"
+        ]
       }
     ],
     "heights": [
@@ -5851,11 +5837,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 92
+    "targetMoves": 39
   },
   {
     "id": "e59",
@@ -5863,12 +5848,71 @@
     "tier": "expert",
     "beakers": [
       {
-        "layers": []
+        "layers": [
+          "viridian",
+          "violet"
+        ]
       },
       {
         "layers": [
+          "violet",
           "cobalt",
+          "crimson",
+          "saffron",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
           "cobalt",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "viridian",
+          "viridian",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "crimson",
           "cobalt",
           "cobalt",
           "cobalt",
@@ -5876,69 +5920,12 @@
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
+          "violet",
           "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
           "amber"
         ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
@@ -5952,11 +5939,10 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 89
+    "targetMoves": 34
   },
   {
     "id": "e60",
@@ -5965,81 +5951,82 @@
     "beakers": [
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "amber",
+          "cobalt",
+          "cobalt",
+          "violet",
+          "amber"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "amber",
+          "violet",
+          "amber"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt",
+          "crimson",
+          "crimson",
+          "crimson",
           "cobalt",
           "cobalt"
         ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson",
+          "amber",
+          "violet",
+          "violet",
+          "viridian",
           "crimson"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
+          "crimson",
           "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet",
-          "violet"
+          "saffron",
+          "saffron",
+          "viridian",
+          "viridian"
         ]
       },
       {
         "layers": [
           "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "crimson",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian"
         ]
       },
       {
         "layers": []
       },
       {
-        "layers": []
+        "layers": [
+          "viridian",
+          "viridian",
+          "saffron",
+          "saffron"
+        ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
+        "layers": [
+          "violet",
+          "cobalt",
+          "cobalt"
+        ]
       }
     ],
     "heights": [
@@ -6053,10 +6040,9 @@
       6,
       6,
       6,
-      6,
       6
     ],
     "catalysts": 1,
-    "targetMoves": 88
+    "targetMoves": 36
   }
 ]

@@ -18,7 +18,7 @@ export function getTopCount(beaker: Beaker): number {
 }
 
 export function getCapacity(beaker: Beaker, height: number): number {
-  return height - beaker.crystals.length;
+  return height - beaker.crystals.length - beaker.layers.length;
 }
 
 function _solidify(beaker: Beaker): number {
@@ -49,16 +49,8 @@ export function canPour(state: GameState, srcIdx: number, destIdx: number): bool
   const src = state.beakers[srcIdx];
   const dest = state.beakers[destIdx];
   if (src.layers.length === 0) return false;
-  const srcTop = getTopColor(src)!;
-  const destTop = getTopColor(dest);
-  if (!destTop) return true;
-  if (destTop === srcTop) {
-    const cap = getCapacity(dest, state.heights[destIdx]);
-    const srcCnt = getTopCount(src);
-    return srcCnt > 0 && cap > 0;
-  }
-  if (isPrimary(srcTop) && isPrimary(destTop)) return true;
-  return false;
+  // Allow any pour as long as destination has capacity
+  return getCapacity(dest, state.heights[destIdx]) > 0;
 }
 
 function pushHistory(state: GameState) {
@@ -87,51 +79,46 @@ export function doPour(state: GameState, srcIdx: number, destIdx: number): Actio
   const srcTop = getTopColor(src)!;
   const destTop = getTopColor(dest);
 
-  if (!destTop || destTop === srcTop) {
-    const count = getTopCount(src);
-    const capacity = getCapacity(dest, state.heights[destIdx]);
-    const transfer = Math.min(count, capacity);
-    if (transfer <= 0) {
-      state.history.pop();
-      return { success: false, message: 'No space' };
-    }
-
-    const moved: string[] = [];
-    for (let i = 0; i < transfer; i++) {
-      moved.push(src.layers.pop()!);
-    }
-    moved.reverse();
-    dest.layers.push(...moved);
-
-    if (destTop && isPrimary(srcTop) && isPrimary(destTop)) {
-      const solidified = applySolidification(dest, state.heights[destIdx]);
-      if (solidified > 0) state.solidificationOccurred = true;
-    }
-
-    state.moves++;
-    return { success: true };
-  }
-
-  if (isPrimary(srcTop) && isPrimary(destTop)) {
+  // If both tops are primaries that react → create intermediate
+  if (destTop && isPrimary(srcTop) && isPrimary(destTop)) {
     const reaction = getReaction(srcTop, destTop);
-    if (!reaction) {
-      state.history.pop();
-      return { success: false, message: 'No reaction between these colors' };
+    if (reaction) {
+      src.layers.pop();
+      dest.layers.pop();
+      dest.layers.push(reaction);
+
+      state.discovered.add(`${srcTop},${destTop}`);
+      state.discovered.add(`${destTop},${srcTop}`);
+
+      state.moves++;
+      return { success: true };
     }
-
-    src.layers.pop();
-    dest.layers.pop();
-    dest.layers.push(reaction);
-
-    state.discovered.add(`${srcTop},${destTop}`);
-    state.discovered.add(`${destTop},${srcTop}`);
-
-    state.moves++;
-    return { success: true };
   }
 
-  state.history.pop();
-  return { success: false, message: 'Invalid move' };
+  // Normal pour: transfer top_count of srcTop onto dest (will stack on whatever is there)
+  const count = getTopCount(src);
+  const capacity = getCapacity(dest, state.heights[destIdx]);
+  const transfer = Math.min(count, capacity);
+  if (transfer <= 0) {
+    state.history.pop();
+    return { success: false, message: 'No space' };
+  }
+
+  const moved: string[] = [];
+  for (let i = 0; i < transfer; i++) {
+    moved.push(src.layers.pop()!);
+  }
+  moved.reverse();
+  dest.layers.push(...moved);
+
+  // Check for solidification: after pouring same primary onto same primary
+  if (destTop && destTop === srcTop && isPrimary(srcTop)) {
+    const solidified = _solidify(dest);
+    if (solidified > 0) state.solidificationOccurred = true;
+  }
+
+  state.moves++;
+  return { success: true };
 }
 
 export function applyCatalyst(state: GameState, beakerIdx: number): ActionResult {

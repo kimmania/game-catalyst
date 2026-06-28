@@ -29,23 +29,25 @@ export function renderHelpVisuals() {
   };
 
   if (pour) {
-    pour.appendChild(miniBeaker(['crimson','crimson'], 0, 'Source', true));
+    // Pouring: stack on top regardless of underlying color
+    pour.appendChild(miniBeaker(['crimson','crimson'], 0, 'From', true));
     const arrow = document.createElement('div');
     arrow.className = 'help-arrow'; arrow.textContent = '➡';
     pour.appendChild(arrow);
-    pour.appendChild(miniBeaker([], 0, 'Target'));
+    pour.appendChild(miniBeaker(['amber','crimson','crimson'], 0, 'To'));
   }
 
   if (reaction) {
-    reaction.appendChild(miniBeaker(['crimson'], 0, 'Crimson'));
+    // Adjacent primary layers react to form intermediate
+    reaction.appendChild(miniBeaker(['crimson'], 0, 'Layer 1'));
     const plus = document.createElement('div');
     plus.className = 'help-arrow'; plus.textContent = '+';
     reaction.appendChild(plus);
-    reaction.appendChild(miniBeaker(['amber'], 0, 'Amber'));
+    reaction.appendChild(miniBeaker(['amber'], 0, 'Layer 2'));
     const arrow = document.createElement('div');
     arrow.className = 'help-arrow'; arrow.textContent = '=';
     reaction.appendChild(arrow);
-    reaction.appendChild(miniBeaker(['crimson','amber','orange'], 0, 'Result'));
+    reaction.appendChild(miniBeaker(['orange'], 0, 'Result'));
   }
 
   if (catalyst) {

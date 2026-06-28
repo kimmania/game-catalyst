@@ -5,149 +5,21 @@
     "tier": "tutorial",
     "beakers": [
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      }
-    ],
-    "heights": [
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "catalysts": 3,
-    "targetMoves": 14
-  },
-  {
-    "id": "t2",
-    "lab": "Apprentice Bench",
-    "tier": "tutorial",
-    "beakers": [
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
           "amber",
           "amber"
         ]
-      }
-    ],
-    "heights": [
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "catalysts": 3,
-    "targetMoves": 14
-  },
-  {
-    "id": "t3",
-    "lab": "Apprentice Bench",
-    "tier": "tutorial",
-    "beakers": [
-      {
-        "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
       },
       {
         "layers": [
           "amber",
-          "amber",
-          "amber",
-          "amber"
+          "violet",
+          "violet",
+          "violet"
         ]
-      }
-    ],
-    "heights": [
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "catalysts": 3,
-    "targetMoves": 14
-  },
-  {
-    "id": "t4",
-    "lab": "Apprentice Bench",
-    "tier": "tutorial",
-    "beakers": [
-      {
-        "layers": []
       },
       {
         "layers": [
-          "crimson",
           "crimson",
           "crimson",
           "crimson"
@@ -156,19 +28,7 @@
       {
         "layers": [
           "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "violet",
-          "violet",
-          "violet",
+          "crimson",
           "violet"
         ]
       }
@@ -177,11 +37,139 @@
       4,
       4,
       4,
+      4
+    ],
+    "catalysts": 3,
+    "targetMoves": 9
+  },
+  {
+    "id": "t2",
+    "lab": "Apprentice Bench",
+    "tier": "tutorial",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      4,
+      4,
       4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 8
+  },
+  {
+    "id": "t3",
+    "lab": "Apprentice Bench",
+    "tier": "tutorial",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "viridian",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "catalysts": 3,
+    "targetMoves": 15
+  },
+  {
+    "id": "t4",
+    "lab": "Apprentice Bench",
+    "tier": "tutorial",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "cobalt",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "catalysts": 3,
+    "targetMoves": 13
   },
   {
     "id": "t5",
@@ -192,42 +180,39 @@
         "layers": [
           "cobalt",
           "cobalt",
-          "cobalt",
-          "cobalt"
-        ]
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "saffron",
-          "saffron",
           "saffron",
           "saffron"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "saffron",
+          "saffron",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet"
+        ]
       }
     ],
     "heights": [
       4,
       4,
       4,
-      4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 11
   },
   {
     "id": "t6",
@@ -236,37 +221,33 @@
     "beakers": [
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
-          "violet"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": [
           "crimson",
-          "crimson",
-          "crimson",
+          "amber",
+          "amber",
           "crimson"
         ]
       },
       {
+        "layers": [
+          "violet",
+          "amber",
+          "violet",
+          "amber"
+        ]
+      },
+      {
         "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "violet",
+          "crimson",
+          "violet"
+        ]
       }
     ],
     "heights": [
-      4,
       4,
       4,
       4,
@@ -282,32 +263,30 @@
     "beakers": [
       {
         "layers": [
-          "cobalt",
-          "cobalt",
+          "violet",
+          "violet",
           "cobalt",
           "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
-        "layers": []
-      },
-      {
         "layers": [
           "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "cobalt",
+          "violet"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "saffron",
+          "saffron",
+          "saffron",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt"
         ]
       }
     ],
@@ -315,11 +294,10 @@
       4,
       4,
       4,
-      4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 16
   },
   {
     "id": "t8",
@@ -329,9 +307,9 @@
       {
         "layers": [
           "amber",
-          "amber",
-          "amber",
-          "amber"
+          "violet",
+          "violet",
+          "violet"
         ]
       },
       {
@@ -339,33 +317,29 @@
       },
       {
         "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "crimson",
+          "crimson",
+          "violet",
+          "crimson"
         ]
       },
       {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
+          "amber",
+          "amber",
+          "amber",
+          "crimson"
         ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
       4,
       4,
       4,
-      4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 16
   },
   {
     "id": "t9",
@@ -375,31 +349,29 @@
       {
         "layers": [
           "violet",
-          "violet",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
           "violet",
           "violet"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "saffron",
+          "cobalt",
+          "saffron"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
           "saffron",
           "saffron",
-          "saffron",
-          "saffron"
+          "cobalt",
+          "violet"
         ]
       }
     ],
@@ -407,11 +379,10 @@
       4,
       4,
       4,
-      4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 13
   },
   {
     "id": "t10",
@@ -419,33 +390,31 @@
     "tier": "tutorial",
     "beakers": [
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "amber"
+        ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
+          "crimson",
+          "crimson",
+          "amber",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
           "violet",
           "violet"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "saffron",
-          "saffron",
-          "saffron",
-          "saffron"
-        ]
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
+          "violet",
+          "amber",
+          "crimson",
+          "crimson"
         ]
       }
     ],
@@ -453,11 +422,10 @@
       4,
       4,
       4,
-      4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 12
   },
   {
     "id": "t11",
@@ -466,76 +434,28 @@
     "beakers": [
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
+          "saffron",
+          "cobalt",
           "violet"
         ]
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber"
-        ]
-      },
-      {
-        "layers": []
-      }
-    ],
-    "heights": [
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "catalysts": 3,
-    "targetMoves": 14
-  },
-  {
-    "id": "t12",
-    "lab": "Apprentice Bench",
-    "tier": "tutorial",
-    "beakers": [
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
-        ]
-      },
-      {
-        "layers": [
+          "violet",
+          "violet",
           "cobalt",
-          "cobalt",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "violet",
           "cobalt",
           "cobalt"
         ]
@@ -543,6 +463,48 @@
     ],
     "heights": [
       4,
+      4,
+      4,
+      4
+    ],
+    "catalysts": 3,
+    "targetMoves": 16
+  },
+  {
+    "id": "t12",
+    "lab": "Apprentice Bench",
+    "tier": "tutorial",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "violet",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
       4,
       4,
       4,
@@ -558,18 +520,13 @@
     "beakers": [
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
-          "crimson"
+          "amber",
+          "cobalt"
         ]
       },
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "viridian",
+          "cobalt",
           "viridian",
           "viridian",
           "viridian"
@@ -577,25 +534,27 @@
       },
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "cobalt",
+          "cobalt"
         ]
       },
       {
-        "layers": []
+        "layers": [
+          "amber",
+          "amber",
+          "viridian",
+          "amber"
+        ]
       }
     ],
     "heights": [
       4,
       4,
       4,
-      4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 13
   },
   {
     "id": "t14",
@@ -604,10 +563,18 @@
     "beakers": [
       {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "saffron",
+          "cobalt",
+          "cobalt",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "violet",
+          "violet"
         ]
       },
       {
@@ -615,26 +582,14 @@
       },
       {
         "layers": [
-          "viridian",
-          "viridian",
-          "viridian",
-          "viridian"
-        ]
-      },
-      {
-        "layers": []
-      },
-      {
-        "layers": [
-          "cobalt",
-          "cobalt",
-          "cobalt",
-          "cobalt"
+          "saffron",
+          "saffron",
+          "saffron",
+          "violet"
         ]
       }
     ],
     "heights": [
-      4,
       4,
       4,
       4,
@@ -649,44 +604,41 @@
     "tier": "tutorial",
     "beakers": [
       {
-        "layers": []
-      },
-      {
         "layers": [
-          "amber",
-          "amber",
-          "amber",
-          "amber"
+          "crimson",
+          "violet"
         ]
       },
       {
         "layers": [
-          "crimson",
-          "crimson",
-          "crimson",
+          "violet",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "saffron",
+          "saffron",
           "crimson"
         ]
       },
       {
         "layers": [
-          "violet",
-          "violet",
-          "violet",
+          "crimson",
+          "crimson",
+          "saffron",
           "violet"
         ]
-      },
-      {
-        "layers": []
       }
     ],
     "heights": [
       4,
       4,
       4,
-      4,
       4
     ],
     "catalysts": 3,
-    "targetMoves": 14
+    "targetMoves": 16
   }
 ]
