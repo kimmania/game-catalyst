@@ -10,6 +10,7 @@ import { PRIMARIES, getReaction } from './engine/constants';
 import type { GameState, SaveData } from './engine/types.js';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
+import { renderHelpVisuals } from './engine/renderHelpVisuals';
 
 const SAVE_DEBOUNCE = 500;
 let saveTimer: ReturnType<typeof setTimeout> | null = null;
@@ -224,10 +225,11 @@ async function startLevel(levelId: string) {
   syncHeader();
 
   if (!saveData.hasSeenHelp) {
-    requestAnimationFrame(() => {
-      showOverlay('help-overlay');
-    });
+    saveData.hasSeenHelp = true;
+    persistSave();
   }
+  renderHelpVisuals();
+  showOverlay('help-overlay');
 }
 
 function makeFallbackLevel() {
