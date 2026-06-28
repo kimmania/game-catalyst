@@ -1,0 +1,6062 @@
+[
+  {
+    "id": "e1",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 92
+  },
+  {
+    "id": "e2",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e3",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e4",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 90
+  },
+  {
+    "id": "e5",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e6",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 86
+  },
+  {
+    "id": "e7",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e8",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e9",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e10",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e11",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e12",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 90
+  },
+  {
+    "id": "e13",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 92
+  },
+  {
+    "id": "e14",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 92
+  },
+  {
+    "id": "e15",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e16",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e17",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e18",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e19",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e20",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e21",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e22",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e23",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e24",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e25",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e26",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e27",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e28",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e29",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e30",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e31",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e32",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 86
+  },
+  {
+    "id": "e33",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e34",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e35",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e36",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 86
+  },
+  {
+    "id": "e37",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e38",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 92
+  },
+  {
+    "id": "e39",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 86
+  },
+  {
+    "id": "e40",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 86
+  },
+  {
+    "id": "e41",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e42",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 90
+  },
+  {
+    "id": "e43",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e44",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e45",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e46",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 90
+  },
+  {
+    "id": "e47",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e48",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 86
+  },
+  {
+    "id": "e49",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e50",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e51",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e52",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e53",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 87
+  },
+  {
+    "id": "e54",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 91
+  },
+  {
+    "id": "e55",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  },
+  {
+    "id": "e56",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 90
+  },
+  {
+    "id": "e57",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 86
+  },
+  {
+    "id": "e58",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 92
+  },
+  {
+    "id": "e59",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 89
+  },
+  {
+    "id": "e60",
+    "lab": "Forbidden Vault",
+    "tier": "expert",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "catalysts": 1,
+    "targetMoves": 88
+  }
+]

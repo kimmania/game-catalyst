@@ -1,0 +1,4622 @@
+[
+  {
+    "id": "m1",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m2",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m3",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m4",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m5",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 44
+  },
+  {
+    "id": "m6",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 44
+  },
+  {
+    "id": "m7",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m8",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m9",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m10",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m11",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 44
+  },
+  {
+    "id": "m12",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m13",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 44
+  },
+  {
+    "id": "m14",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m15",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m16",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m17",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m18",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m19",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m20",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m21",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m22",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m23",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m24",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m25",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m26",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m27",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m28",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m29",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m30",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m31",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m32",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m33",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m34",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m35",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m36",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m37",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m38",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m39",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m40",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m41",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m42",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m43",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m44",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m45",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m46",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m47",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m48",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m49",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m50",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m51",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m52",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m53",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m54",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m55",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m56",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m57",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m58",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "violet",
+          "violet",
+          "violet",
+          "violet",
+          "violet"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m59",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 45
+  },
+  {
+    "id": "m60",
+    "lab": "Master\u2019s Altar",
+    "tier": "medium",
+    "beakers": [
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron",
+          "saffron"
+        ]
+      },
+      {
+        "layers": [
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian",
+          "viridian"
+        ]
+      },
+      {
+        "layers": [
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt",
+          "cobalt"
+        ]
+      },
+      {
+        "layers": [
+          "amber",
+          "amber",
+          "amber",
+          "amber",
+          "amber"
+        ]
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": []
+      },
+      {
+        "layers": [
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson",
+          "crimson"
+        ]
+      }
+    ],
+    "heights": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "catalysts": 2,
+    "targetMoves": 44
+  }
+]

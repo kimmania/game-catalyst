@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#2a1810" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Catalyst" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="description" content="An alchemy-lab color-compounding puzzle for iPad and mobile." />
+
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+
+  <title>Catalyst – Alchemy Lab Puzzle</title>
+</head>
+<body>
+  <div id="app">
+    <!-- Intro story screen -->
+    <div id="intro-screen" class="screen active">
+      <div class="intro-content">
+        <h1>Catalyst</h1>
+        <h2>Apprentice of the Alchemy Guild</h2>
+        <p class="intro-text">
+          The Guild Masters demand pure elements for their grand transmutations — but the reagents are stubborn and love to mingle.
+        </p>
+        <p class="intro-text">
+          Use your knowledge of the reaction table, manage your catalyst charges wisely, and beware the solidification that shrinks your workspace forever.
+        </p>
+        <button id="start-adventure" class="btn btn-primary">Begin Your Apprenticeship</button>
+      </div>
+    </div>
+
+    <!-- Game screen -->
+    <div id="game-screen" class="screen">
+      <header class="top-bar">
+        <button id="undo-btn" class="icon-btn" title="Undo" aria-label="Undo">↶</button>
+        <div class="level-info">
+          <span id="level-label">Apprentice Bench</span>
+          <span id="level-number">Level 1</span>
+        </div>
+        <button id="settings-btn" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
+        <button id="reset-btn" class="icon-btn" title="Reset Level" aria-label="Reset Level">↻</button>
+        <button id="help-btn" class="icon-btn" title="Help" aria-label="Help">?</button>
+      </header>
+
+      <main id="game-area">
+        <div id="beaker-container"></div>
+        <div id="catalyst-bar">
+          <button id="catalyst-btn" class="btn btn-bright" disabled>
+            <span class="catalyst-icon">🔥</span>
+            <span class="catalyst-label">Catalyst</span>
+            <span id="catalyst-count" class="catalyst-count">0</span>
+          </button>
+        </div>
+        <div id="reaction-table"></div>
+      </main>
+
+      <div id="lab-theme-indicator"></div>
+    </div>
+
+    <!-- Modals / Overlays -->
+    <div id="help-overlay" class="overlay">
+      <div class="modal help-modal">
+        <button class="close-btn" id="help-close" aria-label="Close">×</button>
+        <h2>How to Play</h2>
+        <div class="help-sections">
+          <section>
+            <h3>Pouring</h3>
+            <p>Tap a <strong>source</strong> beaker, then tap a <strong>destination</strong> beaker.</p>
+            <p>Pouring is allowed if the destination has matching color on top — or is empty.</p>
+            <div class="help-visual" id="help-pour"></div>
+          </section>
+          <section>
+            <h3>Reactions</h3>
+            <p>Pouring a different color creates an <strong>intermediate</strong> compound. Use the reaction table below to see every combination.</p>
+            <div class="help-visual" id="help-reaction"></div>
+          </section>
+          <section>
+            <h3>Catalyst Charges</h3>
+            <p>Select a beaker with an intermediate on top, then tap <strong>Catalyst</strong> to split it back to its two parent colors.</p>
+            <p>Charges are limited — use them wisely.</p>
+            <div class="help-visual" id="help-catalyst"></div>
+          </section>
+          <section>
+            <h3>Solidification</h3>
+            <p>Pouring the <strong>same</strong> primary color onto itself fuses into a permanent crystal at the bottom, reducing that beaker's capacity.</p>
+            <p class="help-warning">Solidification is irreversible!</p>
+            <div class="help-visual" id="help-solidify"></div>
+          </section>
+          <section>
+            <h3>Goal</h3>
+            <p>Every non-empty beaker must contain <strong>one uniform color</strong> (any color, primary or intermediate). Empty beakers are fine.</p>
+            <p>A <strong>perfect solve</strong> uses zero solidifications and zero catalysts.</p>
+          </section>
+        </div>
+        <button id="help-dismiss" class="btn btn-primary">Got It</button>
+      </div>
+    </div>
+
+    <div id="settings-overlay" class="overlay">
+      <div class="modal settings-modal">
+        <button class="close-btn" id="settings-close" aria-label="Close">×</button>
+        <h2>Settings</h2>
+        <div class="settings-row">
+          <label for="sound-toggle">Sound Effects</label>
+          <button id="sound-toggle" class="toggle" role="switch" aria-checked="true">On</button>
+        </div>
+        <div class="settings-row">
+          <label for="music-toggle">Music</label>
+          <button id="music-toggle" class="toggle" role="switch" aria-checked="true">On</button>
+        </div>
+        <div class="settings-row">
+          <label for="motion-toggle">Reduced Motion</label>
+          <button id="motion-toggle" class="toggle" role="switch" aria-checked="false">Off</button>
+        </div>
+        <div class="settings-row">
+          <label for="contrast-toggle">High Contrast</label>
+          <button id="contrast-toggle" class="toggle" role="switch" aria-checked="false">Off</button>
+        </div>
+        <div class="settings-divider"></div>
+        <button id="reset-progress-btn" class="btn btn-danger">Reset All Progress</button>
+        <button id="reset-confirm-btn" class="btn btn-danger hidden">Tap again to confirm</button>
+      </div>
+    </div>
+
+    <div id="level-complete-overlay" class="overlay">
+      <div class="modal level-modal">
+        <h2 id="lc-title">Level Complete!</h2>
+        <div class="stars" id="lc-stars">⭐⭐⭐</div>
+        <p id="lc-moves">Moves: <span class="value">12</span></p>
+        <p id="lc-best">Best: <span class="value">12</span></p>
+        <p id="lc-message" class="lc-message">Purity preserved. The Guild is pleased.</p>
+        <div class="level-modal-actions">
+          <button id="lc-retry" class="btn">Replay</button>
+          <button id="lc-next" class="btn btn-primary">Next Level</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="reset-overlay" class="overlay">
+      <div class="modal reset-modal">
+        <p>Reset this level?</p>
+        <div class="modal-actions">
+          <button id="reset-cancel" class="btn">Cancel</button>
+          <button id="reset-confirm" class="btn btn-danger">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>

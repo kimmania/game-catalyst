@@ -1,0 +1,17 @@
+{
+  "name": "game-catalyst",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "generate-puzzles": "python3 scripts/generate_puzzles.py",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^6.4.3",
+    "vite-plugin-pwa": "^0.21.2"
+  }
+}
