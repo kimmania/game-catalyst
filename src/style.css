@@ -232,6 +232,21 @@ html, body {
   background: rgba(255,255,255,0.12);
 }
 
+/* Crystals (permanent solidifications) */
+.beaker .layer.layer-crystal,
+.beaker .layer.layer-crystal[data-color] {
+  background: linear-gradient(180deg, #2a3a5c, #1a2a4a) !important;
+  border-color: rgba(120, 180, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beaker .layer.layer-crystal::after {
+  content: '✦';
+  color: rgba(150, 220, 255, 0.9);
+  font-size: clamp(10px, 2.8vw, 14px);
+}
+
 /* Reactive layer highlight */
 .beaker.activated {
   border-color: rgba(255, 180, 60, 0.9);
