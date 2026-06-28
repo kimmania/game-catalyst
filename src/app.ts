@@ -227,9 +227,9 @@ async function startLevel(levelId: string) {
   if (!saveData.hasSeenHelp) {
     saveData.hasSeenHelp = true;
     persistSave();
+    renderHelpVisuals();
+    showOverlay('help-overlay');
   }
-  renderHelpVisuals();
-  showOverlay('help-overlay');
 }
 
 function makeFallbackLevel() {

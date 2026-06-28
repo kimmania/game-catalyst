@@ -21,6 +21,20 @@ export function getCapacity(beaker: Beaker, height: number): number {
   return height - beaker.crystals.length - beaker.layers.length;
 }
 
+/* For a beaker to be "won", all layers must be identical, all crystals must
+   match those layers (or be empty), and crystals must be at the bottom. */
+export function isBeakerUniform(beaker: Beaker): boolean {
+  if (beaker.layers.length === 0) return true;  // empty OK
+  const top = beaker.layers[beaker.layers.length - 1];
+  for (const layer of beaker.layers) {
+    if (layer !== top) return false;
+  }
+  for (const c of beaker.crystals) {
+    if (c !== top) return false;
+  }
+  return true;
+}
+
 function _solidify(beaker: Beaker): number {
   const top = getTopColor(beaker);
   if (!top || !isPrimary(top)) return 0;
@@ -49,7 +63,6 @@ export function canPour(state: GameState, srcIdx: number, destIdx: number): bool
   const src = state.beakers[srcIdx];
   const dest = state.beakers[destIdx];
   if (src.layers.length === 0) return false;
-  // Allow any pour as long as destination has capacity
   return getCapacity(dest, state.heights[destIdx]) > 0;
 }
 
@@ -95,7 +108,7 @@ export function doPour(state: GameState, srcIdx: number, destIdx: number): Actio
     }
   }
 
-  // Normal pour: transfer top_count of srcTop onto dest (will stack on whatever is there)
+  // Normal pour: transfer top_count of srcTop onto dest
   const count = getTopCount(src);
   const capacity = getCapacity(dest, state.heights[destIdx]);
   const transfer = Math.min(count, capacity);
@@ -111,7 +124,7 @@ export function doPour(state: GameState, srcIdx: number, destIdx: number): Actio
   moved.reverse();
   dest.layers.push(...moved);
 
-  // Check for solidification: after pouring same primary onto same primary
+  // Solidification: when two primary layers of the same color sit together
   if (destTop && destTop === srcTop && isPrimary(srcTop)) {
     const solidified = _solidify(dest);
     if (solidified > 0) state.solidificationOccurred = true;
@@ -159,11 +172,7 @@ export function undo(state: GameState): boolean {
 
 export function isWin(beakers: Beaker[]): boolean {
   for (const beaker of beakers) {
-    if (beaker.layers.length === 0) continue;
-    const top = getTopColor(beaker)!;
-    for (const layer of beaker.layers) {
-      if (layer !== top) return false;
-    }
+    if (!isBeakerUniform(beaker)) return false;
   }
   return true;
 }

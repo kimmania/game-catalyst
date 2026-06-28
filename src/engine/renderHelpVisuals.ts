@@ -4,21 +4,22 @@ export function renderHelpVisuals() {
   const catalyst = document.getElementById('help-catalyst');
   const solidify = document.getElementById('help-solidify');
 
-  const miniBeaker = (layers: string[], crystals: number = 0, label?: string, highlight?: boolean) => {
+  const miniBeaker = (layers: string[], crystals: string[] = [], label?: string, highlight?: boolean) => {
     const b = document.createElement('div');
     b.className = 'help-mini-beaker' + (highlight ? ' selected' : '');
     const cap = document.createElement('div');
     cap.className = 'mini-cap';
     b.appendChild(cap);
+    for (const c of crystals) {
+      const cryst = document.createElement('div');
+      cryst.className = 'mini-crystal';
+      cryst.dataset.color = c;
+      b.appendChild(cryst);
+    }
     for (const c of layers) {
       const layer = document.createElement('div');
-      layer.className = 'mini-layer'; layer.style.background = `var(--${c})`;
+      layer.className = 'mini-layer'; layer.dataset.color = c;
       b.appendChild(layer);
-    }
-    if (crystals > 0) {
-      const cryst = document.createElement('div');
-      cryst.className = 'mini-crystals'; cryst.textContent = '💎'.repeat(crystals);
-      b.appendChild(cryst);
     }
     if (label) {
       const lbl = document.createElement('div');
@@ -29,40 +30,43 @@ export function renderHelpVisuals() {
   };
 
   if (pour) {
-    // Pouring: stack on top regardless of underlying color
-    pour.appendChild(miniBeaker(['crimson','crimson'], 0, 'From', true));
+    pour.innerHTML = '';
+    // Pouring: crimson onto a beaker containing amber → stacks on top
+    pour.appendChild(miniBeaker(['crimson','crimson'], [], 'From', true));
     const arrow = document.createElement('div');
     arrow.className = 'help-arrow'; arrow.textContent = '➡';
     pour.appendChild(arrow);
-    pour.appendChild(miniBeaker(['amber','crimson','crimson'], 0, 'To'));
+    pour.appendChild(miniBeaker(['amber','crimson','crimson'], [], 'To'));
   }
 
   if (reaction) {
-    // Adjacent primary layers react to form intermediate
-    reaction.appendChild(miniBeaker(['crimson'], 0, 'Layer 1'));
-    const plus = document.createElement('div');
-    plus.className = 'help-arrow'; plus.textContent = '+';
-    reaction.appendChild(plus);
-    reaction.appendChild(miniBeaker(['amber'], 0, 'Layer 2'));
+    reaction.innerHTML = '';
+    // Adjacent primary layers (crimson + amber) react to form orange
+    reaction.appendChild(miniBeaker(['crimson','amber'], [], 'Touch'));
     const arrow = document.createElement('div');
-    arrow.className = 'help-arrow'; arrow.textContent = '=';
+    arrow.className = 'help-arrow'; arrow.textContent = '➡';
     reaction.appendChild(arrow);
-    reaction.appendChild(miniBeaker(['orange'], 0, 'Result'));
+    reaction.appendChild(miniBeaker(['orange'], [], 'Result'));
   }
 
   if (catalyst) {
-    catalyst.appendChild(miniBeaker(['orange'], 0, 'Intermediate'));
+    catalyst.innerHTML = '';
+    // Catalyst splits orange back into its parent colors
+    catalyst.appendChild(miniBeaker(['orange'], [], 'Intermediate'));
     const arrow = document.createElement('div');
     arrow.className = 'help-arrow'; arrow.textContent = '🔥➡';
     catalyst.appendChild(arrow);
-    catalyst.appendChild(miniBeaker(['amber','crimson'], 0, 'Split'));
+    catalyst.appendChild(miniBeaker(['amber','crimson'], [], 'Split'));
   }
 
   if (solidify) {
-    solidify.appendChild(miniBeaker(['crimson','crimson','crimson','crimson'], 0, 'Before'));
+    solidify.innerHTML = '';
+    // Solidification: two consecutive crimson layers become a crystal at the bottom
+    solidify.appendChild(miniBeaker(['crimson','crimson'], [], 'Before'));
     const arrow = document.createElement('div');
     arrow.className = 'help-arrow'; arrow.textContent = '➡';
     solidify.appendChild(arrow);
-    solidify.appendChild(miniBeaker(['crimson','crimson'], 2, 'After'));
+    solidify.appendChild(miniBeaker(['crimson'], ['crimson'], 'After'));
+    // Note: the crystal sits at the BOTTOM of the beaker, replacing the pair
   }
 }
