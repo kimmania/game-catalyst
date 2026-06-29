@@ -7,7 +7,7 @@ import {
   hasValidMoves,
   createGameState,
 } from './engine/game-logic';
-import { PRIMARIES, getReaction } from './engine/constants';
+import { REACTION_PAIRS, COLOR_NAME } from './engine/constants';
 import type { GameState, SaveData, LevelData } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
@@ -33,6 +33,7 @@ const els = {
   catalystBtn: () => document.getElementById('catalyst-btn') as HTMLButtonElement,
   catalystCount: () => document.getElementById('catalyst-count')!,
   reactionTable: () => document.getElementById('reaction-table')!,
+  reactionTableWrap: () => document.getElementById('reaction-table-wrap')!,
   undoBtn: () => document.getElementById('undo-btn') as HTMLButtonElement,
   resetBtn: () => document.getElementById('reset-btn') as HTMLButtonElement,
   settingsBtn: () => document.getElementById('settings-btn') as HTMLButtonElement,
@@ -396,25 +397,51 @@ function renderReactionTable() {
   const container = els.reactionTable();
   container.innerHTML = '';
 
-  for (let i = 0; i < PRIMARIES.length; i++) {
-    for (let j = 0; j < PRIMARIES.length; j++) {
-      const cell = document.createElement('div');
-      cell.className = 'reaction-cell';
-      if (i === j) {
-        cell.style.opacity = '0';
-      } else {
-        const reaction = getReaction(PRIMARIES[i], PRIMARIES[j]);
-        const discovered = state?.discovered.has(`${PRIMARIES[i]},${PRIMARIES[j]}`);
-        if (discovered && reaction) {
-          cell.textContent = reaction;
-          cell.dataset.color = reaction;
-          cell.classList.add('discovered');
-        } else if (reaction) {
-          cell.textContent = '?';
-        }
-      }
-      container.appendChild(cell);
-    }
+  const wrap = els.reactionTableWrap();
+  if (!state || state.discovered.size === 0) {
+    wrap.classList.add('empty');
+    return;
+  }
+  wrap.classList.remove('empty');
+
+  for (const [a, b, result] of REACTION_PAIRS) {
+    const forward = state.discovered.has(`${a},${b}`);
+    const reverse = state.discovered.has(`${b},${a}`);
+    if (!forward && !reverse) continue;
+
+    const row = document.createElement('div');
+    row.className = 'reaction-row';
+
+    const dot = (color: string, label: string) => {
+      const el = document.createElement('span');
+      el.className = 'reaction-dot';
+      el.dataset.color = color;
+      el.setAttribute('aria-label', label);
+      el.title = label;
+      return el;
+    };
+
+    row.appendChild(dot(a, COLOR_NAME[a] ?? a));
+
+    const plus = document.createElement('span');
+    plus.className = 'reaction-operator';
+    plus.textContent = '+';
+    row.appendChild(plus);
+
+    row.appendChild(dot(b, COLOR_NAME[b] ?? b));
+
+    const arrow = document.createElement('span');
+    arrow.className = 'reaction-operator';
+    arrow.textContent = '→';
+    row.appendChild(arrow);
+
+    const out = document.createElement('span');
+    out.className = 'reaction-output';
+    out.textContent = COLOR_NAME[result] ?? result;
+    out.dataset.color = result;
+    row.appendChild(out);
+
+    container.appendChild(row);
   }
 }
 

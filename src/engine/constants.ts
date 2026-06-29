@@ -48,7 +48,7 @@ export function isIntermediate(color: string): color is Intermediate {
   return INTERMEDIATES.includes(color as Intermediate);
 }
 
-const REACTION_PAIRS: [Primary, Primary, Intermediate][] = [
+export const REACTION_PAIRS: [Primary, Primary, Intermediate][] = [
   ['crimson', 'amber', 'orange'],
   ['amber', 'viridian', 'chartreuse'],
   ['viridian', 'cobalt', 'teal'],

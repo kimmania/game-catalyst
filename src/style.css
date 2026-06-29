@@ -324,12 +324,16 @@ body.reduced-motion .beaker.invalid {
   font-weight: bold;
 }
 
-/* Reaction table */
+/* Discovered reaction list */
 #reaction-table-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
+}
+
+#reaction-table-wrap.empty {
+  display: none;
 }
 
 #reaction-table-label {
@@ -340,15 +344,79 @@ body.reduced-motion .beaker.invalid {
 }
 
 #reaction-table {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 6px;
+  width: 100%;
+  max-width: 360px;
   padding: 8px;
   border-radius: 10px;
   background: rgba(0,0,0,0.25);
   border: 1px solid rgba(180,140,100,0.12);
 }
 
+.reaction-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+}
+
+.reaction-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.35);
+  flex-shrink: 0;
+}
+
+.reaction-operator {
+  color: #b88860;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+.reaction-output {
+  min-width: 70px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.reaction-dot[data-color="crimson"]    { background: var(--crimson); }
+.reaction-dot[data-color="amber"]      { background: var(--amber); }
+.reaction-dot[data-color="viridian"]   { background: var(--viridian); }
+.reaction-dot[data-color="cobalt"]     { background: var(--cobalt); }
+.reaction-dot[data-color="saffron"]    { background: var(--saffron); }
+.reaction-dot[data-color="violet"]     { background: var(--violet); }
+.reaction-dot[data-color="orange"]     { background: var(--orange); }
+.reaction-dot[data-color="chartreuse"] { background: var(--chartreuse); }
+.reaction-dot[data-color="teal"]       { background: var(--teal); }
+.reaction-dot[data-color="indigo"]     { background: var(--indigo); }
+.reaction-dot[data-color="magenta"]    { background: var(--magenta); }
+.reaction-dot[data-color="fuchsia"]    { background: var(--fuchsia); }
+
+.reaction-output[data-color="crimson"]    { background: var(--crimson); }
+.reaction-output[data-color="amber"]      { background: var(--amber); }
+.reaction-output[data-color="viridian"]   { background: var(--viridian); }
+.reaction-output[data-color="cobalt"]     { background: var(--cobalt); }
+.reaction-output[data-color="saffron"]    { background: var(--saffron); }
+.reaction-output[data-color="violet"]     { background: var(--violet); }
+.reaction-output[data-color="orange"]     { background: var(--orange); }
+.reaction-output[data-color="chartreuse"] { background: var(--chartreuse); }
+.reaction-output[data-color="teal"]       { background: var(--teal); }
+.reaction-output[data-color="indigo"]     { background: var(--indigo); }
+.reaction-output[data-color="magenta"]    { background: var(--magenta); }
+.reaction-output[data-color="fuchsia"]    { background: var(--fuchsia); }
+
+/* Legacy reaction table grid (no longer used) */
 .reaction-cell {
   aspect-ratio: 1 / 1;
   border-radius: 8px;
