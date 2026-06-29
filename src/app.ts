@@ -8,10 +8,11 @@ import {
   createGameState,
 } from './engine/game-logic';
 import { PRIMARIES, getReaction } from './engine/constants';
-import type { GameState, SaveData } from './engine/types.js';
+import type { GameState, SaveData, LevelData } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
 import { renderHelpVisuals } from './engine/renderHelpVisuals';
+import { playPour, playInvalid, playCatalyst, playWin } from './engine/audio';
 
 const SAVE_DEBOUNCE = 500;
 let saveTimer: ReturnType<typeof setTimeout> | null = null;
@@ -19,7 +20,9 @@ let saveTimer: ReturnType<typeof setTimeout> | null = null;
 let state: GameState | null = null;
 let saveData: SaveData = getDefaultSave();
 let currentLevelId: string | null = null;
-let _levelLabel = 'Apprentice Bench';
+let keyboardIndex = 0;
+
+const TIER_ORDER = ['tutorial', 'easy', 'medium', 'hard', 'expert', 'master'];
 
 // Cached DOM elements
 const els = {
@@ -36,13 +39,13 @@ const els = {
   helpBtn: () => document.getElementById('help-btn') as HTMLButtonElement,
   levelLabel: () => document.getElementById('level-label')!,
   levelNumber: () => document.getElementById('level-number')!,
+  moveCount: () => document.getElementById('move-count')!,
   helpOverlay: () => document.getElementById('help-overlay')!,
   helpClose: () => document.getElementById('help-close')!,
   helpDismiss: () => document.getElementById('help-dismiss') as HTMLButtonElement,
   settingsOverlay: () => document.getElementById('settings-overlay')!,
   settingsClose: () => document.getElementById('settings-close')!,
   soundToggle: () => document.getElementById('sound-toggle') as HTMLButtonElement,
-  musicToggle: () => document.getElementById('music-toggle') as HTMLButtonElement,
   motionToggle: () => document.getElementById('motion-toggle') as HTMLButtonElement,
   contrastToggle: () => document.getElementById('contrast-toggle') as HTMLButtonElement,
   resetProgressBtn: () => document.getElementById('reset-progress-btn') as HTMLButtonElement,
@@ -50,10 +53,10 @@ const els = {
   levelCompleteOverlay: () => document.getElementById('level-complete-overlay')!,
   lcTitle: () => document.getElementById('lc-title')!,
   lcStars: () => document.getElementById('lc-stars')!,
-  lcStarsVal: () => document.getElementById('lc-stars-val')?.querySelector('.value') as HTMLElement | null,
+  lcStarsVal: () => document.getElementById('lc-stars-val') as HTMLElement | null,
   lcMoves: () => document.getElementById('lc-moves')!.querySelector('.value') as HTMLElement,
-  lcTarget: () => document.getElementById('lc-target')?.querySelector('.value') as HTMLElement | null,
-  lcSolidify: () => document.getElementById('lc-solidify')?.querySelector('.value') as HTMLElement | null,
+  lcTarget: () => document.getElementById('lc-target')!.querySelector('.value') as HTMLElement,
+  lcSolidify: () => document.getElementById('lc-solidify')!.querySelector('.value') as HTMLElement,
   lcBest: () => document.getElementById('lc-best')!.querySelector('.value') as HTMLElement,
   lcMessage: () => document.getElementById('lc-message')!,
   lcRetry: () => document.getElementById('lc-retry') as HTMLButtonElement,
@@ -64,6 +67,7 @@ const els = {
   stuckOverlay: () => document.getElementById('stuck-overlay')!,
   stuckCancel: () => document.getElementById('stuck-cancel') as HTMLButtonElement,
   stuckRestart: () => document.getElementById('stuck-restart') as HTMLButtonElement,
+  announcer: () => document.getElementById('aria-announcer')!,
 };
 
 function getLevelLabel(levelId: string): string {
@@ -71,8 +75,8 @@ function getLevelLabel(levelId: string): string {
   switch (tier) {
     case 'tutorial': return 'Apprentice Bench';
     case 'easy': return 'Apprentice Bench';
-    case 'medium': return 'Master’s Altar';
-    case 'hard': return 'Master’s Altar';
+    case 'medium': return 'Master\u2019s Altar';
+    case 'hard': return 'Master\u2019s Altar';
     case 'expert': return 'Forbidden Vault';
     case 'master': return 'Forbidden Vault';
     default: return 'Apprentice Bench';
@@ -87,7 +91,9 @@ function showScreen(id: string) {
 
 export function bootstrap() {
   saveData = loadSave();
+  applyBodyClasses();
   bindEvents();
+  bindKeyboard();
 
   const introSeen = saveData.hasSeenIntro;
   if (introSeen) {
@@ -95,6 +101,11 @@ export function bootstrap() {
   } else {
     showScreen('intro-screen');
   }
+}
+
+function applyBodyClasses() {
+  document.body.classList.toggle('high-contrast', !!saveData.settings.highContrast);
+  document.body.classList.toggle('reduced-motion', !!saveData.settings.reducedMotion);
 }
 
 function bindEvents() {
@@ -126,7 +137,6 @@ function bindEvents() {
   els.settingsClose().addEventListener('click', () => hideOverlay('settings-overlay'));
 
   bindToggle(els.soundToggle(), 'sound');
-  bindToggle(els.musicToggle(), 'music');
   bindToggle(els.motionToggle(), 'reducedMotion');
   bindToggle(els.contrastToggle(), 'highContrast');
 
@@ -159,20 +169,99 @@ function bindEvents() {
     startLevel(currentLevelId ?? 't1');
   });
   els.lcNext().addEventListener('click', async () => {
-    const next = nextLevelId(currentLevelId ?? 't1');
+    const next = await resolveNextLevelId(currentLevelId ?? 't1');
     hideOverlay('level-complete-overlay');
     await startLevel(next);
   });
 
   els.catalystBtn().addEventListener('click', handleCatalyst);
+
+  // Backdrop click to close overlays
+  for (const overlayId of ['help-overlay', 'settings-overlay', 'reset-overlay', 'stuck-overlay']) {
+    const overlay = document.getElementById(overlayId);
+    overlay?.addEventListener('click', (e) => {
+      if (e.target === overlay) hideOverlay(overlayId);
+    });
+  }
 }
 
-function nextLevelId(current: string): string {
-  const m = current.match(/^([a-z]*)(\d+)$/i);
-  if (!m) return 't1';
-  const prefix = m[1] || 't';
-  const num = parseInt(m[2], 10);
-  return `${prefix}${num + 1}`;
+function bindKeyboard() {
+  document.addEventListener('keydown', (e) => {
+    const target = e.target as HTMLElement;
+    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName) || target.isContentEditable) {
+      return;
+    }
+
+    if (isOverlayOpen()) return;
+
+    if (e.key === 'Tab') {
+      // Let default tab behavior move focus; we track selected beaker separately.
+      return;
+    }
+
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      moveKeyboardSelection(1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      moveKeyboardSelection(-1);
+    } else if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleBeakerTap(keyboardIndex);
+    } else if (e.key === 'c' || e.key === 'C') {
+      e.preventDefault();
+      handleCatalyst();
+    } else if (e.key === 'u' || e.key === 'U' || (e.ctrlKey && e.key === 'z')) {
+      e.preventDefault();
+      handleUndo();
+    } else if (e.key === '?' || e.key === '/') {
+      e.preventDefault();
+      showOverlay('help-overlay');
+    }
+  });
+}
+
+function isOverlayOpen(): boolean {
+  return document.querySelectorAll('.overlay.active').length > 0;
+}
+
+function moveKeyboardSelection(delta: number) {
+  if (!state) return;
+  const n = state.beakers.length;
+  if (n === 0) return;
+  keyboardIndex = (keyboardIndex + delta + n) % n;
+  state.selectedBeaker = keyboardIndex;
+  renderBoard();
+  syncCatalystUI();
+  const beaker = els.beakerContainer().children[keyboardIndex] as HTMLElement | undefined;
+  beaker?.focus({ preventScroll: true });
+}
+
+async function resolveNextLevelId(current: string): Promise<string> {
+  const currentTier = deriveTier(current);
+  const tierIndex = TIER_ORDER.indexOf(currentTier);
+  const bank = await fetchPuzzleBank(currentTier);
+  const currentNumMatch = current.match(/^(?:[a-z]*)(\d+)$/i);
+  const currentNum = currentNumMatch ? parseInt(currentNumMatch[1], 10) : 1;
+
+  // Try next number in same tier
+  const sameTierNext = bank.find((l) => {
+    const m = l.id.match(/^(?:[a-z]*)(\d+)$/i);
+    return m && parseInt(m[1], 10) === currentNum + 1;
+  });
+  if (sameTierNext) return sameTierNext.id;
+
+  // Roll over to first level of next tier
+  const nextTier = TIER_ORDER[tierIndex + 1];
+  if (nextTier) {
+    const nextBank = await fetchPuzzleBank(nextTier);
+    if (nextBank.length) return nextBank[0].id;
+  }
+
+  // Loop back to tutorial start
+  const tutorialBank = await fetchPuzzleBank('tutorial');
+  if (tutorialBank.length) return tutorialBank[0].id;
+  return 't1';
 }
 
 function bindToggle(btn: HTMLButtonElement, key: keyof SaveData['settings']) {
@@ -183,17 +272,20 @@ function bindToggle(btn: HTMLButtonElement, key: keyof SaveData['settings']) {
     if (key === 'highContrast') {
       document.body.classList.toggle('high-contrast', !!saveData.settings.highContrast);
     }
+    if (key === 'reducedMotion') {
+      document.body.classList.toggle('reduced-motion', !!saveData.settings.reducedMotion);
+    }
   });
 }
 
 function syncToggleUI(btn: HTMLButtonElement, value: boolean) {
-  btn.textContent = value ? 'On' : 'Off';
   btn.setAttribute('aria-checked', String(value));
+  const label = btn.querySelector('.toggle-label');
+  if (label) label.textContent = value ? 'On' : 'Off';
 }
 
 function syncSettingsUI() {
   syncToggleUI(els.soundToggle(), saveData.settings.sound);
-  syncToggleUI(els.musicToggle(), saveData.settings.music);
   syncToggleUI(els.motionToggle(), saveData.settings.reducedMotion);
   syncToggleUI(els.contrastToggle(), saveData.settings.highContrast);
 }
@@ -212,9 +304,9 @@ async function startLevel(levelId: string) {
   currentLevelId = levelId;
   saveData.currentLevel = levelId;
   persistSave();
+  keyboardIndex = 0;
 
-  _levelLabel = getLevelLabel(levelId);
-  els.levelLabel().textContent = _levelLabel;
+  els.levelLabel().textContent = getLevelLabel(levelId);
 
   const level = await getLevelById(levelId);
   if (!level) {
@@ -236,6 +328,7 @@ async function startLevel(levelId: string) {
   renderBoard();
   syncCatalystUI();
   syncHeader();
+  syncMoveCount();
 
   if (!saveData.hasSeenHelp) {
     saveData.hasSeenHelp = true;
@@ -245,7 +338,7 @@ async function startLevel(levelId: string) {
   }
 }
 
-function makeFallbackLevel() {
+function makeFallbackLevel(): LevelData {
   return {
     id: 't1',
     lab: 'Apprentice Bench',
@@ -270,15 +363,13 @@ function renderBoard() {
     const b = document.createElement('div');
     b.className = 'beaker';
     b.dataset.index = String(idx);
+    b.tabIndex = 0;
+    b.setAttribute('role', 'button');
+    b.setAttribute('aria-label', `Beaker ${idx + 1}`);
     if (state!.selectedBeaker === idx) b.classList.add('selected');
+    if (keyboardIndex === idx && !isOverlayOpen()) b.classList.add('keyboard-focus');
 
     b.addEventListener('click', () => handleBeakerTap(idx));
-    b.addEventListener('pointerdown', (e) => {
-      (e.target as HTMLElement).style.transform = 'scale(0.98)';
-    });
-    b.addEventListener('pointerup', (e) => {
-      (e.target as HTMLElement).style.transform = '';
-    });
 
     // crystals at very bottom
     for (const c of beaker.crystals) {
@@ -330,6 +421,7 @@ function renderReactionTable() {
 function handleBeakerTap(idx: number) {
   if (!state) return;
   if (state.won) return;
+  keyboardIndex = idx;
 
   if (state.selectedBeaker === null) {
     if (state.beakers[idx].layers.length === 0) return; // cannot select empty beaker
@@ -343,8 +435,10 @@ function handleBeakerTap(idx: number) {
     state.selectedBeaker = null;
 
     if (result.success) {
+      playPour();
       postMove();
     } else {
+      playInvalid();
       wobbleBeaker(dest);
     }
   }
@@ -368,11 +462,13 @@ function handleCatalyst() {
   if (state.selectedBeaker === null) return;
   const result = applyCatalyst(state, state.selectedBeaker);
   if (result.success) {
+    playCatalyst();
     state.selectedBeaker = null;
     postMove();
     renderBoard();
     syncCatalystUI();
   } else {
+    playInvalid();
     wobbleBeaker(state.selectedBeaker);
     state.selectedBeaker = null;
     renderBoard();
@@ -384,19 +480,23 @@ function handleUndo() {
   if (undo(state)) {
     syncCatalystUI();
     renderBoard();
+    syncMoveCount();
   }
 }
 
 function postMove() {
   if (!state) return;
+  syncMoveCount();
   if (isWin(state.beakers)) {
     state.won = true;
     const stars = computeStars();
+    playWin();
     showWin(stars);
     saveData = completeLevel(saveData, state.levelId, stars);
     persistSave();
   } else if (!hasValidMoves(state)) {
     showOverlay('stuck-overlay');
+    announce('No valid moves remain. Try restarting the level.');
   } else {
     debounceSave();
   }
@@ -404,7 +504,7 @@ function postMove() {
 
 function computeStars(): number {
   if (!state) return 1;
-  const target = (state as GameState & { targetMoves?: number }).targetMoves ?? 999;
+  const target = state.targetMoves ?? 999;
   const stars =
     state.moves <= target && !state.solidificationOccurred ? 3 :
     state.moves <= target ? 2 :
@@ -419,12 +519,10 @@ function showWin(stars: number) {
   const lcStarsVal = els.lcStarsVal();
   if (lcStarsVal) lcStarsVal.textContent = String(stars);
   els.lcMoves().textContent = String(state.moves);
-  const lcTarget = els.lcTarget();
-  if (lcTarget) lcTarget.textContent = String(state.targetMoves);
-  const lcSolidify = els.lcSolidify();
-  if (lcSolidify) lcSolidify.textContent = state.solidificationOccurred ? 'Yes' : 'None';
+  els.lcTarget().textContent = String(state.targetMoves);
+  els.lcSolidify().textContent = state.solidificationOccurred ? 'Yes' : 'None';
 
-  const prevBest = saveData.progress.completed[state!.levelId] || 0;
+  const prevBest = saveData.progress.completed[state.levelId] || 0;
   const newBest = Math.max(prevBest, stars);
   els.lcBest().textContent = String(newBest);
 
@@ -435,6 +533,7 @@ function showWin(stars: number) {
   } else {
     els.lcMessage().textContent = 'The transmutation succeeded, albeit messily.';
   }
+  announce(`Level complete! ${stars} out of 3 stars.`);
   showOverlay('level-complete-overlay');
 }
 
@@ -451,6 +550,19 @@ function syncCatalystUI() {
 
 function syncHeader() {
   els.levelNumber().textContent = currentLevelId ?? 'Level 1';
+}
+
+function syncMoveCount() {
+  if (!state) return;
+  els.moveCount().textContent = String(state.moves);
+}
+
+function announce(message: string) {
+  const el = els.announcer();
+  el.textContent = '';
+  // Force DOM reflow so repeated identical messages are re-announced.
+  void el.offsetWidth;
+  el.textContent = message;
 }
 
 function debounceSave() {

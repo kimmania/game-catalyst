@@ -41,6 +41,10 @@
           <span id="level-label">Apprentice Bench</span>
           <span id="level-number">Level 1</span>
         </div>
+        <div class="moves-info" aria-live="polite" aria-atomic="true">
+          <span class="moves-label">Moves</span>
+          <span id="move-count">0</span>
+        </div>
         <button id="settings-btn" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
         <button id="reset-btn" class="icon-btn" title="Reset Level" aria-label="Reset Level">↻</button>
         <button id="help-btn" class="icon-btn" title="Help" aria-label="Help">?</button>
@@ -104,20 +108,16 @@
         <button class="close-btn" id="settings-close" aria-label="Close">×</button>
         <h2>Settings</h2>
         <div class="settings-row">
-          <label for="sound-toggle">Sound Effects</label>
-          <button id="sound-toggle" class="toggle" role="switch" aria-checked="true">On</button>
+          <span>Sound Effects</span>
+          <button id="sound-toggle" class="toggle" role="switch" aria-checked="true"><span class="toggle-label">On</span></button>
         </div>
         <div class="settings-row">
-          <label for="music-toggle">Music</label>
-          <button id="music-toggle" class="toggle" role="switch" aria-checked="true">On</button>
+          <span>Reduced Motion</span>
+          <button id="motion-toggle" class="toggle" role="switch" aria-checked="false"><span class="toggle-label">Off</span></button>
         </div>
         <div class="settings-row">
-          <label for="motion-toggle">Reduced Motion</label>
-          <button id="motion-toggle" class="toggle" role="switch" aria-checked="false">Off</button>
-        </div>
-        <div class="settings-row">
-          <label for="contrast-toggle">High Contrast</label>
-          <button id="contrast-toggle" class="toggle" role="switch" aria-checked="false">Off</button>
+          <span>High Contrast</span>
+          <button id="contrast-toggle" class="toggle" role="switch" aria-checked="false"><span class="toggle-label">Off</span></button>
         </div>
         <div class="settings-divider"></div>
         <button id="reset-progress-btn" class="btn btn-danger">Reset All Progress</button>
@@ -137,7 +137,7 @@
       <div class="modal level-modal">
         <h2 id="lc-title">Level Complete!</h2>
         <div class="stars" id="lc-stars">⭐⭐⭐</div>
-        <p id="lc-stars-line">Stars: <span class="value" id="lc-stars-val">⭐⭐⭐</span></p>
+        <p id="lc-stars-line">Star Rating: <span class="value" id="lc-stars-val">3</span> / 3</p>
         <p id="lc-moves">Moves Used: <span class="value">12</span></p>
         <p id="lc-target">Target Moves: <span class="value">8</span></p>
         <p id="lc-solidify">Solidifications: <span class="value">0</span></p>
@@ -170,6 +170,8 @@
         </div>
       </div>
     </div>
+
+    <div id="aria-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
   </div>
 
   <script type="module" src="src/main.ts"></script>

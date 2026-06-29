@@ -30,9 +30,6 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Generate puzzles
-        run: npm run generate-puzzles
-
       - name: Build
         run: npm run build
 

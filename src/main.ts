@@ -1,4 +1,4 @@
 import './style.css';
-import { bootstrap } from './app.js';
+import { bootstrap } from './app';
 
 bootstrap();
