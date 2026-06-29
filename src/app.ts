@@ -22,6 +22,8 @@ let saveData: SaveData = getDefaultSave();
 let currentLevelId: string | null = null;
 let keyboardIndex = 0;
 
+let lastAction: { type: 'solidify' | 'catalyst'; beakerIndex: number } | null = null;
+
 const TIER_ORDER = ['tutorial', 'easy', 'medium', 'hard', 'expert', 'master'];
 
 // Cached DOM elements
@@ -326,6 +328,7 @@ async function startLevel(levelId: string) {
 
   state = createGameState(level);
   showScreen('game-screen');
+  lastAction = null;
   renderBoard();
   syncCatalystUI();
   syncHeader();
@@ -372,18 +375,27 @@ function renderBoard() {
 
     b.addEventListener('click', () => handleBeakerTap(idx));
 
+    const animateSolidify = lastAction?.type === 'solidify' && lastAction.beakerIndex === idx;
+    const animateCatalyst = lastAction?.type === 'catalyst' && lastAction.beakerIndex === idx;
+
     // crystals at very bottom
     for (const c of beaker.crystals) {
       const cEl = document.createElement('div');
       cEl.className = 'layer layer-crystal';
+      if (animateSolidify) cEl.classList.add('forming');
       cEl.dataset.color = c;
       b.appendChild(cEl);
     }
 
-    for (const layer of beaker.layers) {
+    for (let li = 0; li < beaker.layers.length; li++) {
+      const layer = beaker.layers[li];
       const l = document.createElement('div');
       l.className = 'layer';
       l.dataset.color = layer;
+      // The top two layers in a catalyst target are the freshly-split parents.
+      if (animateCatalyst && li >= beaker.layers.length - 2) {
+        l.classList.add('splitting');
+      }
       b.appendChild(l);
     }
 
@@ -458,11 +470,15 @@ function handleBeakerTap(idx: number) {
   } else {
     const src = state.selectedBeaker;
     const dest = idx;
+    const beforeSolidified = state.solidificationOccurred;
     const result = doPour(state, src, dest);
     state.selectedBeaker = null;
 
     if (result.success) {
       playPour();
+      if (!beforeSolidified && state.solidificationOccurred) {
+        lastAction = { type: 'solidify', beakerIndex: dest };
+      }
       postMove();
     } else {
       playInvalid();
@@ -487,9 +503,11 @@ function wobbleBeaker(idx: number) {
 function handleCatalyst() {
   if (!state) return;
   if (state.selectedBeaker === null) return;
-  const result = applyCatalyst(state, state.selectedBeaker);
+  const beakerIndex = state.selectedBeaker;
+  const result = applyCatalyst(state, beakerIndex);
   if (result.success) {
     playCatalyst();
+    lastAction = { type: 'catalyst', beakerIndex };
     state.selectedBeaker = null;
     postMove();
     renderBoard();
@@ -505,6 +523,7 @@ function handleCatalyst() {
 function handleUndo() {
   if (!state) return;
   if (undo(state)) {
+    lastAction = null;
     syncCatalystUI();
     renderBoard();
     syncMoveCount();

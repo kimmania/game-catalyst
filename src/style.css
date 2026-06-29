@@ -277,6 +277,64 @@ body.reduced-motion .beaker.invalid {
   font-size: clamp(10px, 2.8vw, 14px);
 }
 
+/* Crystal formation animation */
+.layer-crystal.forming {
+  animation: crystal-form 0.45s ease-out;
+}
+
+@keyframes crystal-form {
+  0% {
+    opacity: 0;
+    transform: translateY(-120%) scale(0.5);
+    filter: brightness(1.5);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(8%) scale(1.05);
+    filter: brightness(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: brightness(1);
+  }
+}
+
+/* Catalyst split animation */
+.layer.splitting {
+  animation: catalyst-split 0.4s ease-out;
+}
+
+@keyframes catalyst-split {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: brightness(1.6) saturate(1.4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+    filter: brightness(1.2) saturate(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1) saturate(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layer-crystal.forming,
+  .layer.splitting {
+    animation: none;
+  }
+}
+
+body.reduced-motion .layer-crystal.forming,
+body.reduced-motion .layer.splitting {
+  animation: none;
+}
+
 .layer.layer-crystal[data-color="crimson"] { background: #903030 !important; }
 .layer.layer-crystal[data-color="crimson"]::after { color: #ff8888; }
 .layer.layer-crystal[data-color="amber"]   { background: #b07020 !important; }
