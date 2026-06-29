@@ -187,6 +187,26 @@ export function isWin(beakers: Beaker[]): boolean {
   return true;
 }
 
+export function hasValidMoves(state: GameState): boolean {
+  const { beakers, heights, catalystCharges } = state;
+  // Check any legal pour exists
+  for (let src = 0; src < beakers.length; src++) {
+    if (beakers[src].layers.length === 0) continue;
+    for (let dest = 0; dest < beakers.length; dest++) {
+      if (src === dest) continue;
+      if (getCapacity(beakers[dest], heights[dest]) > 0) return true;
+    }
+  }
+  // Check any catalyst is usable
+  if (catalystCharges > 0) {
+    for (const b of beakers) {
+      const top = getTopColor(b);
+      if (top && getReactionParents(top)) return true;
+    }
+  }
+  return false;
+}
+
 export function createGameState(level: {
   id: string;
   lab: string;

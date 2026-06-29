@@ -4,6 +4,7 @@ import {
   applyCatalyst,
   undo,
   isWin,
+  hasValidMoves,
   createGameState,
 } from './engine/game-logic';
 import { PRIMARIES, getReaction } from './engine/constants';
@@ -60,6 +61,9 @@ const els = {
   resetOverlay: () => document.getElementById('reset-overlay')!,
   resetCancel: () => document.getElementById('reset-cancel') as HTMLButtonElement,
   resetConfirm: () => document.getElementById('reset-confirm') as HTMLButtonElement,
+  stuckOverlay: () => document.getElementById('stuck-overlay')!,
+  stuckCancel: () => document.getElementById('stuck-cancel') as HTMLButtonElement,
+  stuckRestart: () => document.getElementById('stuck-restart') as HTMLButtonElement,
 };
 
 function getLevelLabel(levelId: string): string {
@@ -141,6 +145,12 @@ function bindEvents() {
   els.resetCancel().addEventListener('click', () => hideOverlay('reset-overlay'));
   els.resetConfirm().addEventListener('click', () => {
     hideOverlay('reset-overlay');
+    startLevel(currentLevelId ?? 't1');
+  });
+
+  els.stuckCancel().addEventListener('click', () => hideOverlay('stuck-overlay'));
+  els.stuckRestart().addEventListener('click', () => {
+    hideOverlay('stuck-overlay');
     startLevel(currentLevelId ?? 't1');
   });
 
@@ -385,6 +395,8 @@ function postMove() {
     showWin(stars);
     saveData = completeLevel(saveData, state.levelId, stars);
     persistSave();
+  } else if (!hasValidMoves(state)) {
+    showOverlay('stuck-overlay');
   } else {
     debounceSave();
   }
