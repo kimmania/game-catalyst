@@ -8,7 +8,7 @@ import {
   createGameState,
 } from './engine/game-logic';
 import { REACTION_PAIRS, COLOR_NAME } from './engine/constants';
-import type { GameState, SaveData, LevelData } from './engine/types';
+import type { GameState, SaveData, LevelData, Beaker } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
 import { renderHelpVisuals } from './engine/renderHelpVisuals';
@@ -21,6 +21,7 @@ let state: GameState | null = null;
 let saveData: SaveData = getDefaultSave();
 let currentLevelId: string | null = null;
 let keyboardIndex = 0;
+let previousBeakers: Beaker[] | null = null;
 
 let lastAction: { type: 'solidify' | 'catalyst'; beakerIndex: number } | null = null;
 
@@ -361,6 +362,8 @@ function makeFallbackLevel(): LevelData {
 function renderBoard() {
   if (!state) return;
   const container = els.beakerContainer();
+  const previous = previousBeakers;
+  previousBeakers = state.beakers.map((b) => ({ layers: [...b.layers], crystals: [...b.crystals] }));
   container.innerHTML = '';
 
   state.beakers.forEach((beaker, idx) => {
@@ -377,12 +380,13 @@ function renderBoard() {
 
     const animateSolidify = lastAction?.type === 'solidify' && lastAction.beakerIndex === idx;
     const animateCatalyst = lastAction?.type === 'catalyst' && lastAction.beakerIndex === idx;
+    const beakerChanged = !previous || beakerChangedSince(previous[idx], beaker);
 
     // crystals at very bottom
     for (const c of beaker.crystals) {
       const cEl = document.createElement('div');
       cEl.className = 'layer layer-crystal';
-      if (animateSolidify) cEl.classList.add('forming');
+      if (animateSolidify && beakerChanged) cEl.classList.add('forming');
       cEl.dataset.color = c;
       b.appendChild(cEl);
     }
@@ -393,7 +397,7 @@ function renderBoard() {
       l.className = 'layer';
       l.dataset.color = layer;
       // The top two layers in a catalyst target are the freshly-split parents.
-      if (animateCatalyst && li >= beaker.layers.length - 2) {
+      if (animateCatalyst && beakerChanged && li >= beaker.layers.length - 2) {
         l.classList.add('splitting');
       }
       b.appendChild(l);
@@ -403,6 +407,19 @@ function renderBoard() {
   });
 
   renderReactionTable();
+}
+
+function beakerChangedSince(prev: Beaker | undefined, curr: Beaker): boolean {
+  if (!prev) return true;
+  if (prev.layers.length !== curr.layers.length) return true;
+  if (prev.crystals.length !== curr.crystals.length) return true;
+  for (let i = 0; i < prev.layers.length; i++) {
+    if (prev.layers[i] !== curr.layers[i]) return true;
+  }
+  for (let i = 0; i < prev.crystals.length; i++) {
+    if (prev.crystals[i] !== curr.crystals[i]) return true;
+  }
+  return false;
 }
 
 function renderReactionTable() {
