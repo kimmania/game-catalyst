@@ -492,7 +492,7 @@ function postMove() {
     const stars = computeStars();
     playWin();
     showWin(stars);
-    saveData = completeLevel(saveData, state.levelId, stars);
+    saveData = completeLevel(saveData, state.levelId, stars, state.moves);
     persistSave();
   } else if (!hasValidMoves(state)) {
     showOverlay('stuck-overlay');
@@ -522,9 +522,9 @@ function showWin(stars: number) {
   els.lcTarget().textContent = String(state.targetMoves);
   els.lcSolidify().textContent = state.solidificationOccurred ? 'Yes' : 'None';
 
-  const prevBest = saveData.progress.completed[state.levelId] || 0;
-  const newBest = Math.max(prevBest, stars);
-  els.lcBest().textContent = String(newBest);
+  const bestMoves = saveData.progress.bestMoves[state.levelId];
+  const displayBest = bestMoves === undefined ? state.moves : bestMoves;
+  els.lcBest().textContent = String(displayBest);
 
   if (stars === 3) {
     els.lcMessage().textContent = 'Purity preserved. The Guild is overjoyed. A perfect solve!';

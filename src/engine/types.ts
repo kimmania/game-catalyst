@@ -42,7 +42,8 @@ export interface GameState {
 export interface SaveData {
   version: number;
   progress: {
-    completed: Record<string, number>;
+    completed: Record<string, number>; // highest star rating
+    bestMoves: Record<string, number>; // fewest moves to complete
     unlocked: string[];
   };
   settings: {

@@ -6,6 +6,7 @@ export function getDefaultSave(): SaveData {
     version: SAVE_VERSION,
     progress: {
       completed: {},
+      bestMoves: {},
       unlocked: ['t1'],
     },
     settings: {
@@ -50,7 +51,11 @@ export function clearSave() {
 
 function migrateSave(old: SaveData): SaveData {
   const fresh = getDefaultSave();
-  fresh.progress = old.progress ?? fresh.progress;
+  fresh.progress = {
+    completed: old.progress?.completed ?? {},
+    bestMoves: old.progress?.bestMoves ?? {},
+    unlocked: old.progress?.unlocked ?? ['t1'],
+  };
   fresh.settings = { ...fresh.settings, ...old.settings };
   fresh.grimoire = old.grimoire ?? fresh.grimoire;
   fresh.hasSeenIntro = old.hasSeenHelp ?? old.hasSeenIntro ?? false;
@@ -64,11 +69,15 @@ export function patchSettings(data: SaveData, patch: Partial<Settings>): SaveDat
   return { ...data, settings: { ...data.settings, ...patch } };
 }
 
-export function completeLevel(data: SaveData, levelId: string, stars: number): SaveData {
+export function completeLevel(data: SaveData, levelId: string, stars: number, moves: number): SaveData {
   const completed = { ...data.progress.completed };
-  const prev = completed[levelId] ?? 0;
-  completed[levelId] = Math.max(prev, stars);
-
+  const bestMoves = { ...data.progress.bestMoves };
+  const prevStars = completed[levelId] ?? 0;
+  completed[levelId] = Math.max(prevStars, stars);
+  const prevMoves = bestMoves[levelId];
+  if (prevMoves === undefined || moves < prevMoves) {
+    bestMoves[levelId] = moves;
+  }
   const unlocked = [...data.progress.unlocked];
   // Unlock next level in sequence if adjacent
   const nextId = deriveNextLevelId(levelId);
@@ -82,7 +91,7 @@ export function completeLevel(data: SaveData, levelId: string, stars: number): S
 
   return {
     ...data,
-    progress: { completed, unlocked: Array.from(new Set(unlocked)) },
+    progress: { completed, bestMoves, unlocked: Array.from(new Set(unlocked)) },
     grimoire: Array.from(mergedGrimoire),
   };
 }
