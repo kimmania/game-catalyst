@@ -721,6 +721,8 @@ function handleBeakerTap(idx: number) {
       navigator.vibrate?.(10);
       if (result.reacted && srcTop && destTop) {
         persistDiscovery(`${srcTop},${destTop}`);
+        const resultName = COLOR_NAME[getReaction(srcTop, destTop) ?? ''] ?? 'new color';
+        announce(`Discovered ${resultName}!`);
       }
       state.selectedBeaker = null;
       renderBoard();
@@ -740,6 +742,7 @@ function handleBeakerTap(idx: number) {
       postMove();
     } else {
       play('invalid');
+      announce(`Invalid move. ${result.message ?? ''}`);
       wobbleBeaker(dest);
     }
   }
@@ -766,6 +769,7 @@ function handleCatalyst() {
   if (result.success) {
     play('catalyst');
     navigator.vibrate?.(15);
+    announce('Catalyst used. The layer splits into its primaries.');
     animateReactionFlash(beakerIndex, getComputedColor(beakerIndex));
     spawnParticles(beakerIndex, 8);
     lastAction = { type: 'catalyst', beakerIndex };
@@ -775,6 +779,7 @@ function handleCatalyst() {
     syncCatalystUI();
   } else {
     play('invalid');
+    announce(`Cannot use catalyst. ${result.message ?? ''}`);
     wobbleBeaker(state.selectedBeaker);
     state.selectedBeaker = null;
     renderBoard();
