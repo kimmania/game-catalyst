@@ -72,10 +72,17 @@ body.reduced-motion *::after {
   width: 100%;
   min-height: 0;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  pointer-events: none;
 }
 
 .screen.active {
   display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* Intro */
@@ -650,16 +657,27 @@ body.reduced-motion .reaction-flash {
   color: #f0d0a0;
   cursor: pointer;
   font-family: inherit;
-  transition: transform 0.08s ease, background 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.08s ease, background 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
 }
 
-.map-node:active {
-  transform: scale(0.95);
+.map-node.current {
+  border-color: rgba(255, 200, 96, 0.8);
+  box-shadow: 0 0 0 2px rgba(255, 200, 96, 0.35), 0 0 14px rgba(255, 180, 60, 0.25);
+  animation: current-pulse 2s ease-in-out infinite;
 }
 
 .map-node:hover:not(.locked) {
   background: rgba(255,255,255,0.12);
   box-shadow: 0 0 12px rgba(255, 180, 60, 0.18);
+}
+
+.map-node:active:not(.locked) {
+  transform: scale(0.95);
+}
+
+@keyframes current-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(255, 200, 96, 0.35), 0 0 14px rgba(255, 180, 60, 0.25); }
+  50% { box-shadow: 0 0 0 4px rgba(255, 200, 96, 0.2), 0 0 22px rgba(255, 180, 60, 0.35); }
 }
 
 .map-node.locked {
@@ -669,8 +687,24 @@ body.reduced-motion .reaction-flash {
   cursor: default;
 }
 
+.map-node.locked::before {
+  content: '🔒';
+  font-size: 0.75rem;
+  opacity: 0.55;
+}
+
+.map-node.locked .node-id {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
 .map-node.locked .node-stars {
-  opacity: 0.4;
+  opacity: 0.3;
+}
+
+.map-node.perfect {
+  background: rgba(240, 200, 96, 0.12);
+  border-color: rgba(240, 200, 96, 0.45);
 }
 
 .node-id {
@@ -695,22 +729,73 @@ body.reduced-motion .reaction-flash {
   justify-content: center;
 }
 
-/* Region atmosphere on game screen */
+/* Region atmosphere */
 body[data-tier="easy"] #game-screen {
-  background: radial-gradient(circle at 20% 80%, rgba(180, 50, 30, 0.12) 0%, transparent 55%);
+  background:
+    radial-gradient(circle at 20% 80%, rgba(180, 90, 30, 0.13) 0%, transparent 55%),
+    linear-gradient(180deg, #2a1810 0%, #1c100b 100%);
 }
 body[data-tier="medium"] #game-screen {
-  background: radial-gradient(circle at 80% 20%, rgba(200, 140, 20, 0.12) 0%, transparent 55%);
+  background:
+    radial-gradient(circle at 80% 20%, rgba(160, 160, 30, 0.13) 0%, transparent 55%),
+    linear-gradient(180deg, #2a1810 0%, #1c100b 100%);
 }
 body[data-tier="hard"] #game-screen {
-  background: radial-gradient(circle at 20% 20%, rgba(40, 160, 60, 0.12) 0%, transparent 55%);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(40, 160, 150, 0.13) 0%, transparent 55%),
+    linear-gradient(180deg, #1a2018 0%, #1c100b 100%);
 }
 body[data-tier="expert"] #game-screen {
-  background: radial-gradient(circle at 80% 80%, rgba(30, 80, 180, 0.12) 0%, transparent 55%);
+  background:
+    radial-gradient(circle at 80% 80%, rgba(180, 60, 20, 0.14) 0%, transparent 55%),
+    linear-gradient(180deg, #281610 0%, #1c100b 100%);
 }
 body[data-tier="master"] #game-screen {
-  background: radial-gradient(circle at 50% 50%, rgba(120, 30, 120, 0.14) 0%, transparent 60%);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(130, 60, 170, 0.15) 0%, transparent 55%),
+    linear-gradient(180deg, #221528 0%, #1c100b 100%);
 }
+
+/* Map region accent tints */
+#map-screen::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.55;
+  pointer-events: none;
+  transition: background 0.5s ease;
+  background: radial-gradient(circle at 30% 10%, rgba(160, 128, 80, 0.10), transparent 45%);
+}
+
+body[data-region="easy"] #map-screen::before {
+  background: radial-gradient(circle at 20% 20%, rgba(180, 90, 30, 0.16), transparent 45%);
+}
+body[data-region="medium"] #map-screen::before {
+  background: radial-gradient(circle at 80% 30%, rgba(160, 160, 30, 0.16), transparent 45%);
+}
+body[data-region="hard"] #map-screen::before {
+  background: radial-gradient(circle at 30% 70%, rgba(40, 160, 150, 0.16), transparent 45%);
+}
+body[data-region="expert"] #map-screen::before {
+  background: radial-gradient(circle at 70% 80%, rgba(180, 60, 20, 0.16), transparent 45%);
+}
+body[data-region="master"] #map-screen::before {
+  background: radial-gradient(circle at 50% 50%, rgba(130, 60, 170, 0.18), transparent 50%);
+}
+
+.region-title {
+  position: relative;
+  padding-left: 12px;
+  border-left: 3px solid rgba(212, 160, 48, 0.5);
+  transition: border-color 0.3s ease;
+}
+
+body[data-region="easy"] .region-title { border-left-color: rgba(200, 110, 40, 0.7); }
+body[data-region="medium"] .region-title { border-left-color: rgba(170, 170, 40, 0.7); }
+body[data-region="hard"] .region-title { border-left-color: rgba(50, 170, 160, 0.7); }
+body[data-region="expert"] .region-title { border-left-color: rgba(200, 70, 30, 0.7); }
+body[data-region="master"] .region-title { border-left-color: rgba(150, 80, 190, 0.7); }
 
 .reaction-row {
   display: flex;

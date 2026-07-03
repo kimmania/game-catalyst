@@ -104,21 +104,37 @@ function renderMap() {
         const node = document.createElement('button');
         node.className = 'map-node';
         node.setAttribute('role', 'listitem');
-        node.setAttribute('aria-label', `Level ${level.id}`);
+        const nodeStars = completed[level.id] ?? 0;
+        const status = !unlocked.has(level.id)
+          ? 'Locked'
+          : level.id === currentLevelId
+          ? 'Current'
+          : nodeStars === 3
+          ? 'Perfect'
+          : `${nodeStars} of 3 stars`;
+        const ariaLabel = `${getLevelLabel(level.id)}: Level ${level.id}, ${status}`;
+
+        node.setAttribute('aria-label', ariaLabel);
 
         if (!unlocked.has(level.id)) {
           node.classList.add('locked');
           node.setAttribute('aria-disabled', 'true');
+          node.setAttribute('tabindex', '-1');
           node.title = 'Locked';
         } else {
           node.title = `Play level ${level.id}`;
           node.addEventListener('click', () => startLevel(level.id));
+          if (level.id === currentLevelId) {
+            node.classList.add('current');
+          }
+          if (nodeStars === 3) {
+            node.classList.add('perfect');
+          }
         }
 
-        const stars = completed[level.id] ?? 0;
         node.innerHTML = `
           <span class="node-id">${level.id}</span>
-          <span class="node-stars" aria-label="${stars} of 3 stars">${'★'.repeat(stars)}${'☆'.repeat(3 - stars)}</span>
+          <span class="node-stars" aria-hidden="true">${'★'.repeat(nodeStars)}${'☆'.repeat(3 - nodeStars)}</span>
         `;
         path.appendChild(node);
       }
@@ -178,6 +194,8 @@ export function bootstrap() {
 }
 
 function showMap() {
+  const region = deriveTier(currentLevelId ?? saveData.currentLevel ?? 't1');
+  document.body.dataset.region = region;
   showScreen('map-screen');
   renderMap();
 }
