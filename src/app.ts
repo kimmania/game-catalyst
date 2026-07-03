@@ -101,6 +101,9 @@ function renderMap() {
     path.setAttribute('aria-label', `${region} levels`);
 
     fetchPuzzleBank(region).then(bank => {
+      // Guard against stale fetches from overlapping renderMap() calls.
+      if (!path.isConnected) return;
+      path.innerHTML = '';
       const regionStars = bank.reduce((sum, l) => sum + (completed[l.id] ?? 0), 0);
       totalStars += regionStars;
       const regionUnlocked = bank.some(l => unlocked.has(l.id));
@@ -720,9 +723,10 @@ function handleBeakerTap(idx: number) {
       play('pour');
       navigator.vibrate?.(10);
       if (result.reacted && srcTop && destTop) {
-        persistDiscovery(`${srcTop},${destTop}`);
         const resultName = COLOR_NAME[getReaction(srcTop, destTop) ?? ''] ?? 'new color';
+        const isNew = persistDiscovery(`${srcTop},${destTop}`);
         announce(`Discovered ${resultName}!`);
+        if (isNew) celebrateReaction(dest, getReaction(srcTop, destTop) ?? '');
       }
       state.selectedBeaker = null;
       renderBoard();
@@ -892,14 +896,16 @@ function debounceSave() {
   }, SAVE_DEBOUNCE);
 }
 
-function persistDiscovery(rawKey: string) {
+function persistDiscovery(rawKey: string): boolean {
   const [a, b] = rawKey.split(',');
-  if (!a || !b) return;
+  if (!a || !b) return false;
   const key = [a.trim(), b.trim()].sort().join(',');
   if (!saveData.grimoire.includes(key)) {
     saveData.grimoire.push(key);
     persistSave();
+    return true;
   }
+  return false;
 }
 
 function persistSave() {
@@ -985,5 +991,36 @@ function spawnParticles(idx: number, count: number) {
     ], { duration, easing: 'ease-out', fill: 'forwards' })
       .onfinish = () => p.remove();
   }
+}
+
+function celebrateReaction(idx: number, color: string) {
+  if (document.body.classList.contains('reduced-motion') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+  play('reaction');
+  navigator.vibrate?.([15, 25, 35]);
+  spawnParticles(idx, 24);
+
+  const center = beakerCenter(idx);
+  const toast = document.createElement('div');
+  toast.className = 'reaction-toast';
+  toast.innerHTML = `
+    <span class="reaction-toast-label">New Reaction!</span>
+    <span class="reaction-toast-color" data-color="${color}">${COLOR_NAME[color] ?? color}</span>
+  `;
+  toast.style.left = `${center.x}px`;
+  toast.style.top = `${center.y}px`;
+  toast.style.opacity = '0';
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(() => {
+    toast.style.opacity = '1';
+  });
+
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+    setTimeout(() => toast.remove(), 350);
+  }, 1400);
 }
 

@@ -1,6 +1,6 @@
 import { loadSave } from './storage';
 
-export type SoundName = 'pour' | 'invalid' | 'catalyst' | 'crystal' | 'win' | 'click';
+export type SoundName = 'pour' | 'invalid' | 'catalyst' | 'crystal' | 'win' | 'click' | 'reaction';
 
 let audioContext: AudioContext | null = null;
 let settings = loadSave().settings;
@@ -89,6 +89,9 @@ function scheduleSound(name: SoundName) {
       break;
     case 'click':
       playClick();
+      break;
+    case 'reaction':
+      playReaction();
       break;
   }
 }
@@ -210,6 +213,35 @@ function playClick() {
   o.connect(g).connect(c.destination);
   o.start();
   o.stop(c.currentTime + 0.08);
+}
+
+function playReaction() {
+  const c = ctx();
+  // Shimmer chord: C6 / E6 / G6 / B6
+  const notes = [1046.5, 1318.5, 1568.0, 1975.5];
+  notes.forEach((freq, i) => {
+    const o = c.createOscillator();
+    o.type = 'sine';
+    const t = c.currentTime + i * 0.045;
+    o.frequency.setValueAtTime(freq * 0.6, t);
+    o.frequency.exponentialRampToValueAtTime(freq, t + 0.12);
+    const g = c.createGain();
+    g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(0.16, t + 0.04);
+    g.gain.exponentialRampToValueAtTime(0.001, t + 0.55);
+    o.connect(g).connect(c.destination);
+    o.start(t);
+    o.stop(t + 0.6);
+  });
+
+  const sparkle = whiteNoise(0.35, 0.08);
+  const filter = c.createBiquadFilter();
+  filter.type = 'bandpass';
+  filter.frequency.value = 4200;
+  filter.Q.value = 1.2;
+  sparkle.disconnect();
+  sparkle.connect(filter).connect(c.destination);
+  sparkle.start();
 }
 
 // Ambient music drone
