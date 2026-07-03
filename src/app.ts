@@ -12,7 +12,7 @@ import type { GameState, SaveData, LevelData, Beaker } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
 import { renderHelpVisuals } from './engine/renderHelpVisuals';
-import { play, startMusic, stopMusic, refreshSettings } from './engine/audio';
+import { play, startMusic, stopMusic, refreshSettings, listenForAudioUnlock } from './engine/audio';
 
 const SAVE_DEBOUNCE = 500;
 let saveTimer: ReturnType<typeof setTimeout> | null = null;
@@ -137,12 +137,12 @@ function renderMap() {
 function getLevelLabel(levelId: string): string {
   const tier = deriveTier(levelId);
   switch (tier) {
-    case 'tutorial': return 'Guild Hall';
-    case 'easy': return 'Crimson Mines';
-    case 'medium': return 'Amber Dunes';
-    case 'hard': return 'Viridian Caverns';
-    case 'expert': return 'Cobalt Spire';
-    case 'master': return 'Forbidden Vault';
+    case 'tutorial': return 'Neophyte Narthex';
+    case 'easy': return 'Vitriol Vault';
+    case 'medium': return 'Sulfur Crucible';
+    case 'hard': return 'Mercury Alembic';
+    case 'expert': return 'Athanor Heart';
+    case 'master': return 'Azoth Chamber';
     default: return 'Apprentice Bench';
   }
 }
@@ -166,6 +166,7 @@ export function bootstrap() {
   applyBodyClasses();
   bindEvents();
   bindKeyboard();
+  listenForAudioUnlock();
 
   const introSeen = saveData.hasSeenIntro;
   if (introSeen) {
@@ -377,7 +378,7 @@ function bindToggle(btn: HTMLButtonElement, key: keyof SaveData['settings']) {
 
 function updateMusicState() {
   if (saveData.settings.music) {
-    startMusic();
+    void startMusic();
   } else {
     stopMusic();
   }
@@ -412,7 +413,8 @@ async function startLevel(levelId: string) {
   saveData.currentLevel = levelId;
   persistSave();
   keyboardIndex = 0;
-  startMusic();
+
+  await startMusic();
 
   const tier = deriveTier(levelId);
   document.body.dataset.tier = tier;

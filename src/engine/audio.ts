@@ -16,13 +16,45 @@ export function refreshSettings() {
   settings = loadSave().settings;
 }
 
-export async function resumeAudio() {
+let resumePromise: Promise<void> | null = null;
+
+export async function resumeAudio(): Promise<void> {
   const c = ctx();
-  if (c.state === 'suspended') await c.resume();
+  if (c.state === 'running') return;
+
+  if (!resumePromise) {
+    resumePromise = (async () => {
+      try {
+        await c.resume();
+      } catch {
+        // ignore
+      } finally {
+        resumePromise = null;
+      }
+    })();
+  }
+  return resumePromise;
 }
 
-export function play(name: SoundName) {
-  resumeAudio();
+let userGestureUnlocked = false;
+
+export async function unlockAudioOnUserGesture(): Promise<void> {
+  if (userGestureUnlocked) return;
+  userGestureUnlocked = true;
+  await resumeAudio();
+}
+
+export function listenForAudioUnlock() {
+  const handler = async () => {
+    await unlockAudioOnUserGesture();
+    if (settings.music) startMusic();
+  };
+  document.addEventListener('pointerdown', handler, { once: true });
+  document.addEventListener('keydown', handler, { once: true });
+}
+
+export async function play(name: SoundName) {
+  await resumeAudio();
   if (!settings.sound) return;
 
   switch (name) {
@@ -174,10 +206,10 @@ function playClick() {
 let musicNodes: (OscillatorNode | GainNode)[] | null = null;
 let isMusicPlaying = false;
 
-export function startMusic() {
+export async function startMusic() {
   if (isMusicPlaying) return;
   if (!settings.music) return;
-  resumeAudio();
+  await resumeAudio();
   const c = ctx();
   isMusicPlaying = true;
 
