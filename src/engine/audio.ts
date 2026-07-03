@@ -12,11 +12,9 @@ function ctx(): AudioContext {
         window.AudioContext ||
         ((window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext);
       audioContext = new Ctor();
-      audioContext.onstatechange = () => {
-        console.log('[audio] AudioContext state:', audioContext?.state);
-      };
     } catch (err) {
-      console.error('[audio] failed to create AudioContext', err);
+      // AudioContext unsupported
+      void err;
     }
   }
   return audioContext as AudioContext;
@@ -29,13 +27,12 @@ export function refreshSettings() {
 export function unlockAudio() {
   const c = ctx();
   if (!c) return;
-  try {
-    if (c.state === 'suspended') {
-      console.log('[audio] attempting resume...');
+  if (c.state === 'suspended') {
+    try {
       void c.resume();
+    } catch {
+      // ignore
     }
-  } catch (e) {
-    console.error('[audio] resume failed', e);
   }
 }
 
@@ -45,7 +42,6 @@ export function listenForAudioUnlock() {
   if (unlockAttached) return;
   unlockAttached = true;
   const handler = () => {
-    console.log('[audio] user gesture detected');
     unlockAudio();
     if (settings.music && !isMusicPlaying) startMusic();
   };
@@ -57,22 +53,15 @@ export function listenForAudioUnlock() {
 export function play(name: SoundName) {
   unlockAudio();
 
-  if (!settings.sound) {
-    console.log('[audio] sound disabled, skipping', name);
-    return;
-  }
+  if (!settings.sound) return;
 
   const c = ctx();
   if (!c) return;
 
   if (c.state !== 'running') {
-    console.log('[audio] context not running, deferring', name, c.state);
     requestAnimationFrame(() => {
       if (ctx().state === 'running') {
-        console.log('[audio] now running, playing deferred', name);
         scheduleSound(name);
-      } else {
-        console.log('[audio] still not running, dropping', name);
       }
     });
     return;
@@ -82,7 +71,6 @@ export function play(name: SoundName) {
 }
 
 function scheduleSound(name: SoundName) {
-  console.log('[audio] playing', name);
   switch (name) {
     case 'pour':
       playPour();
@@ -267,7 +255,6 @@ export function startMusic() {
   lfo.start();
 
   musicNodes = [drone1, drone2, lfo, masterGain];
-  console.log('[audio] music started');
 }
 
 export function stopMusic() {

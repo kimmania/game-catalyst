@@ -135,8 +135,6 @@ def main():
         path = os.path.join(out_dir, f"{tier}.json")
         with open(path, "w") as f:
             json.dump(levels, f, indent=2)
-        print(f"{tier}: {len(levels)} levels written to {path}  (attempts: {attempts})")
-    print("Done.")
 
 
 if __name__ == "__main__":
