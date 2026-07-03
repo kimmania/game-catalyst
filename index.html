@@ -35,6 +35,10 @@
 
     <!-- Map screen -->
     <div id="map-screen" class="screen">
+      <div class="map-topbar">
+        <button id="map-settings" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
+        <button id="map-help" class="icon-btn" title="How to Play" aria-label="How to Play">?</button>
+      </div>
       <div class="map-header">
         <h1>Journey of the Catalyst</h1>
         <p class="map-rank" id="map-rank">Rank: Apprentice</p>
@@ -66,8 +70,7 @@
         </div>
       </div>
       <div class="map-actions">
-        <button id="map-settings" class="btn btn-secondary">Settings</button>
-        <button id="map-help" class="btn btn-secondary">How to Play</button>
+        <button id="resume-adventure" class="btn btn-primary hidden">Resume</button>
       </div>
     </div>
 
@@ -115,30 +118,31 @@
         <div class="help-sections">
           <section>
             <h3>Pouring</h3>
-            <p>Tap a <strong>source</strong> beaker, then tap a <strong>destination</strong> beaker to pour.</p>
-            <p>Colors stack on top of each other regardless of what's underneath. Pairing two different primary colors triggers a <strong>reaction</strong>.</p>
+            <p>Tap a <strong>source</strong> beaker, then tap a <strong>destination</strong> beaker to pour its top color on top.</p>
+            <p>Colors stack regardless of what lies underneath. Matching a different primary color on top triggers a <strong>reaction</strong>.</p>
             <div class="help-visual" id="help-pour"></div>
           </section>
           <section>
             <h3>Reactions</h3>
-            <p>When two adjacent primary colors come into contact, they fuse into a single <strong>intermediate</strong> layer. The reaction table shows every valid pair.</p>
+            <p>The primaries are crimson, amber, viridian, cobalt, and saffron. When two different primaries meet, they fuse into one intermediate color.</p>
+            <p>Watch the <strong>Discovered Reactions</strong> panel below the board for the pairs you have already seen.</p>
             <div class="help-visual" id="help-reaction"></div>
           </section>
           <section>
-            <h3>Catalyst Charges</h3>
-            <p>Tap a beaker with an intermediate on top, then press <strong>Catalyst</strong> to split it back into its two parent colors. Charges are limited — use them wisely.</p>
+            <h3>Catalyst</h3>
+            <p>Select a beaker with an intermediate color on top, then press <strong>Catalyst</strong> to split it back into its two parent colors. Charges are limited.</p>
             <div class="help-visual" id="help-catalyst"></div>
           </section>
           <section>
             <h3>Solidification</h3>
-            <p>Pouring the same primary color onto itself fuses consecutive matching layers into permanent crystals at the bottom, reducing that beaker's capacity.</p>
-            <p class="help-warning">Avoid solidification for a perfect solve!</p>
+            <p>Pouring two of the same primary layer together fuses them into a permanent crystal at the bottom, permanently reducing that beaker's space.</p>
+            <p class="help-warning">Avoid solidification and catalyst use for a perfect 3-star solve!</p>
             <div class="help-visual" id="help-solidify"></div>
           </section>
           <section>
             <h3>Goal</h3>
             <p>Every non-empty beaker must contain <strong>one uniform color</strong> (any color, primary or intermediate). Empty beakers are fine.</p>
-            <p>A <strong>perfect solve</strong> uses zero solidifications and zero catalysts.</p>
+            <p>Beat a level using no catalyst and no solidification to earn all three stars.</p>
           </section>
         </div>
         <button id="help-dismiss" class="btn btn-primary">Got It</button>

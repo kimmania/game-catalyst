@@ -518,6 +518,19 @@ body.reduced-motion .reaction-flash {
   overflow-y: auto;
 }
 
+.map-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  max-width: 540px;
+  padding: 4px 0 8px;
+  background: linear-gradient(180deg, #231410 70%, transparent 100%);
+}
+
 .map-header {
   text-align: center;
   margin: 8px 0 16px;
@@ -819,7 +832,7 @@ body[data-tier="master"] #game-screen {
 .help-mini-beaker {
   width: 48px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   border: 2px solid #bfa86a;
   border-top: none;
@@ -831,15 +844,16 @@ body[data-tier="master"] #game-screen {
   position: relative;
 }
 
-.help-mini-beaker.selected {
-  border-color: #f0d060;
-  box-shadow: 0 0 8px rgba(240,208,96,0.5);
-}
-
-.mini-cap {
+.help-mini-beaker::before {
+  content: '';
   width: 100%;
   height: 4px;
   border-top: 2px solid #bfa86a;
+}
+
+.help-mini-beaker.selected {
+  border-color: #f0d060;
+  box-shadow: 0 0 8px rgba(240,208,96,0.5);
 }
 
 .mini-layer {
@@ -848,29 +862,16 @@ body[data-tier="master"] #game-screen {
   border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
-.mini-crystals {
-  font-size: 8px;
-  line-height: 14px;
-  text-align: center;
+.mini-crystal {
   width: 100%;
-  background: rgba(30,15,10,0.8);
-}
-
-.mini-label {
-  font-size: 8px;
-  color: #bfa86a;
-  text-align: center;
-  padding: 2px 0;
-  width: 100%;
-  background: rgba(30,15,10,0.8);
-  border-top: 1px solid rgba(191,168,106,0.2);
-}
-
-.help-arrow {
-  font-size: 18px;
-  color: #bfa86a;
+  height: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 8px;
+}
+.mini-crystal::after {
+  content: '✦';
 }
 
 /* Mini layer colors */
@@ -888,29 +889,28 @@ body[data-tier="master"] #game-screen {
 .mini-layer[data-color="fuchsia"]     { background: #902e70; }
 
 /* Mini crystal (for help solidify diagram) */
-.mini-crystal {
-  width: 100%;
-  height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 8px;
-}
-.mini-crystal::after {
-  content: '✦';
-}
-.mini-crystal[data-color="crimson"]  { background: rgba(144,48,48,0.6) !important; }
+.mini-crystal[data-color="crimson"]  { background: rgba(144,48,48,0.8); }
 .mini-crystal[data-color="crimson"]::after { color: #ff8888; }
-.mini-crystal[data-color="amber"]    { background: rgba(176,112,32,0.6) !important; }
+.mini-crystal[data-color="amber"]    { background: rgba(176,112,32,0.8); }
 .mini-crystal[data-color="amber"]::after   { color: #ffd080; }
-.mini-crystal[data-color="viridian"] { background: rgba(42,106,40,0.6) !important; }
+.mini-crystal[data-color="viridian"] { background: rgba(42,106,40,0.8); }
 .mini-crystal[data-color="viridian"]::after { color: #88ff88; }
-.mini-crystal[data-color="cobalt"]   { background: rgba(32,74,128,0.6) !important; }
+.mini-crystal[data-color="cobalt"]   { background: rgba(32,74,128,0.8); }
 .mini-crystal[data-color="cobalt"]::after   { color: #88bbff; }
-.mini-crystal[data-color="saffron"]  { background: rgba(168,128,16,0.6) !important; }
+.mini-crystal[data-color="saffron"]  { background: rgba(168,128,16,0.8); }
 .mini-crystal[data-color="saffron"]::after  { color: #ffee88; }
-.mini-crystal[data-color="violet"]   { background: rgba(80,40,88,0.6) !important; }
+.mini-crystal[data-color="violet"]   { background: rgba(80,40,88,0.8); }
 .mini-crystal[data-color="violet"]::after   { color: #dd88ff; }
+
+.mini-label {
+  font-size: 8px;
+  color: #bfa86a;
+  text-align: center;
+  padding: 2px 0;
+  width: 100%;
+  background: rgba(30,15,10,0.8);
+  border-top: 1px solid rgba(191,168,106,0.2);
+}
 
 .help-warning {
   color: #e08060;

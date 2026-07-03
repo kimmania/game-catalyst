@@ -4,26 +4,48 @@ export function renderHelpVisuals() {
   const catalyst = document.getElementById('help-catalyst');
   const solidify = document.getElementById('help-solidify');
 
+  const colorName: Record<string, string> = {
+    crimson: 'Crimson',
+    amber: 'Amber',
+    orange: 'Orange',
+  };
+
+  const miniLayer = (color: string) => {
+    const l = document.createElement('div');
+    l.className = 'mini-layer';
+    l.dataset.color = color;
+    return l;
+  };
+
+  const helpArrow = () => {
+    const arrow = document.createElement('div');
+    arrow.className = 'help-arrow';
+    arrow.textContent = '➡';
+    return arrow;
+  };
+
+  const miniCrystal = (color: string) => {
+    const c = document.createElement('div');
+    c.className = 'mini-crystal';
+    c.dataset.color = color;
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', `${colorName[color] ?? color} crystal`);
+    return c;
+  };
+
   const miniBeaker = (layers: string[], crystals: string[] = [], label?: string, highlight?: boolean) => {
     const b = document.createElement('div');
     b.className = 'help-mini-beaker' + (highlight ? ' selected' : '');
-    const cap = document.createElement('div');
-    cap.className = 'mini-cap';
-    b.appendChild(cap);
     for (const c of crystals) {
-      const cryst = document.createElement('div');
-      cryst.className = 'mini-crystal';
-      cryst.dataset.color = c;
-      b.appendChild(cryst);
+      b.appendChild(miniCrystal(c));
     }
     for (const c of layers) {
-      const layer = document.createElement('div');
-      layer.className = 'mini-layer'; layer.dataset.color = c;
-      b.appendChild(layer);
+      b.appendChild(miniLayer(c));
     }
     if (label) {
       const lbl = document.createElement('div');
-      lbl.className = 'mini-label'; lbl.textContent = label;
+      lbl.className = 'mini-label';
+      lbl.textContent = label;
       b.appendChild(lbl);
     }
     return b;
@@ -31,42 +53,32 @@ export function renderHelpVisuals() {
 
   if (pour) {
     pour.innerHTML = '';
-    // Pouring: crimson onto a beaker containing amber → stacks on top
-    pour.appendChild(miniBeaker(['crimson','crimson'], [], 'From', true));
-    const arrow = document.createElement('div');
-    arrow.className = 'help-arrow'; arrow.textContent = '➡';
-    pour.appendChild(arrow);
-    pour.appendChild(miniBeaker(['amber','crimson','crimson'], [], 'To'));
+    // Pour two crimsons from the first beaker onto an amber top
+    pour.appendChild(miniBeaker(['crimson', 'crimson'], [], 'From', true));
+    pour.appendChild(helpArrow());
+    pour.appendChild(miniBeaker(['crimson', 'crimson', 'amber'], [], 'To'));
   }
 
   if (reaction) {
     reaction.innerHTML = '';
-    // Adjacent primary layers (crimson + amber) react to form orange
-    reaction.appendChild(miniBeaker(['crimson','amber'], [], 'Touch'));
-    const arrow = document.createElement('div');
-    arrow.className = 'help-arrow'; arrow.textContent = '➡';
-    reaction.appendChild(arrow);
+    reaction.appendChild(miniBeaker(['amber', 'crimson'], [], 'Touch'));
+    reaction.appendChild(helpArrow());
     reaction.appendChild(miniBeaker(['orange'], [], 'Result'));
   }
 
   if (catalyst) {
     catalyst.innerHTML = '';
-    // Catalyst splits orange back into its parent colors
     catalyst.appendChild(miniBeaker(['orange'], [], 'Intermediate'));
-    const arrow = document.createElement('div');
-    arrow.className = 'help-arrow'; arrow.textContent = '🔥➡';
+    const arrow = helpArrow();
+    arrow.textContent = '🔥➡';
     catalyst.appendChild(arrow);
-    catalyst.appendChild(miniBeaker(['amber','crimson'], [], 'Split'));
+    catalyst.appendChild(miniBeaker(['crimson', 'amber'], [], 'Split'));
   }
 
   if (solidify) {
     solidify.innerHTML = '';
-    // Solidification: two consecutive crimson layers become a crystal at the bottom
-    solidify.appendChild(miniBeaker(['crimson','crimson'], [], 'Before'));
-    const arrow = document.createElement('div');
-    arrow.className = 'help-arrow'; arrow.textContent = '➡';
-    solidify.appendChild(arrow);
+    solidify.appendChild(miniBeaker(['crimson', 'crimson'], [], 'Before'));
+    solidify.appendChild(helpArrow());
     solidify.appendChild(miniBeaker(['crimson'], ['crimson'], 'After'));
-    // Note: the crystal sits at the BOTTOM of the beaker, replacing the pair
   }
 }

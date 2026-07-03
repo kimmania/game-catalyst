@@ -599,13 +599,20 @@ function handleBeakerTap(idx: number) {
 
     if (result.success) {
       play('pour');
+      state.selectedBeaker = null;
+      renderBoard();
+      syncCatalystUI();
       animatePour(src, dest, result);
       if (result.reacted || result.reactionColor) {
         animateReactionFlash(dest, result.reactionColor ?? getComputedColor(dest));
       }
       if (!beforeSolidified && state.solidificationOccurred) {
         lastAction = { type: 'solidify', beakerIndex: dest };
-        setTimeout(() => play('crystal'), 180);
+        setTimeout(() => {
+          play('crystal');
+          renderBoard();
+          syncCatalystUI();
+        }, 180);
       }
       postMove();
     } else {
@@ -667,7 +674,7 @@ function postMove() {
     state.won = true;
     const stars = computeStars();
     play('win');
-    showWin(stars);
+    setTimeout(() => showWin(stars), 350);
     saveData = completeLevel(saveData, state.levelId, stars, state.moves);
     persistSave();
   } else if (!hasValidMoves(state)) {
