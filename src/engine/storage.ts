@@ -54,11 +54,16 @@ function migrateSave(old: SaveData): SaveData {
   fresh.progress = {
     completed: old.progress?.completed ?? {},
     bestMoves: old.progress?.bestMoves ?? {},
-    unlocked: old.progress?.unlocked ?? ['t1'],
+    unlocked: Array.from(new Set(old.progress?.unlocked ?? ['t1'])),
   };
+  // Restore any completed levels that somehow lost their replay unlock.
+  for (const levelId of Object.keys(fresh.progress.completed)) {
+    fresh.progress.unlocked.push(levelId);
+  }
+  fresh.progress.unlocked = Array.from(new Set(fresh.progress.unlocked));
   fresh.settings = { ...fresh.settings, ...old.settings };
   fresh.grimoire = old.grimoire ?? fresh.grimoire;
-  fresh.hasSeenIntro = old.hasSeenHelp ?? old.hasSeenIntro ?? false;
+  fresh.hasSeenIntro = old.hasSeenIntro ?? old.hasSeenHelp ?? false;
   fresh.hasSeenHelp = old.hasSeenHelp ?? false;
   fresh.currentLevel = old.currentLevel ?? fresh.currentLevel;
   fresh.version = SAVE_VERSION;
@@ -78,20 +83,21 @@ export function completeLevel(data: SaveData, levelId: string, stars: number, mo
   if (prevMoves === undefined || moves < prevMoves) {
     bestMoves[levelId] = moves;
   }
-  const unlocked = [...data.progress.unlocked];
-  // Unlock next level in sequence if adjacent
+
+  const unlocked = new Set(data.progress.unlocked);
+  // Always keep the completed level replayable.
+  unlocked.add(levelId);
+
+  // Unlock next level in sequence if adjacent.
   const nextId = deriveNextLevelId(levelId);
-  if (nextId && !unlocked.includes(nextId)) {
-    unlocked.push(nextId);
-  }
+  if (nextId) unlocked.add(nextId);
 
   // Merge grimoire
   const mergedGrimoire = new Set(data.grimoire);
-  // Note: grimoire updates handled separately in main app
 
   return {
     ...data,
-    progress: { completed, bestMoves, unlocked: Array.from(new Set(unlocked)) },
+    progress: { completed, bestMoves, unlocked: Array.from(unlocked) },
     grimoire: Array.from(mergedGrimoire),
   };
 }

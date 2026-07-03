@@ -430,6 +430,12 @@ function hideOverlay(id: string) {
 async function startLevel(levelId: string) {
   currentLevelId = levelId;
   saveData.currentLevel = levelId;
+  // Ensure the level we are about to play is replayable from the map.
+  const wasUnlocked = saveData.progress.unlocked.includes(levelId);
+  if (!wasUnlocked) {
+    saveData.progress.unlocked.push(levelId);
+  }
+  saveData = { ...saveData, progress: { ...saveData.progress, unlocked: Array.from(new Set(saveData.progress.unlocked)) } };
   persistSave();
   keyboardIndex = 0;
 
