@@ -91,7 +91,11 @@ function pushHistory(state: GameState) {
   }
 }
 
-export function doPour(state: GameState, srcIdx: number, destIdx: number): ActionResult {
+export function doPour(
+  state: GameState,
+  srcIdx: number,
+  destIdx: number,
+): ActionResult & { transferred?: number; reacted?: boolean; reactionColor?: string; solidified?: boolean } {
   if (!canPour(state, srcIdx, destIdx)) {
     return { success: false, message: 'Invalid move' };
   }
@@ -114,7 +118,7 @@ export function doPour(state: GameState, srcIdx: number, destIdx: number): Actio
       state.discovered.add(`${destTop},${srcTop}`);
 
       state.moves++;
-      return { success: true };
+      return { success: true, transferred: 1, reacted: true, reactionColor: reaction };
     }
   }
 
@@ -135,13 +139,14 @@ export function doPour(state: GameState, srcIdx: number, destIdx: number): Actio
   dest.layers.push(...moved);
 
   // Solidification: when two primary layers of the same color sit together
+  let solidified = false;
   if (destTop && destTop === srcTop && isPrimary(srcTop)) {
-    const solidified = _solidify(dest);
-    if (solidified > 0) state.solidificationOccurred = true;
+    solidified = _solidify(dest) > 0;
+    if (solidified) state.solidificationOccurred = true;
   }
 
   state.moves++;
-  return { success: true };
+  return { success: true, transferred: transfer, solidified };
 }
 
 export function applyCatalyst(state: GameState, beakerIdx: number): ActionResult {

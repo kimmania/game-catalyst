@@ -188,23 +188,57 @@ html, body {
 #beaker-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 18px;
   justify-content: center;
   align-content: flex-start;
+  padding: 8px 0;
 }
 
 .beaker {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  width: clamp(52px, 13vw, 80px);
-  min-height: clamp(110px, 28vw, 170px);
-  background: rgba(255, 255, 255, 0.05);
+  width: clamp(56px, 13vw, 84px);
+  min-height: clamp(120px, 30vw, 180px);
+  padding: 5px 6px 8px;
   border: 2px solid rgba(200, 170, 130, 0.35);
-  border-radius: 0 0 14px 14px;
-  padding: 4px;
+  border-top: none;
+  border-radius: 0 0 22px 22px;
+  background:
+    radial-gradient(ellipse 80% 40% at 30% 100%, rgba(255, 255, 255, 0.06) 0%, transparent 60%),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.0) 40%, rgba(255,255,255,0.0) 60%, rgba(255,255,255,0.05) 100%),
+    rgba(255, 255, 255, 0.02);
+  box-shadow:
+    inset 0 0 18px rgba(255, 240, 200, 0.05),
+    0 6px 14px rgba(0, 0, 0, 0.35);
   cursor: pointer;
-  transition: box-shadow 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+  transition: transform 0.12s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.beaker::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -2px;
+  right: -2px;
+  height: 8px;
+  border: 2px solid rgba(200, 170, 130, 0.35);
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 2px 5px rgba(255, 240, 200, 0.08);
+}
+
+.beaker::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 8px;
+  width: 4px;
+  height: 45%;
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.05) 100%);
+  pointer-events: none;
 }
 
 .beaker:active {
@@ -212,14 +246,15 @@ html, body {
 }
 
 .beaker.selected {
-  border-color: rgba(255, 200, 100, 0.8);
-  box-shadow: 0 0 20px rgba(255, 180, 60, 0.25),
-              inset 0 0 12px rgba(255, 200, 100, 0.08);
+  border-color: rgba(255, 200, 100, 0.9);
+  box-shadow:
+    0 0 24px rgba(255, 180, 60, 0.35),
+    inset 0 0 14px rgba(255, 200, 100, 0.12);
 }
 
 .beaker.keyboard-focus {
-  outline: 2px solid rgba(255, 230, 160, 0.85);
-  outline-offset: 2px;
+  outline: 2px solid rgba(255, 230, 160, 0.9);
+  outline-offset: 3px;
 }
 
 .beaker.invalid {
@@ -229,13 +264,13 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   .beaker.invalid {
     animation: none;
-    border-color: rgba(224, 112, 96, 0.8);
+    border-color: rgba(224, 112, 96, 0.9);
   }
 }
 
 body.reduced-motion .beaker.invalid {
   animation: none;
-  border-color: rgba(224, 112, 96, 0.8);
+  border-color: rgba(224, 112, 96, 0.9);
 }
 
 @keyframes wobble {
@@ -250,31 +285,48 @@ body.reduced-motion .beaker.invalid {
 .beaker .layer {
   flex-shrink: 0;
   width: 100%;
-  height: clamp(18px, 5vw, 26px);
-  border-radius: 4px;
-  opacity: 0.95;
+  height: clamp(20px, 5.4vw, 28px);
+  border-radius: 6px;
+  opacity: 0.96;
   border: 1px solid rgba(0,0,0,0.35);
+  box-shadow:
+    inset 0 2px 5px rgba(255,255,255,0.2),
+    inset 0 -2px 4px rgba(0,0,0,0.15);
   margin-bottom: 2px;
+  position: relative;
 }
 
-.layer-inner {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  background: rgba(255,255,255,0.12);
+.beaker .layer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, rgba(255,255,255,0.1) 40%, rgba(255,255,255,0.22) 60%, rgba(0,0,0,0.12) 100%);
+  pointer-events: none;
 }
 
 /* Crystals (permanent solidifications) */
 .beaker .layer.layer-crystal {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.45);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
+.beaker .layer.layer-crystal::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 40%, rgba(255,255,255,0.1) 100%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 2px, transparent 2px, transparent 5px);
+}
 .beaker .layer.layer-crystal::after {
   content: '✦';
-  font-size: clamp(10px, 2.8vw, 14px);
+  position: relative;
+  font-size: clamp(11px, 2.8vw, 15px);
+  text-shadow: 0 0 6px rgba(255,255,255,0.5);
 }
 
 /* Crystal formation animation */
@@ -323,15 +375,57 @@ body.reduced-motion .beaker.invalid {
   }
 }
 
+/* VFX: reaction flash, pour trail, particles */
+.vfx-layer {
+  position: fixed;
+  pointer-events: none;
+  z-index: 150;
+}
+
+.reaction-flash {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: reaction-flash-anim 0.45s ease-out forwards;
+}
+
+@keyframes reaction-flash-anim {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
+  60% { transform: translate(-50%, -50%) scale(1.4); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1.8); opacity: 0; }
+}
+
+.particle {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 150;
+}
+
+.pour-dot {
+  position: fixed;
+  width: clamp(16px, 4vw, 24px);
+  height: clamp(16px, 4vw, 24px);
+  border-radius: 50%;
+  z-index: 150;
+  pointer-events: none;
+  box-shadow: inset 0 -3px 6px rgba(0,0,0,0.35), 0 2px 5px rgba(0,0,0,0.3);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .layer-crystal.forming,
-  .layer.splitting {
+  .layer.splitting,
+  .reaction-flash {
     animation: none;
   }
 }
 
 body.reduced-motion .layer-crystal.forming,
-body.reduced-motion .layer.splitting {
+body.reduced-motion .layer.splitting,
+body.reduced-motion .reaction-flash {
   animation: none;
 }
 
@@ -411,6 +505,146 @@ body.reduced-motion .layer.splitting {
   border-radius: 10px;
   background: rgba(0,0,0,0.25);
   border: 1px solid rgba(180,140,100,0.12);
+}
+
+/* Map screen */
+#map-screen {
+  align-items: center;
+  justify-content: flex-start;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(120, 70, 30, 0.15) 0%, transparent 50%),
+    linear-gradient(180deg, #231410 0%, #1c100b 100%);
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.map-header {
+  text-align: center;
+  margin: 8px 0 16px;
+}
+
+.map-header h1 {
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  color: #e8c080;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+.map-rank {
+  color: #b88860;
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+}
+
+#map-container {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.map-region {
+  background: rgba(0,0,0,0.22);
+  border: 1px solid rgba(180, 140, 100, 0.14);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.region-title {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #e0b878;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.region-title[data-locked="true"] {
+  color: #7a5d4a;
+}
+
+.region-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.map-node {
+  appearance: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 54px;
+  min-height: 64px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(200, 160, 100, 0.2);
+  color: #f0d0a0;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.08s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.map-node:active {
+  transform: scale(0.95);
+}
+
+.map-node:hover:not(.locked) {
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 12px rgba(255, 180, 60, 0.18);
+}
+
+.map-node.locked {
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(150, 120, 90, 0.12);
+  color: #6a5a4a;
+  cursor: default;
+}
+
+.map-node.locked .node-stars {
+  opacity: 0.4;
+}
+
+.node-id {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.node-stars {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #f0c060;
+}
+
+.map-actions {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0 8px;
+}
+
+.map-actions .btn {
+  min-width: 120px;
+  justify-content: center;
+}
+
+/* Region atmosphere on game screen */
+body[data-tier="easy"] #game-screen {
+  background: radial-gradient(circle at 20% 80%, rgba(180, 50, 30, 0.12) 0%, transparent 55%);
+}
+body[data-tier="medium"] #game-screen {
+  background: radial-gradient(circle at 80% 20%, rgba(200, 140, 20, 0.12) 0%, transparent 55%);
+}
+body[data-tier="hard"] #game-screen {
+  background: radial-gradient(circle at 20% 20%, rgba(40, 160, 60, 0.12) 0%, transparent 55%);
+}
+body[data-tier="expert"] #game-screen {
+  background: radial-gradient(circle at 80% 80%, rgba(30, 80, 180, 0.12) 0%, transparent 55%);
+}
+body[data-tier="master"] #game-screen {
+  background: radial-gradient(circle at 50% 50%, rgba(120, 30, 120, 0.14) 0%, transparent 60%);
 }
 
 .reaction-row {

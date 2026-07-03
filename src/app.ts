@@ -12,7 +12,7 @@ import type { GameState, SaveData, LevelData, Beaker } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
 import { renderHelpVisuals } from './engine/renderHelpVisuals';
-import { playPour, playInvalid, playCatalyst, playWin } from './engine/audio';
+import { play, startMusic, stopMusic, refreshSettings } from './engine/audio';
 
 const SAVE_DEBOUNCE = 500;
 let saveTimer: ReturnType<typeof setTimeout> | null = null;
@@ -30,6 +30,12 @@ const TIER_ORDER = ['tutorial', 'easy', 'medium', 'hard', 'expert', 'master'];
 // Cached DOM elements
 const els = {
   introScreen: () => document.getElementById('intro-screen')!,
+  mapScreen: () => document.getElementById('map-screen')!,
+  mapContainer: () => document.getElementById('map-container')!,
+  mapRank: () => document.getElementById('map-rank')!,
+  mapSettings: () => document.getElementById('map-settings') as HTMLButtonElement,
+  mapHelp: () => document.getElementById('map-help') as HTMLButtonElement,
+  mapReturn: () => document.getElementById('map-return') as HTMLButtonElement,
   gameScreen: () => document.getElementById('game-screen')!,
   startAdventure: () => document.getElementById('start-adventure')!,
   beakerContainer: () => document.getElementById('beaker-container')!,
@@ -50,6 +56,7 @@ const els = {
   settingsOverlay: () => document.getElementById('settings-overlay')!,
   settingsClose: () => document.getElementById('settings-close')!,
   soundToggle: () => document.getElementById('sound-toggle') as HTMLButtonElement,
+  musicToggle: () => document.getElementById('music-toggle') as HTMLButtonElement,
   motionToggle: () => document.getElementById('motion-toggle') as HTMLButtonElement,
   contrastToggle: () => document.getElementById('contrast-toggle') as HTMLButtonElement,
   resetProgressBtn: () => document.getElementById('reset-progress-btn') as HTMLButtonElement,
@@ -64,6 +71,7 @@ const els = {
   lcBest: () => document.getElementById('lc-best')!.querySelector('.value') as HTMLElement,
   lcMessage: () => document.getElementById('lc-message')!,
   lcRetry: () => document.getElementById('lc-retry') as HTMLButtonElement,
+  lcMap: () => document.getElementById('lc-map') as HTMLButtonElement,
   lcNext: () => document.getElementById('lc-next') as HTMLButtonElement,
   resetOverlay: () => document.getElementById('reset-overlay')!,
   resetCancel: () => document.getElementById('reset-cancel') as HTMLButtonElement,
@@ -74,17 +82,77 @@ const els = {
   announcer: () => document.getElementById('aria-announcer')!,
 };
 
+function renderMap() {
+  const completed = saveData.progress.completed;
+  const unlocked = new Set(saveData.progress.unlocked);
+  let totalStars = 0;
+
+  for (const region of TIER_ORDER) {
+    const path = document.getElementById(`path-${region}`);
+    if (!path) continue;
+    path.innerHTML = '';
+    path.setAttribute('role', 'list');
+    path.setAttribute('aria-label', `${region} levels`);
+
+    fetchPuzzleBank(region).then(bank => {
+      const regionStars = bank.reduce((sum, l) => sum + (completed[l.id] ?? 0), 0);
+      totalStars += regionStars;
+      const regionUnlocked = bank.some(l => unlocked.has(l.id));
+
+      for (const level of bank) {
+        const node = document.createElement('button');
+        node.className = 'map-node';
+        node.setAttribute('role', 'listitem');
+        node.setAttribute('aria-label', `Level ${level.id}`);
+
+        if (!unlocked.has(level.id)) {
+          node.classList.add('locked');
+          node.setAttribute('aria-disabled', 'true');
+          node.title = 'Locked';
+        } else {
+          node.title = `Play level ${level.id}`;
+          node.addEventListener('click', () => startLevel(level.id));
+        }
+
+        const stars = completed[level.id] ?? 0;
+        node.innerHTML = `
+          <span class="node-id">${level.id}</span>
+          <span class="node-stars" aria-label="${stars} of 3 stars">${'★'.repeat(stars)}${'☆'.repeat(3 - stars)}</span>
+        `;
+        path.appendChild(node);
+      }
+
+      const title = document.querySelector(`.map-region[data-region="${region}"] .region-title`) as HTMLElement | null;
+      if (title) {
+        title.dataset.locked = String(!regionUnlocked);
+        const starsLabel = regionStars > 0 ? ` (${regionStars} / ${bank.length * 3} ★)` : '';
+        title.textContent = `${getLevelLabel(bank[0]?.id ?? `${region}1`)}${starsLabel}`;
+      }
+
+      els.mapRank().textContent = `Rank: ${getRankTitle(totalStars)}`;
+    });
+  }
+}
+
 function getLevelLabel(levelId: string): string {
   const tier = deriveTier(levelId);
   switch (tier) {
-    case 'tutorial': return 'Apprentice Bench';
-    case 'easy': return 'Apprentice Bench';
-    case 'medium': return 'Master\u2019s Altar';
-    case 'hard': return 'Master\u2019s Altar';
-    case 'expert': return 'Forbidden Vault';
+    case 'tutorial': return 'Guild Hall';
+    case 'easy': return 'Crimson Mines';
+    case 'medium': return 'Amber Dunes';
+    case 'hard': return 'Viridian Caverns';
+    case 'expert': return 'Cobalt Spire';
     case 'master': return 'Forbidden Vault';
     default: return 'Apprentice Bench';
   }
+}
+
+function getRankTitle(stars: number): string {
+  if (stars >= 50) return 'Archon Alchemist';
+  if (stars >= 35) return 'Master Alchemist';
+  if (stars >= 20) return 'Journeyman Alchemist';
+  if (stars >= 8) return 'Apprentice Alchemist';
+  return 'Novice';
 }
 
 function showScreen(id: string) {
@@ -101,10 +169,15 @@ export function bootstrap() {
 
   const introSeen = saveData.hasSeenIntro;
   if (introSeen) {
-    startLevel(saveData.currentLevel ?? 't1');
+    showMap();
   } else {
     showScreen('intro-screen');
   }
+}
+
+function showMap() {
+  showScreen('map-screen');
+  renderMap();
 }
 
 function applyBodyClasses() {
@@ -116,7 +189,7 @@ function bindEvents() {
   els.startAdventure().addEventListener('click', () => {
     saveData.hasSeenIntro = true;
     persistSave();
-    startLevel(saveData.currentLevel ?? 't1');
+    showMap();
   });
 
   els.undoBtn().addEventListener('click', handleUndo);
@@ -130,6 +203,18 @@ function bindEvents() {
   els.helpBtn().addEventListener('click', () => {
     showOverlay('help-overlay');
   });
+  els.mapReturn().addEventListener('click', () => {
+    saveData.currentLevel = currentLevelId ?? saveData.currentLevel;
+    persistSave();
+    showMap();
+  });
+  els.mapSettings().addEventListener('click', () => {
+    syncSettingsUI();
+    showOverlay('settings-overlay');
+  });
+  els.mapHelp().addEventListener('click', () => {
+    showOverlay('help-overlay');
+  });
 
   els.helpClose().addEventListener('click', () => hideOverlay('help-overlay'));
   els.helpDismiss().addEventListener('click', () => {
@@ -141,6 +226,7 @@ function bindEvents() {
   els.settingsClose().addEventListener('click', () => hideOverlay('settings-overlay'));
 
   bindToggle(els.soundToggle(), 'sound');
+  bindToggle(els.musicToggle(), 'music');
   bindToggle(els.motionToggle(), 'reducedMotion');
   bindToggle(els.contrastToggle(), 'highContrast');
 
@@ -171,6 +257,10 @@ function bindEvents() {
   els.lcRetry().addEventListener('click', () => {
     hideOverlay('level-complete-overlay');
     startLevel(currentLevelId ?? 't1');
+  });
+  els.lcMap().addEventListener('click', () => {
+    hideOverlay('level-complete-overlay');
+    showMap();
   });
   els.lcNext().addEventListener('click', async () => {
     const next = await resolveNextLevelId(currentLevelId ?? 't1');
@@ -279,7 +369,18 @@ function bindToggle(btn: HTMLButtonElement, key: keyof SaveData['settings']) {
     if (key === 'reducedMotion') {
       document.body.classList.toggle('reduced-motion', !!saveData.settings.reducedMotion);
     }
+    if (key === 'music') {
+      updateMusicState();
+    }
   });
+}
+
+function updateMusicState() {
+  if (saveData.settings.music) {
+    startMusic();
+  } else {
+    stopMusic();
+  }
 }
 
 function syncToggleUI(btn: HTMLButtonElement, value: boolean) {
@@ -289,7 +390,9 @@ function syncToggleUI(btn: HTMLButtonElement, value: boolean) {
 }
 
 function syncSettingsUI() {
+  refreshSettings();
   syncToggleUI(els.soundToggle(), saveData.settings.sound);
+  syncToggleUI(els.musicToggle(), saveData.settings.music);
   syncToggleUI(els.motionToggle(), saveData.settings.reducedMotion);
   syncToggleUI(els.contrastToggle(), saveData.settings.highContrast);
 }
@@ -309,14 +412,17 @@ async function startLevel(levelId: string) {
   saveData.currentLevel = levelId;
   persistSave();
   keyboardIndex = 0;
+  startMusic();
 
+  const tier = deriveTier(levelId);
+  document.body.dataset.tier = tier;
   els.levelLabel().textContent = getLevelLabel(levelId);
 
   const level = await getLevelById(levelId);
   if (!level) {
     // Fallback: load bank and pick first available
-    const tier = deriveTier(levelId);
-    const bank = await fetchPuzzleBank(tier);
+    const fallbackTier = deriveTier(levelId);
+    const bank = await fetchPuzzleBank(fallbackTier);
     if (bank.length) {
       await startLevel(bank[0].id);
     } else {
@@ -492,13 +598,18 @@ function handleBeakerTap(idx: number) {
     state.selectedBeaker = null;
 
     if (result.success) {
-      playPour();
+      play('pour');
+      animatePour(src, dest, result);
+      if (result.reacted || result.reactionColor) {
+        animateReactionFlash(dest, result.reactionColor ?? getComputedColor(dest));
+      }
       if (!beforeSolidified && state.solidificationOccurred) {
         lastAction = { type: 'solidify', beakerIndex: dest };
+        setTimeout(() => play('crystal'), 180);
       }
       postMove();
     } else {
-      playInvalid();
+      play('invalid');
       wobbleBeaker(dest);
     }
   }
@@ -523,14 +634,16 @@ function handleCatalyst() {
   const beakerIndex = state.selectedBeaker;
   const result = applyCatalyst(state, beakerIndex);
   if (result.success) {
-    playCatalyst();
+    play('catalyst');
+    animateReactionFlash(beakerIndex, getComputedColor(beakerIndex));
+    spawnParticles(beakerIndex, 8);
     lastAction = { type: 'catalyst', beakerIndex };
     state.selectedBeaker = null;
     postMove();
     renderBoard();
     syncCatalystUI();
   } else {
-    playInvalid();
+    play('invalid');
     wobbleBeaker(state.selectedBeaker);
     state.selectedBeaker = null;
     renderBoard();
@@ -553,7 +666,7 @@ function postMove() {
   if (isWin(state.beakers)) {
     state.won = true;
     const stars = computeStars();
-    playWin();
+    play('win');
     showWin(stars);
     saveData = completeLevel(saveData, state.levelId, stars, state.moves);
     persistSave();
@@ -638,3 +751,85 @@ function debounceSave() {
 function persistSave() {
   saveSave(saveData);
 }
+
+/* VFX helpers */
+function getComputedColor(idx: number): string {
+  const b = els.beakerContainer().children[idx] as HTMLElement | undefined;
+  if (!b) return 'white';
+  const layer = b.querySelector('.layer') as HTMLElement | null;
+  if (!layer) return 'white';
+  return window.getComputedStyle(layer).backgroundColor || 'white';
+}
+
+function beakerCenter(idx: number): { x: number; y: number } {
+  const b = els.beakerContainer().children[idx] as HTMLElement | undefined;
+  if (!b) { return { x: 0, y: 0 }; }
+  const rect = b.getBoundingClientRect();
+  return { x: rect.left + rect.width / 2, y: rect.top + rect.height * 0.35 };
+}
+
+function animatePour(src: number, dest: number, result: { transferred?: number; reacted?: boolean }) {
+  if (document.body.classList.contains('reduced-motion') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+  const from = beakerCenter(src);
+  const to = beakerCenter(dest);
+  const count = Math.min(result.transferred ?? 1, 12);
+  const color = getComputedColor(dest);
+  for (let i = 0; i < count; i++) {
+    setTimeout(() => {
+      const dot = document.createElement('div');
+      dot.className = 'pour-dot';
+      dot.style.backgroundColor = color;
+      dot.style.left = `${from.x}px`;
+      dot.style.top = `${from.y}px`;
+      dot.style.opacity = '0.95';
+      document.body.appendChild(dot);
+      const duration = 400 + Math.random() * 150;
+      const offsetX = (Math.random() - 0.5) * 24;
+      dot.animate([
+        { transform: `translate(-50%, -50%)`, opacity: 0.95 },
+        { transform: `translate(${to.x - from.x + offsetX}px, ${to.y - from.y}px)`, opacity: 0.6 },
+      ], { duration, easing: 'cubic-bezier(0.45, 0, 0.55, 1)', fill: 'forwards' })
+        .onfinish = () => dot.remove();
+    }, i * 30);
+  }
+}
+
+function animateReactionFlash(idx: number, color: string) {
+  if (document.body.classList.contains('reduced-motion') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+  const center = beakerCenter(idx);
+  const flash = document.createElement('div');
+  flash.className = 'reaction-flash';
+  flash.style.backgroundColor = color;
+  flash.style.left = `${center.x}px`;
+  flash.style.top = `${center.y}px`;
+  document.body.appendChild(flash);
+  flash.addEventListener('animationend', () => flash.remove());
+}
+
+function spawnParticles(idx: number, count: number) {
+  if (document.body.classList.contains('reduced-motion') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+  const center = beakerCenter(idx);
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.backgroundColor = getComputedColor(idx);
+    p.style.left = `${center.x}px`;
+    p.style.top = `${center.y}px`;
+    document.body.appendChild(p);
+    const angle = Math.random() * Math.PI * 2;
+    const dist = 24 + Math.random() * 40;
+    const duration = 350 + Math.random() * 250;
+    p.animate([
+      { transform: `translate(-50%, -50%) scale(1)`, opacity: 1 },
+      { transform: `translate(${Math.cos(angle) * dist - 50}%, ${Math.sin(angle) * dist - 50}%) scale(0)`, opacity: 0 },
+    ], { duration, easing: 'ease-out', fill: 'forwards' })
+      .onfinish = () => p.remove();
+  }
+}
+

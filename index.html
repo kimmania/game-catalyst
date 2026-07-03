@@ -33,9 +33,48 @@
       </div>
     </div>
 
+    <!-- Map screen -->
+    <div id="map-screen" class="screen">
+      <div class="map-header">
+        <h1>Journey of the Catalyst</h1>
+        <p class="map-rank" id="map-rank">Rank: Apprentice</p>
+      </div>
+      <div id="map-container">
+        <div class="map-region" data-region="tutorial">
+          <h2 class="region-title">Guild Hall</h2>
+          <div class="region-path" id="path-tutorial"></div>
+        </div>
+        <div class="map-region" data-region="easy">
+          <h2 class="region-title">Crimson Mines</h2>
+          <div class="region-path" id="path-easy"></div>
+        </div>
+        <div class="map-region" data-region="medium">
+          <h2 class="region-title">Amber Dunes</h2>
+          <div class="region-path" id="path-medium"></div>
+        </div>
+        <div class="map-region" data-region="hard">
+          <h2 class="region-title">Viridian Caverns</h2>
+          <div class="region-path" id="path-hard"></div>
+        </div>
+        <div class="map-region" data-region="expert">
+          <h2 class="region-title">Cobalt Spire</h2>
+          <div class="region-path" id="path-expert"></div>
+        </div>
+        <div class="map-region" data-region="master">
+          <h2 class="region-title">Forbidden Vault</h2>
+          <div class="region-path" id="path-master"></div>
+        </div>
+      </div>
+      <div class="map-actions">
+        <button id="map-settings" class="btn btn-secondary">Settings</button>
+        <button id="map-help" class="btn btn-secondary">How to Play</button>
+      </div>
+    </div>
+
     <!-- Game screen -->
     <div id="game-screen" class="screen">
       <header class="top-bar">
+        <button id="map-return" class="icon-btn" title="Back to Map" aria-label="Back to Map">🗺</button>
         <button id="undo-btn" class="icon-btn" title="Undo" aria-label="Undo">↶</button>
         <button id="reset-btn" class="icon-btn" title="Reset Level" aria-label="Reset Level">↻</button>
         <div class="level-info">
@@ -115,6 +154,10 @@
           <button id="sound-toggle" class="toggle" role="switch" aria-checked="true"><span class="toggle-label">On</span></button>
         </div>
         <div class="settings-row">
+          <span>Music</span>
+          <button id="music-toggle" class="toggle" role="switch" aria-checked="true"><span class="toggle-label">On</span></button>
+        </div>
+        <div class="settings-row">
           <span>Reduced Motion</span>
           <button id="motion-toggle" class="toggle" role="switch" aria-checked="false"><span class="toggle-label">Off</span></button>
         </div>
@@ -148,6 +191,7 @@
         <p id="lc-message" class="lc-message">Purity preserved. The Guild is pleased.</p>
         <div class="level-modal-actions">
           <button id="lc-retry" class="btn">Replay</button>
+          <button id="lc-map" class="btn btn-secondary">Map</button>
           <button id="lc-next" class="btn btn-primary">Next Level</button>
         </div>
       </div>
