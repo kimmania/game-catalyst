@@ -10,7 +10,7 @@ import {
 import { REACTION_PAIRS, COLOR_NAME, REACTION_LORE, getReaction } from './engine/constants';
 import type { GameState, SaveData, LevelData, Beaker } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
-import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
+import { fetchPuzzleBank, getLevelById, deriveTier } from './engine/puzzles';
 import { renderHelpVisuals } from './engine/renderHelpVisuals';
 import { play, startMusic, stopMusic, refreshSettings, listenForAudioUnlock } from './engine/audio';
 
@@ -88,7 +88,23 @@ const els = {
   announcer: () => document.getElementById('aria-announcer')!,
 };
 
-function renderMap() {
+let mapRenderGeneration = 0;
+let puzzleBanksLoaded = false;
+const banks: Partial<Record<string, LevelData[]>> = {};
+async function preloadPuzzleBanks() {
+  if (puzzleBanksLoaded) return;
+  await Promise.all(TIER_ORDER.map(async (tier) => {
+    banks[tier] = await fetchPuzzleBank(tier);
+  }));
+  puzzleBanksLoaded = true;
+}
+
+async function renderMap() {
+  mapRenderGeneration += 1;
+  const generation = mapRenderGeneration;
+  await preloadPuzzleBanks();
+  if (generation !== mapRenderGeneration) return;
+
   const completed = saveData.progress.completed;
   const unlocked = new Set(saveData.progress.unlocked);
   let totalStars = 0;
@@ -100,63 +116,59 @@ function renderMap() {
     path.setAttribute('role', 'list');
     path.setAttribute('aria-label', `${region} levels`);
 
-    fetchPuzzleBank(region).then(bank => {
-      // Guard against stale fetches from overlapping renderMap() calls.
-      if (!path.isConnected) return;
-      path.innerHTML = '';
-      const regionStars = bank.reduce((sum, l) => sum + (completed[l.id] ?? 0), 0);
-      totalStars += regionStars;
-      const regionUnlocked = bank.some(l => unlocked.has(l.id));
+    const bank = banks[region] ?? [];
+    const regionStars = bank.reduce((sum, l) => sum + (completed[l.id] ?? 0), 0);
+    totalStars += regionStars;
+    const regionUnlocked = bank.some(l => unlocked.has(l.id));
 
-      for (const level of bank) {
-        const node = document.createElement('button');
-        node.className = 'map-node';
-        node.setAttribute('role', 'listitem');
-        const nodeStars = completed[level.id] ?? 0;
-        const status = !unlocked.has(level.id)
-          ? 'Locked'
-          : level.id === currentLevelId
-          ? 'Current'
-          : nodeStars === 3
-          ? 'Perfect'
-          : `${nodeStars} of 3 stars`;
-        const ariaLabel = `${getLevelLabel(level.id)}: Level ${level.id}, ${status}`;
+    for (const level of bank) {
+      const node = document.createElement('button');
+      node.className = 'map-node';
+      node.setAttribute('role', 'listitem');
+      const nodeStars = completed[level.id] ?? 0;
+      const status = !unlocked.has(level.id)
+        ? 'Locked'
+        : level.id === currentLevelId
+        ? 'Current'
+        : nodeStars === 3
+        ? 'Perfect'
+        : `${nodeStars} of 3 stars`;
+      const ariaLabel = `${getLevelLabel(level.id)}: Level ${level.id}, ${status}`;
 
-        node.setAttribute('aria-label', ariaLabel);
+      node.setAttribute('aria-label', ariaLabel);
 
-        if (!unlocked.has(level.id)) {
-          node.classList.add('locked');
-          node.setAttribute('aria-disabled', 'true');
-          node.setAttribute('tabindex', '-1');
-          node.title = 'Locked';
-        } else {
-          node.title = `Play level ${level.id}`;
-          node.addEventListener('click', () => startLevel(level.id));
-          if (level.id === currentLevelId) {
-            node.classList.add('current');
-          }
-          if (nodeStars === 3) {
-            node.classList.add('perfect');
-          }
+      if (!unlocked.has(level.id)) {
+        node.classList.add('locked');
+        node.setAttribute('aria-disabled', 'true');
+        node.setAttribute('tabindex', '-1');
+        node.title = 'Locked';
+      } else {
+        node.title = `Play level ${level.id}`;
+        node.addEventListener('click', () => startLevel(level.id));
+        if (level.id === currentLevelId) {
+          node.classList.add('current');
         }
-
-        node.innerHTML = `
-          <span class="node-id">${level.id}</span>
-          <span class="node-stars" aria-hidden="true">${'★'.repeat(nodeStars)}${'☆'.repeat(3 - nodeStars)}</span>
-        `;
-        path.appendChild(node);
+        if (nodeStars === 3) {
+          node.classList.add('perfect');
+        }
       }
 
-      const title = document.querySelector(`.map-region[data-region="${region}"] .region-title`) as HTMLElement | null;
-      if (title) {
-        title.dataset.locked = String(!regionUnlocked);
-        const starsLabel = regionStars > 0 ? ` (${regionStars} / ${bank.length * 3} ★)` : '';
-        title.textContent = `${getLevelLabel(bank[0]?.id ?? `${region}1`)}${starsLabel}`;
-      }
+      node.innerHTML = `
+        <span class="node-id">${level.id}</span>
+        <span class="node-stars" aria-hidden="true">${'★'.repeat(nodeStars)}${'☆'.repeat(3 - nodeStars)}</span>
+      `;
+      path.appendChild(node);
+    }
 
-      els.mapRank().textContent = `Rank: ${getRankTitle(totalStars)}`;
-    });
+    const title = document.querySelector(`.map-region[data-region="${region}"] .region-title`) as HTMLElement | null;
+    if (title) {
+      title.dataset.locked = String(!regionUnlocked);
+      const starsLabel = regionStars > 0 ? ` (${regionStars} / ${bank.length * 3} ★)` : '';
+      title.textContent = `${getLevelLabel(bank[0]?.id ?? `${region}1`)}${starsLabel}`;
+    }
   }
+
+  els.mapRank().textContent = `Rank: ${getRankTitle(totalStars)}`;
 }
 
 function getLevelLabel(levelId: string): string {
