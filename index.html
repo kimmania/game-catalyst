@@ -85,8 +85,9 @@
           <span id="level-number">Level 1</span>
         </div>
         <div class="moves-info" aria-live="polite" aria-atomic="true">
-          <span class="moves-label">Moves</span>
-          <span id="move-count">0</span>
+          <span class="moves-label" id="moves-label">Moves</span>
+          <span id="move-count" aria-labelledby="moves-label">0</span>
+          <span class="target-moves" id="target-moves">/ —</span>
         </div>
         <button id="settings-btn" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
         <button id="help-btn" class="icon-btn" title="Help" aria-label="Help">?</button>
@@ -186,7 +187,11 @@
     <div id="level-complete-overlay" class="overlay">
       <div class="modal level-modal">
         <h2 id="lc-title">Level Complete!</h2>
-        <div class="stars" id="lc-stars">⭐⭐⭐</div>
+        <div class="stars" id="lc-stars">
+          <span class="star" data-i="1">⭐</span>
+          <span class="star" data-i="2">⭐</span>
+          <span class="star" data-i="3">⭐</span>
+        </div>
         <p id="lc-stars-line">Star Rating: <span class="value" id="lc-stars-val">3</span> / 3</p>
         <p id="lc-moves">Moves Used: <span class="value">12</span></p>
         <p id="lc-target">Target Moves: <span class="value">8</span></p>

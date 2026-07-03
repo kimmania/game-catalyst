@@ -50,6 +50,7 @@ const els = {
   levelLabel: () => document.getElementById('level-label')!,
   levelNumber: () => document.getElementById('level-number')!,
   moveCount: () => document.getElementById('move-count')!,
+  targetMoves: () => document.getElementById('target-moves')!,
   helpOverlay: () => document.getElementById('help-overlay')!,
   helpClose: () => document.getElementById('help-close')!,
   helpDismiss: () => document.getElementById('help-dismiss') as HTMLButtonElement,
@@ -601,6 +602,7 @@ function handleBeakerTap(idx: number) {
 
     if (result.success) {
       play('pour');
+      navigator.vibrate?.(10);
       state.selectedBeaker = null;
       renderBoard();
       syncCatalystUI();
@@ -644,6 +646,7 @@ function handleCatalyst() {
   const result = applyCatalyst(state, beakerIndex);
   if (result.success) {
     play('catalyst');
+    navigator.vibrate?.(15);
     animateReactionFlash(beakerIndex, getComputedColor(beakerIndex));
     spawnParticles(beakerIndex, 8);
     lastAction = { type: 'catalyst', beakerIndex };
@@ -699,8 +702,14 @@ function computeStars(): number {
 
 function showWin(stars: number) {
   if (!state) return;
-  const starText = ['⭐', '⭐⭐', '⭐⭐⭐'][Math.max(0, Math.min(2, stars - 1))] || '⭐';
-  els.lcStars().textContent = starText;
+  const starContainer = els.lcStars();
+  const starSpans = starContainer.querySelectorAll('.star');
+  starSpans.forEach((span, idx) => {
+    const earned = idx < stars;
+    (span as HTMLElement).style.opacity = earned ? '1' : '0.25';
+    (span as HTMLElement).style.animationDelay = earned ? `${idx * 120}ms` : '0ms';
+    span.classList.toggle('pop-in', earned);
+  });
   const lcStarsVal = els.lcStarsVal();
   if (lcStarsVal) lcStarsVal.textContent = String(stars);
   els.lcMoves().textContent = String(state.moves);
@@ -740,6 +749,8 @@ function syncHeader() {
 function syncMoveCount() {
   if (!state) return;
   els.moveCount().textContent = String(state.moves);
+  const target = state.targetMoves ?? state.beakers.length * 3;
+  els.targetMoves().textContent = `/ ${target}`;
 }
 
 function announce(message: string) {

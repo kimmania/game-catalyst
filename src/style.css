@@ -16,6 +16,45 @@ html, body {
   touch-action: manipulation;
 }
 
+/* Focus-visible ring */
+*:focus-visible {
+  outline: 2.5px solid #d4a030;
+  outline-offset: 2px;
+  box-shadow: 0 0 8px rgba(212, 160, 48, 0.45);
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.beaker:focus-visible,
+.map-node:focus-visible,
+.btn:focus-visible,
+.icon-btn:focus-visible,
+.toggle:focus-visible {
+  outline-color: #f0c060;
+  outline-offset: 3px;
+  box-shadow: 0 0 10px rgba(240, 192, 96, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body.reduced-motion *,
+body.reduced-motion *::before,
+body.reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
 #app {
   display: flex;
   flex-direction: column;
@@ -213,6 +252,19 @@ html, body {
     0 6px 14px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   transition: transform 0.12s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.beaker:empty::after {
+  /* Faint meniscus / cleaned glass line in empty flasks */
+  content: '';
+  position: absolute;
+  bottom: 24px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 240, 200, 0.18), transparent);
+  pointer-events: none;
 }
 
 .beaker::before {
@@ -938,6 +990,12 @@ body[data-tier="master"] #game-screen {
   font-weight: 600;
 }
 
+.target-moves {
+  font-size: 0.7rem;
+  color: #b88860;
+  font-weight: 500;
+}
+
 /* High contrast mode */
 body.high-contrast {
   color: #fff;
@@ -965,8 +1023,7 @@ body.high-contrast .btn {
 body.high-contrast .reaction-cell {
   border-color: #fff;
 }
-body.high-contrast .help-mini-beaker,
-body.high-contrast .mini-cap {
+body.high-contrast .help-mini-beaker {
   border-color: #fff;
 }
 
@@ -1063,6 +1120,30 @@ body.high-contrast .mini-cap {
   text-align: center;
   margin: 8px 0 14px;
   letter-spacing: 4px;
+}
+
+.level-modal .star {
+  display: inline-block;
+  opacity: 0.25;
+}
+
+.level-modal .star.pop-in {
+  animation: star-pop 0.45s cubic-bezier(0.22, 1.4, 0.36, 1) forwards;
+}
+
+@keyframes star-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-25deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.25) rotate(6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
 }
 
 .level-modal p {
