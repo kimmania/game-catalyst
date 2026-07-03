@@ -7,7 +7,7 @@ import {
   hasValidMoves,
   createGameState,
 } from './engine/game-logic';
-import { REACTION_PAIRS, COLOR_NAME } from './engine/constants';
+import { REACTION_PAIRS, COLOR_NAME, REACTION_LORE, getReaction } from './engine/constants';
 import type { GameState, SaveData, LevelData, Beaker } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { getLevelById, fetchPuzzleBank, deriveTier } from './engine/puzzles';
@@ -34,8 +34,13 @@ const els = {
   mapContainer: () => document.getElementById('map-container')!,
   mapRank: () => document.getElementById('map-rank')!,
   mapSettings: () => document.getElementById('map-settings') as HTMLButtonElement,
+  mapGrimoire: () => document.getElementById('map-grimoire') as HTMLButtonElement,
   mapHelp: () => document.getElementById('map-help') as HTMLButtonElement,
   mapReturn: () => document.getElementById('map-return') as HTMLButtonElement,
+  grimoireOverlay: () => document.getElementById('grimoire-overlay')!,
+  grimoireClose: () => document.getElementById('grimoire-close')!,
+  grimoireGrid: () => document.getElementById('grimoire-grid')!,
+  grimoireEmpty: () => document.getElementById('grimoire-empty')!,
   gameScreen: () => document.getElementById('game-screen')!,
   startAdventure: () => document.getElementById('start-adventure')!,
   beakerContainer: () => document.getElementById('beaker-container')!,
@@ -236,6 +241,11 @@ function bindEvents() {
     showOverlay('help-overlay');
   });
 
+  els.mapGrimoire().addEventListener('click', () => {
+    renderGrimoire();
+    showOverlay('grimoire-overlay');
+  });
+
   els.helpClose().addEventListener('click', () => hideOverlay('help-overlay'));
   els.helpDismiss().addEventListener('click', () => {
     hideOverlay('help-overlay');
@@ -244,6 +254,8 @@ function bindEvents() {
   });
 
   els.settingsClose().addEventListener('click', () => hideOverlay('settings-overlay'));
+
+  els.grimoireClose().addEventListener('click', () => hideOverlay('grimoire-overlay'));
 
   bindToggle(els.soundToggle(), 'sound');
   bindToggle(els.musicToggle(), 'music');
@@ -555,6 +567,83 @@ function beakerChangedSince(prev: Beaker | undefined, curr: Beaker): boolean {
   return false;
 }
 
+function renderGrimoire() {
+  const grid = els.grimoireGrid();
+  const empty = els.grimoireEmpty();
+  grid.innerHTML = '';
+
+  const known = new Set<string>();
+  const sessionDiscovered = state?.discovered ?? new Set<string>();
+  for (const key of saveData.grimoire) known.add(key);
+  for (const key of sessionDiscovered) {
+    const [a, b] = key.split(',');
+    if (a && b) {
+      known.add([a, b].sort().join(','));
+    }
+  }
+
+  if (known.size === 0) {
+    grid.classList.add('hidden');
+    empty.classList.remove('hidden');
+    return;
+  }
+  grid.classList.remove('hidden');
+  empty.classList.add('hidden');
+
+  const sorted = Array.from(known).sort();
+  for (const key of sorted) {
+    const [a, b] = key.split(',');
+    if (!a || !b) continue;
+    const result = getReaction(a, b);
+    if (!result) continue;
+    const meta = REACTION_LORE[result];
+    const title = meta?.title ?? `${COLOR_NAME[result] ?? result} Distillate`;
+    const flavor = meta?.flavor ?? '';
+
+    const card = document.createElement('div');
+    card.className = 'grimoire-card';
+
+    const recipe = document.createElement('div');
+    recipe.className = 'grimoire-recipe';
+    const dot = (color: string, label: string) => {
+      const el = document.createElement('span');
+      el.className = 'grimoire-dot';
+      el.dataset.color = color;
+      el.setAttribute('aria-label', label);
+      el.title = label;
+      return el;
+    };
+    recipe.appendChild(dot(a, COLOR_NAME[a] ?? a));
+    const plus = document.createElement('span');
+    plus.className = 'grimoire-op';
+    plus.textContent = '+';
+    recipe.appendChild(plus);
+    recipe.appendChild(dot(b, COLOR_NAME[b] ?? b));
+    const arrow = document.createElement('span');
+    arrow.className = 'grimoire-op';
+    arrow.textContent = '→';
+    recipe.appendChild(arrow);
+    const out = document.createElement('span');
+    out.className = 'grimoire-output';
+    out.dataset.color = result;
+    out.textContent = COLOR_NAME[result] ?? result;
+    recipe.appendChild(out);
+
+    const name = document.createElement('h3');
+    name.className = 'grimoire-title';
+    name.textContent = title;
+
+    const note = document.createElement('p');
+    note.className = 'grimoire-flavor';
+    note.textContent = flavor;
+
+    card.appendChild(recipe);
+    card.appendChild(name);
+    card.appendChild(note);
+    grid.appendChild(card);
+  }
+}
+
 function renderReactionTable() {
   const container = els.reactionTable();
   container.innerHTML = '';
@@ -601,6 +690,7 @@ function renderReactionTable() {
     out.className = 'reaction-output';
     out.textContent = COLOR_NAME[result] ?? result;
     out.dataset.color = result;
+    out.title = `${REACTION_LORE[result]?.title ?? 'Reaction'}: ${a} + ${b} → ${result}`;
     row.appendChild(out);
 
     container.appendChild(row);
@@ -620,6 +710,8 @@ function handleBeakerTap(idx: number) {
   } else {
     const src = state.selectedBeaker;
     const dest = idx;
+    const srcTop = getTopColor(state.beakers[src]);
+    const destTop = getTopColor(state.beakers[dest]);
     const beforeSolidified = state.solidificationOccurred;
     const result = doPour(state, src, dest);
     state.selectedBeaker = null;
@@ -627,6 +719,9 @@ function handleBeakerTap(idx: number) {
     if (result.success) {
       play('pour');
       navigator.vibrate?.(10);
+      if (result.reacted && srcTop && destTop) {
+        persistDiscovery(`${srcTop},${destTop}`);
+      }
       state.selectedBeaker = null;
       renderBoard();
       syncCatalystUI();
@@ -790,6 +885,16 @@ function debounceSave() {
   saveTimer = setTimeout(() => {
     persistSave();
   }, SAVE_DEBOUNCE);
+}
+
+function persistDiscovery(rawKey: string) {
+  const [a, b] = rawKey.split(',');
+  if (!a || !b) return;
+  const key = [a.trim(), b.trim()].sort().join(',');
+  if (!saveData.grimoire.includes(key)) {
+    saveData.grimoire.push(key);
+    persistSave();
+  }
 }
 
 function persistSave() {

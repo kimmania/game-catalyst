@@ -37,6 +37,7 @@
     <div id="map-screen" class="screen">
       <div class="map-topbar">
         <button id="map-settings" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
+        <button id="map-grimoire" class="icon-btn" title="Grimoire" aria-label="Grimoire">📜</button>
         <button id="map-help" class="icon-btn" title="How to Play" aria-label="How to Play">?</button>
       </div>
       <div class="map-header">
@@ -223,6 +224,19 @@
         <div class="modal-actions">
           <button id="stuck-cancel" class="btn">Keep Trying</button>
           <button id="stuck-restart" class="btn btn-primary">Restart Level</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="grimoire-overlay" class="overlay">
+      <div class="modal grimoire-modal">
+        <button class="close-btn" id="grimoire-close" aria-label="Close Grimoire">×</button>
+        <h2>The Alchemist’s Grimoire</h2>
+        <p class="grimoire-intro">Reactions you have witnessed in the crucible.</p>
+        <div id="grimoire-grid"></div>
+        <div id="grimoire-empty" class="grimoire-empty hidden">
+          <p>No reactions recorded yet.</p>
+          <p>Mix two different primary colors in a beaker to begin your notes.</p>
         </div>
       </div>
     </div>
