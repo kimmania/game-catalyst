@@ -50,6 +50,17 @@ def is_trivially_solved(bs):
     return True
 
 
+# Explicit prefixes must stay in sync with src/engine/puzzles.ts deriveTier()
+TIER_PREFIX = {
+    "tutorial": "t",
+    "easy": "e",
+    "medium": "m",
+    "hard": "h",
+    "expert": "x",
+    "master": "a",
+}
+
+
 def generate_level(tier, num, spec):
     rng = random.Random(spec.get("seed", 12345) + num * 17 + hash(tier) % 10000)
     colors_count = min(spec["primaries"], len(PRIMARIES))
@@ -101,7 +112,7 @@ def generate_level(tier, num, spec):
     estimated = max(moves_low, min(moves_high, misplaced + rng.randint(2, 6)))
 
     return {
-        "id": f"{tier[0]}{num + 1}",
+        "id": f"{TIER_PREFIX[tier]}{num + 1}",
         "lab": lab,
         "tier": tier,
         "beakers": serial_beakers,
@@ -124,6 +135,7 @@ TIER_SPECS = {
 def main():
     out_dir = "public/puzzles"
     os.makedirs(out_dir, exist_ok=True)
+    all_ids = set()
     for tier, spec in TIER_SPECS.items():
         levels = []
         attempts = 0
@@ -135,6 +147,12 @@ def main():
         path = os.path.join(out_dir, f"{tier}.json")
         with open(path, "w") as f:
             json.dump(levels, f, indent=2)
+        for lvl in levels:
+            if lvl["id"] in all_ids:
+                print(f"ERROR: duplicate id {lvl['id']} across tiers")
+                raise SystemExit(1)
+            all_ids.add(lvl["id"])
+        print(f"{tier}: {len(levels)} levels ({path})")
 
 
 if __name__ == "__main__":

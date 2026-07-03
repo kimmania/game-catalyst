@@ -51,21 +51,12 @@ export function clearSave() {
 
 function migrateSave(old: SaveData): SaveData {
   const fresh = getDefaultSave();
-  fresh.progress = {
-    completed: old.progress?.completed ?? {},
-    bestMoves: old.progress?.bestMoves ?? {},
-    unlocked: Array.from(new Set(old.progress?.unlocked ?? ['t1'])),
-  };
-  // Restore any completed levels that somehow lost their replay unlock.
-  for (const levelId of Object.keys(fresh.progress.completed)) {
-    fresh.progress.unlocked.push(levelId);
-  }
-  fresh.progress.unlocked = Array.from(new Set(fresh.progress.unlocked));
+  // Level IDs changed in save version 2 (unique tier prefixes). Old progress keys are invalid,
+  // so we keep preferences and grimoire but reset progression to a clean start.
   fresh.settings = { ...fresh.settings, ...old.settings };
   fresh.grimoire = old.grimoire ?? fresh.grimoire;
   fresh.hasSeenIntro = old.hasSeenIntro ?? old.hasSeenHelp ?? false;
   fresh.hasSeenHelp = old.hasSeenHelp ?? false;
-  fresh.currentLevel = old.currentLevel ?? fresh.currentLevel;
   fresh.version = SAVE_VERSION;
   return fresh;
 }
