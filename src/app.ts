@@ -414,7 +414,7 @@ async function startLevel(levelId: string) {
   persistSave();
   keyboardIndex = 0;
 
-  await startMusic();
+  startMusic();
 
   const tier = deriveTier(levelId);
   document.body.dataset.tier = tier;

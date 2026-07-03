@@ -7,56 +7,82 @@ let settings = loadSave().settings;
 
 function ctx(): AudioContext {
   if (!audioContext) {
-    audioContext = new (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)();
+    try {
+      const Ctor =
+        window.AudioContext ||
+        ((window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext);
+      audioContext = new Ctor();
+      audioContext.onstatechange = () => {
+        console.log('[audio] AudioContext state:', audioContext?.state);
+      };
+    } catch (err) {
+      console.error('[audio] failed to create AudioContext', err);
+    }
   }
-  return audioContext;
+  return audioContext as AudioContext;
 }
 
 export function refreshSettings() {
   settings = loadSave().settings;
 }
 
-let resumePromise: Promise<void> | null = null;
-
-export async function resumeAudio(): Promise<void> {
+export function unlockAudio() {
   const c = ctx();
-  if (c.state === 'running') return;
-
-  if (!resumePromise) {
-    resumePromise = (async () => {
-      try {
-        await c.resume();
-      } catch {
-        // ignore
-      } finally {
-        resumePromise = null;
-      }
-    })();
+  if (!c) return;
+  try {
+    if (c.state === 'suspended') {
+      console.log('[audio] attempting resume...');
+      void c.resume();
+    }
+  } catch (e) {
+    console.error('[audio] resume failed', e);
   }
-  return resumePromise;
 }
 
-let userGestureUnlocked = false;
-
-export async function unlockAudioOnUserGesture(): Promise<void> {
-  if (userGestureUnlocked) return;
-  userGestureUnlocked = true;
-  await resumeAudio();
-}
+let unlockAttached = false;
 
 export function listenForAudioUnlock() {
-  const handler = async () => {
-    await unlockAudioOnUserGesture();
-    if (settings.music) startMusic();
+  if (unlockAttached) return;
+  unlockAttached = true;
+  const handler = () => {
+    console.log('[audio] user gesture detected');
+    unlockAudio();
+    if (settings.music && !isMusicPlaying) startMusic();
   };
   document.addEventListener('pointerdown', handler, { once: true });
   document.addEventListener('keydown', handler, { once: true });
+  document.addEventListener('touchstart', handler, { once: true });
 }
 
-export async function play(name: SoundName) {
-  await resumeAudio();
-  if (!settings.sound) return;
+export function play(name: SoundName) {
+  unlockAudio();
 
+  if (!settings.sound) {
+    console.log('[audio] sound disabled, skipping', name);
+    return;
+  }
+
+  const c = ctx();
+  if (!c) return;
+
+  if (c.state !== 'running') {
+    console.log('[audio] context not running, deferring', name, c.state);
+    requestAnimationFrame(() => {
+      if (ctx().state === 'running') {
+        console.log('[audio] now running, playing deferred', name);
+        scheduleSound(name);
+      } else {
+        console.log('[audio] still not running, dropping', name);
+      }
+    });
+    return;
+  }
+
+  scheduleSound(name);
+}
+
+function scheduleSound(name: SoundName) {
+  console.log('[audio] playing', name);
   switch (name) {
     case 'pour':
       playPour();
@@ -111,7 +137,7 @@ function playPour() {
   filter.frequency.setValueAtTime(600, c.currentTime);
   filter.frequency.linearRampToValueAtTime(200, c.currentTime + 0.35);
   const g = c.createGain();
-  g.gain.setValueAtTime(0.18, c.currentTime);
+  g.gain.setValueAtTime(0.25, c.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.35);
   src.connect(filter).connect(g).connect(c.destination);
   src.start();
@@ -124,7 +150,7 @@ function playInvalid() {
   o.frequency.setValueAtTime(120, c.currentTime);
   o.frequency.linearRampToValueAtTime(80, c.currentTime + 0.12);
   const g = c.createGain();
-  g.gain.setValueAtTime(0.1, c.currentTime);
+  g.gain.setValueAtTime(0.15, c.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.15);
   o.connect(g).connect(c.destination);
   o.start();
@@ -133,16 +159,14 @@ function playInvalid() {
 
 function playCatalyst() {
   const c = ctx();
-  // Sizzle
-  const noise = whiteNoise(0.45, 0.12);
+  const noise = whiteNoise(0.45, 0.18);
   noise.start();
-  // Fizzy rising tone
   const o = c.createOscillator();
   o.type = 'sine';
   o.frequency.setValueAtTime(220, c.currentTime);
   o.frequency.exponentialRampToValueAtTime(660, c.currentTime + 0.35);
   const g = c.createGain();
-  g.gain.setValueAtTime(0.08, c.currentTime);
+  g.gain.setValueAtTime(0.12, c.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.45);
   o.connect(g).connect(c.destination);
   o.start();
@@ -151,19 +175,17 @@ function playCatalyst() {
 
 function playCrystal() {
   const c = ctx();
-  // Glass clink
   const o = c.createOscillator();
   o.type = 'sine';
   o.frequency.setValueAtTime(2600, c.currentTime);
   o.frequency.exponentialRampToValueAtTime(1800, c.currentTime + 0.1);
   const g = c.createGain();
-  g.gain.setValueAtTime(0.15, c.currentTime);
+  g.gain.setValueAtTime(0.22, c.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.25);
   o.connect(g).connect(c.destination);
   o.start();
   o.stop(c.currentTime + 0.3);
-  // Tiny noise burst
-  const click = whiteNoise(0.03, 0.05);
+  const click = whiteNoise(0.03, 0.08);
   const filter = c.createBiquadFilter();
   filter.type = 'highpass';
   filter.frequency.value = 2000;
@@ -181,7 +203,7 @@ function playWin() {
     o.frequency.setValueAtTime(freq, c.currentTime + i * 0.12);
     const g = c.createGain();
     g.gain.setValueAtTime(0, c.currentTime + i * 0.12);
-    g.gain.linearRampToValueAtTime(0.12, c.currentTime + i * 0.12 + 0.04);
+    g.gain.linearRampToValueAtTime(0.18, c.currentTime + i * 0.12 + 0.04);
     g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + i * 0.12 + 0.45);
     o.connect(g).connect(c.destination);
     o.start(c.currentTime + i * 0.12);
@@ -195,7 +217,7 @@ function playClick() {
   o.type = 'triangle';
   o.frequency.setValueAtTime(350, c.currentTime);
   const g = c.createGain();
-  g.gain.setValueAtTime(0.05, c.currentTime);
+  g.gain.setValueAtTime(0.08, c.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.05);
   o.connect(g).connect(c.destination);
   o.start();
@@ -206,11 +228,13 @@ function playClick() {
 let musicNodes: (OscillatorNode | GainNode)[] | null = null;
 let isMusicPlaying = false;
 
-export async function startMusic() {
+export function startMusic() {
+  const c = ctx();
+  if (!c) return;
   if (isMusicPlaying) return;
   if (!settings.music) return;
-  await resumeAudio();
-  const c = ctx();
+
+  unlockAudio();
   isMusicPlaying = true;
 
   const drone1 = c.createOscillator();
@@ -230,7 +254,7 @@ export async function startMusic() {
 
   const masterGain = c.createGain();
   masterGain.gain.value = 0.0;
-  masterGain.gain.linearRampToValueAtTime(0.045, c.currentTime + 1.5);
+  masterGain.gain.linearRampToValueAtTime(0.06, c.currentTime + 1.5);
 
   drone1.connect(masterGain);
   drone2.connect(masterGain);
@@ -243,6 +267,7 @@ export async function startMusic() {
   lfo.start();
 
   musicNodes = [drone1, drone2, lfo, masterGain];
+  console.log('[audio] music started');
 }
 
 export function stopMusic() {
