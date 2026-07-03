@@ -124,11 +124,11 @@ def generate_level(tier, num, spec):
 
 TIER_SPECS = {
     "tutorial": {"primaries": 3, "beakers": 4, "height": 4, "catalysts": 3, "target_moves": (4, 16), "lab": "Apprentice Bench", "count": 15},
-    "easy": {"primaries": 4, "beakers": 6, "height": 4,  "catalysts": 2, "target_moves": (8, 28), "lab": "Apprentice Bench", "count": 40},
-    "medium": {"primaries": 5, "beakers": 8, "height": 5, "catalysts": 2, "target_moves": (12, 42), "lab": "Master’s Altar", "count": 60},
-    "hard": {"primaries": 6, "beakers": 10, "height": 5, "catalysts": 1, "target_moves": (20, 65), "lab": "Master’s Altar", "count": 80},
-    "expert": {"primaries": 6, "beakers": 11, "height": 6, "catalysts": 1, "target_moves": (30, 90), "lab": "Forbidden Vault", "count": 60},
-    "master": {"primaries": 6, "beakers": 12, "height": 6, "catalysts": 0, "target_moves": (40, 120), "lab": "Forbidden Vault", "count": 45},
+    "easy":     {"primaries": 4, "beakers": 6, "height": 4, "catalysts": 2, "target_moves": (6, 22), "lab": "Apprentice Bench", "count": 40},
+    "medium":   {"primaries": 5, "beakers": 8, "height": 5, "catalysts": 1, "target_moves": (10, 32), "lab": "Master’s Altar", "count": 60},
+    "hard":     {"primaries": 6, "beakers": 9, "height": 6, "catalysts": 1, "target_moves": (18, 45), "lab": "Master’s Altar", "count": 80},
+    "expert":   {"primaries": 6, "beakers": 9, "height": 7, "catalysts": 1, "target_moves": (26, 70), "lab": "Forbidden Vault", "count": 60},
+    "master":   {"primaries": 6, "beakers": 10, "height": 7, "catalysts": 0, "target_moves": (35, 95), "lab": "Forbidden Vault", "count": 45},
 }
 
 
