@@ -54,6 +54,7 @@ const els = {
   helpBtn: () => document.getElementById('help-btn') as HTMLButtonElement,
   levelLabel: () => document.getElementById('level-label')!,
   levelNumber: () => document.getElementById('level-number')!,
+  goalPanel: () => document.getElementById('goal-panel')!,
   moveCount: () => document.getElementById('move-count')!,
   targetMoves: () => document.getElementById('target-moves')!,
   helpOverlay: () => document.getElementById('help-overlay')!,
@@ -494,6 +495,7 @@ async function startLevel(levelId: string) {
   syncCatalystUI();
   syncHeader();
   syncMoveCount();
+  setGoal(`Each beaker must hold only one reagent color.`);
 
   if (!saveData.hasSeenHelp) {
     saveData.hasSeenHelp = true;
@@ -882,6 +884,14 @@ function syncCatalystUI() {
     state.beakers[state.selectedBeaker].layers.length > 0 &&
     !!getTopColor(state.beakers[state.selectedBeaker]);
   els.catalystBtn().disabled = !enabled;
+}
+
+function setGoal(text: string) {
+  const panel = els.goalPanel();
+  const goalText = panel.querySelector('.goal-text');
+  if (goalText) {
+    goalText.textContent = text;
+  }
 }
 
 function syncHeader() {

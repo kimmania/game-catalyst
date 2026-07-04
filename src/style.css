@@ -225,9 +225,36 @@ body.reduced-motion *::after {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   padding: 10px 14px;
   min-height: 0;
+}
+
+.goal-panel {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(30, 18, 12, 0.72);
+  border: 1px solid rgba(200, 160, 96, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 240, 200, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.goal-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a08058;
+}
+
+.goal-text {
+  font-size: 0.92rem;
+  color: #e8d0a8;
+  line-height: 1.35;
 }
 
 /* Beaker container */
