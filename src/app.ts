@@ -833,10 +833,10 @@ function postMove() {
 function computeStars(): number {
   if (!state) return 1;
   const target = state.targetMoves ?? 999;
-  if (state.moves <= target && !state.solidificationOccurred && !state.catalystUsed) {
+  if (state.moves <= target) {
     return 3;
   }
-  if (state.moves <= target * 1.5) {
+  if (state.moves <= Math.ceil(target * 1.5)) {
     return 2;
   }
   return 1;
@@ -863,7 +863,7 @@ function showWin(stars: number) {
   els.lcBest().textContent = String(displayBest);
 
   if (stars === 3) {
-    els.lcMessage().textContent = 'Purity preserved. The Guild is overjoyed. A flawless solve!';
+    els.lcMessage().textContent = 'The Guild is overjoyed. A perfect solve!';
   } else if (stars === 2) {
     els.lcMessage().textContent = 'A solid effort. The Guild nods approvingly.';
   } else {
