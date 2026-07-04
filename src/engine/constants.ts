@@ -19,6 +19,15 @@ export const INTERMEDIATES = [
   'indigo',
   'magenta',
   'fuchsia',
+  'scarlet',
+  'lime',
+  'azure',
+  'vermilion',
+  'gold',
+  'maroon',
+  'emerald',
+  'rose',
+  'turquoise',
 ] as const;
 
 export type Intermediate = typeof INTERMEDIATES[number];
@@ -38,6 +47,15 @@ export const COLOR_NAME: Record<string, string> = {
   indigo: 'Indigo',
   magenta: 'Magenta',
   fuchsia: 'Fuchsia',
+  scarlet: 'Scarlet',
+  lime: 'Lime',
+  azure: 'Azure',
+  vermilion: 'Vermilion',
+  gold: 'Gold',
+  maroon: 'Maroon',
+  emerald: 'Emerald',
+  rose: 'Rose',
+  turquoise: 'Turquoise',
 };
 
 export function isPrimary(color: string): color is Primary {
@@ -50,11 +68,20 @@ export function isIntermediate(color: string): color is Intermediate {
 
 export const REACTION_PAIRS: [Primary, Primary, Intermediate][] = [
   ['crimson', 'amber', 'orange'],
-  ['amber', 'viridian', 'chartreuse'],
+  ['crimson', 'viridian', 'chartreuse'],
+  ['crimson', 'cobalt', 'scarlet'],
+  ['crimson', 'saffron', 'vermilion'],
+  ['crimson', 'violet', 'fuchsia'],
+  ['amber', 'viridian', 'lime'],
+  ['amber', 'cobalt', 'gold'],
+  ['amber', 'saffron', 'maroon'],
+  ['amber', 'violet', 'rose'],
   ['viridian', 'cobalt', 'teal'],
+  ['viridian', 'saffron', 'emerald'],
+  ['viridian', 'violet', 'azure'],
   ['cobalt', 'saffron', 'indigo'],
+  ['cobalt', 'violet', 'turquoise'],
   ['saffron', 'violet', 'magenta'],
-  ['violet', 'crimson', 'fuchsia'],
 ];
 
 const reactionLookup = new Map<string, Intermediate>();
@@ -68,6 +95,15 @@ const loreBuilder = new Map<string, { title: string; flavor: string }>();
     indigo: 'Midnight Phial',
     magenta: 'Heart-of-Rose Elixir',
     fuchsia: 'Sanguine Aureole',
+    scarlet: 'Emberblood Dye',
+    lime: 'Springtide Salt',
+    azure: 'Skyglass Essence',
+    vermilion: 'Chimera Scale',
+    gold: "King's Aureate",
+    maroon: 'Dried Vineyard',
+    emerald: 'Forestheart Resin',
+    rose: 'Thornpetal Nectar',
+    turquoise: 'Serpentwave Tears',
   };
   const flavorMap: Record<string, string> = {
     orange: 'The fire of crimson kissed by golden amber yields the warmth of a setting sun.',
@@ -76,6 +112,15 @@ const loreBuilder = new Map<string, { title: string; flavor: string }>();
     indigo: 'Cobalt dusk and saffron ember fuse into the color just before true night falls.',
     magenta: 'Saffron flame entwines violet shadow in the exact shade of a lover’s flush.',
     fuchsia: 'Violet brood awakens crimson rage, leaving a halo only the brave dare sip.',
+    scarlet: 'Crimson exposed to cobalt coolness burns a sharper, brighter red than before.',
+    lime: 'Amber warmth drawn through viridian leaf yields a green so sharp it could cut glass.',
+    azure: 'Viridian life leached into violet dusk leaves the pale blue of a cloudless dawn.',
+    vermilion: 'Saffron sun poured over crimson blood produces the hue of a familiar poison.',
+    gold: 'Amber and cobalt divine a treasure that shines only in the alchemist’s mind.',
+    maroon: 'Amber dried by saffron heat deepens into the color of old wine and old regrets.',
+    emerald: 'Viridian fortified by saffron ripens into a green that remembers forests.',
+    rose: 'Amber light filtered through violet petals becomes the blush of a fading bloom.',
+    turquoise: 'Cobalt sea stirred by violet night yields the color of a sheltered lagoon.',
   };
   for (const [a, b, res] of REACTION_PAIRS) {
     reactionLookup.set(`${a},${b}`, res);

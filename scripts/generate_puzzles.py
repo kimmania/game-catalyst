@@ -16,11 +16,20 @@ PRIMARIES = [
 REACTION_PAIRS: dict = {}
 _pair_list = [
     ("crimson", "amber",   "orange"),
-    ("amber",   "viridian","chartreuse"),
-    ("viridian","cobalt",  "teal"),
-    ("cobalt",  "saffron", "indigo"),
-    ("saffron", "violet",  "magenta"),
-    ("violet",  "crimson","fuchsia"),
+    ("crimson", "viridian", "chartreuse"),
+    ("crimson", "cobalt",   "scarlet"),
+    ("crimson", "saffron",  "vermilion"),
+    ("crimson", "violet",   "fuchsia"),
+    ("amber",   "viridian", "lime"),
+    ("amber",   "cobalt",   "gold"),
+    ("amber",   "saffron",  "maroon"),
+    ("amber",   "violet",   "rose"),
+    ("viridian","cobalt",   "teal"),
+    ("viridian","saffron",  "emerald"),
+    ("viridian","violet",   "azure"),
+    ("cobalt",  "saffron",  "indigo"),
+    ("cobalt",  "violet",   "turquoise"),
+    ("saffron", "violet",   "magenta"),
 ]
 for a, b, c in _pair_list:
     REACTION_PAIRS[(a, b)] = c
@@ -50,7 +59,67 @@ def is_trivially_solved(bs):
     return True
 
 
-# Explicit prefixes must stay in sync with src/engine/puzzles.ts deriveTier()
+def has_solid_color_beaker(bs, height):
+    """Return True if any non-empty beaker is filled entirely with one color.
+
+    A starting board with a solid-color beaker is usually a free gift;
+    reject it so every beaker needs some decision-making.
+    """
+    for b in bs:
+        if not b.layers:
+            continue
+        # A beaker with more than one layer all the same color is "solid".
+        if len(b.layers) > 1 and b.is_uniform():
+            return True
+    return False
+
+
+def beaker_uniform_color(b: Beaker):
+    if not b.layers:
+        return None
+    if b.is_uniform():
+        return b.layers[0]
+    return None
+
+
+def _swap_layers(bs, i, idx_i, j, idx_j):
+    bs[i].layers[idx_i], bs[j].layers[idx_j] = bs[j].layers[idx_j], bs[i].layers[idx_i]
+
+
+def repair_solid_beakers(bs, rng, max_attempts: int = 200):
+    """Swap tokens until no non-empty beaker is filled entirely with one color."""
+    for _ in range(max_attempts):
+        solids = [i for i, b in enumerate(bs) if len(b.layers) > 1 and b.is_uniform()]
+        if not solids:
+            return True
+        i = rng.choice(solids)
+        color_i = bs[i].layers[0]
+        candidates = []
+        for j in range(len(bs)):
+            if j == i:
+                continue
+            if not bs[j].layers:
+                continue
+            for idx_j, c in enumerate(bs[j].layers):
+                if c == color_i:
+                    continue
+                # Try swapping one layer of color_i from i with this candidate layer.
+                # Pick any layer in i (they are all color_i).
+                for idx_i in range(len(bs[i].layers)):
+                    # Simulate swap without mutating
+                    new_i = bs[i].layers[:idx_i] + [c] + bs[i].layers[idx_i + 1:]
+                    new_j = bs[j].layers[:idx_j] + [color_i] + bs[j].layers[idx_j + 1:]
+                    if len(new_i) > 1 and len(set(new_i)) == 1:
+                        continue
+                    if len(new_j) > 1 and len(set(new_j)) == 1:
+                        continue
+                    candidates.append((idx_i, j, idx_j))
+                    break
+        if not candidates:
+            return False
+        idx_i, j, idx_j = rng.choice(candidates)
+        _swap_layers(bs, i, idx_i, j, idx_j)
+    return False
 TIER_PREFIX = {
     "tutorial": "t",
     "easy": "e",
@@ -86,7 +155,7 @@ def generate_level(tier, num, spec):
             return None
         # Prefer putting into beakers that already have this color to reduce mixing slightly
         same_color = [j for j in available if bs[j].layers and bs[j].layers[-1] == color]
-        if same_color and rng.random() < 0.45:
+        if same_color and rng.random() < 0.30:
             j = rng.choice(same_color)
         else:
             j = rng.choice(available)
@@ -94,6 +163,10 @@ def generate_level(tier, num, spec):
         bs[j].layers.append(color)
 
     if is_trivially_solved(bs):
+        return None
+
+    # Repair accidental solid-color beakers before rejecting the board.
+    if not repair_solid_beakers(bs, rng):
         return None
 
     serial_beakers = [{"layers": b.layers.copy()} for b in bs]

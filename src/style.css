@@ -495,6 +495,15 @@ body.reduced-motion .beaker.invalid {
 .reaction-toast-color[data-color="indigo"]   { background: var(--indigo); }
 .reaction-toast-color[data-color="magenta"]  { background: var(--magenta); }
 .reaction-toast-color[data-color="fuchsia"]  { background: var(--fuchsia); }
+.reaction-toast-color[data-color="scarlet"]  { background: var(--scarlet); }
+.reaction-toast-color[data-color="lime"]     { background: var(--lime); }
+.reaction-toast-color[data-color="azure"]    { background: var(--azure); }
+.reaction-toast-color[data-color="vermilion"]{ background: var(--vermilion); }
+.reaction-toast-color[data-color="gold"]     { background: var(--gold); }
+.reaction-toast-color[data-color="maroon"]   { background: var(--maroon); }
+.reaction-toast-color[data-color="emerald"]  { background: var(--emerald); }
+.reaction-toast-color[data-color="rose"]     { background: var(--rose); }
+.reaction-toast-color[data-color="turquoise"]{ background: var(--turquoise); }
 
 @keyframes reaction-flash-anim {
   0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
@@ -559,6 +568,24 @@ body.reduced-motion .reaction-flash {
 .layer.layer-crystal[data-color="magenta"]::after     { color: #ffa0e0; }
 .layer.layer-crystal[data-color="fuchsia"]     { background: var(--fuchsia) !important; }
 .layer.layer-crystal[data-color="fuchsia"]::after     { color: #ff8fd0; }
+.layer.layer-crystal[data-color="scarlet"]     { background: var(--scarlet) !important; }
+.layer.layer-crystal[data-color="scarlet"]::after     { color: #ffb0b8; }
+.layer.layer-crystal[data-color="lime"]        { background: var(--lime) !important; }
+.layer.layer-crystal[data-color="lime"]::after        { color: #e0ffc0; }
+.layer.layer-crystal[data-color="azure"]       { background: var(--azure) !important; }
+.layer.layer-crystal[data-color="azure"]::after       { color: #c8e8ff; }
+.layer.layer-crystal[data-color="vermilion"]   { background: var(--vermilion) !important; }
+.layer.layer-crystal[data-color="vermilion"]::after   { color: #ffccb0; }
+.layer.layer-crystal[data-color="gold"]        { background: var(--gold) !important; }
+.layer.layer-crystal[data-color="gold"]::after        { color: #ffe8a0; }
+.layer.layer-crystal[data-color="maroon"]      { background: var(--maroon) !important; }
+.layer.layer-crystal[data-color="maroon"]::after      { color: #d0a0a0; }
+.layer.layer-crystal[data-color="emerald"]     { background: var(--emerald) !important; }
+.layer.layer-crystal[data-color="emerald"]::after     { color: #a0ffd0; }
+.layer.layer-crystal[data-color="rose"]        { background: var(--rose) !important; }
+.layer.layer-crystal[data-color="rose"]::after        { color: #ffd0d8; }
+.layer.layer-crystal[data-color="turquoise"]   { background: var(--turquoise) !important; }
+.layer.layer-crystal[data-color="turquoise"]::after   { color: #b0ffff; }
 
 /* Reactive layer highlight */
 .beaker.activated {
@@ -991,6 +1018,15 @@ body[data-region="master"] .region-title { border-left-color: rgba(150, 80, 190,
 .grimoire-dot[data-color="indigo"]     { background: var(--indigo); }
 .grimoire-dot[data-color="magenta"]    { background: var(--magenta); }
 .grimoire-dot[data-color="fuchsia"]    { background: var(--fuchsia); }
+.grimoire-dot[data-color="scarlet"]    { background: var(--scarlet); }
+.grimoire-dot[data-color="lime"]       { background: var(--lime); }
+.grimoire-dot[data-color="azure"]      { background: var(--azure); }
+.grimoire-dot[data-color="vermilion"]  { background: var(--vermilion); }
+.grimoire-dot[data-color="gold"]       { background: var(--gold); }
+.grimoire-dot[data-color="maroon"]     { background: var(--maroon); }
+.grimoire-dot[data-color="emerald"]    { background: var(--emerald); }
+.grimoire-dot[data-color="rose"]       { background: var(--rose); }
+.grimoire-dot[data-color="turquoise"]  { background: var(--turquoise); }
 
 .grimoire-output[data-color="crimson"]    { background: var(--crimson); }
 .grimoire-output[data-color="amber"]      { background: var(--amber); }
@@ -1004,6 +1040,15 @@ body[data-region="master"] .region-title { border-left-color: rgba(150, 80, 190,
 .grimoire-output[data-color="indigo"]     { background: var(--indigo); }
 .grimoire-output[data-color="magenta"]    { background: var(--magenta); }
 .grimoire-output[data-color="fuchsia"]    { background: var(--fuchsia); }
+.grimoire-output[data-color="scarlet"]    { background: var(--scarlet); }
+.grimoire-output[data-color="lime"]       { background: var(--lime); }
+.grimoire-output[data-color="azure"]      { background: var(--azure); }
+.grimoire-output[data-color="vermilion"]  { background: var(--vermilion); }
+.grimoire-output[data-color="gold"]       { background: var(--gold); }
+.grimoire-output[data-color="maroon"]     { background: var(--maroon); }
+.grimoire-output[data-color="emerald"]    { background: var(--emerald); }
+.grimoire-output[data-color="rose"]       { background: var(--rose); }
+.grimoire-output[data-color="turquoise"]  { background: var(--turquoise); }
 
 .reaction-dot[data-color="crimson"]    { background: var(--crimson); }
 .reaction-dot[data-color="amber"]      { background: var(--amber); }
@@ -1017,6 +1062,15 @@ body[data-region="master"] .region-title { border-left-color: rgba(150, 80, 190,
 .reaction-dot[data-color="indigo"]     { background: var(--indigo); }
 .reaction-dot[data-color="magenta"]    { background: var(--magenta); }
 .reaction-dot[data-color="fuchsia"]    { background: var(--fuchsia); }
+.reaction-dot[data-color="scarlet"]    { background: var(--scarlet); }
+.reaction-dot[data-color="lime"]       { background: var(--lime); }
+.reaction-dot[data-color="azure"]      { background: var(--azure); }
+.reaction-dot[data-color="vermilion"]  { background: var(--vermilion); }
+.reaction-dot[data-color="gold"]       { background: var(--gold); }
+.reaction-dot[data-color="maroon"]     { background: var(--maroon); }
+.reaction-dot[data-color="emerald"]    { background: var(--emerald); }
+.reaction-dot[data-color="rose"]       { background: var(--rose); }
+.reaction-dot[data-color="turquoise"]  { background: var(--turquoise); }
 
 .reaction-output[data-color="crimson"]    { background: var(--crimson); }
 .reaction-output[data-color="amber"]      { background: var(--amber); }
@@ -1030,6 +1084,15 @@ body[data-region="master"] .region-title { border-left-color: rgba(150, 80, 190,
 .reaction-output[data-color="indigo"]     { background: var(--indigo); }
 .reaction-output[data-color="magenta"]    { background: var(--magenta); }
 .reaction-output[data-color="fuchsia"]    { background: var(--fuchsia); }
+.reaction-output[data-color="scarlet"]    { background: var(--scarlet); }
+.reaction-output[data-color="lime"]       { background: var(--lime); }
+.reaction-output[data-color="azure"]      { background: var(--azure); }
+.reaction-output[data-color="vermilion"]  { background: var(--vermilion); }
+.reaction-output[data-color="gold"]       { background: var(--gold); }
+.reaction-output[data-color="maroon"]     { background: var(--maroon); }
+.reaction-output[data-color="emerald"]    { background: var(--emerald); }
+.reaction-output[data-color="rose"]       { background: var(--rose); }
+.reaction-output[data-color="turquoise"]  { background: var(--turquoise); }
 
 /* Legacy reaction table grid (no longer used) */
 .reaction-cell {
@@ -1197,6 +1260,15 @@ body[data-region="master"] .region-title { border-left-color: rgba(150, 80, 190,
 .mini-layer[data-color="indigo"]      { background: var(--indigo); }
 .mini-layer[data-color="magenta"]     { background: var(--magenta); }
 .mini-layer[data-color="fuchsia"]     { background: var(--fuchsia); }
+.mini-layer[data-color="scarlet"]     { background: var(--scarlet); }
+.mini-layer[data-color="lime"]        { background: var(--lime); }
+.mini-layer[data-color="azure"]       { background: var(--azure); }
+.mini-layer[data-color="vermilion"]   { background: var(--vermilion); }
+.mini-layer[data-color="gold"]        { background: var(--gold); }
+.mini-layer[data-color="maroon"]      { background: var(--maroon); }
+.mini-layer[data-color="emerald"]     { background: var(--emerald); }
+.mini-layer[data-color="rose"]        { background: var(--rose); }
+.mini-layer[data-color="turquoise"]   { background: var(--turquoise); }
 
 /* Mini crystal (for help solidify diagram) */
 .mini-crystal[data-color="crimson"]  { background: rgba(194,43,43,0.85); }
@@ -1223,6 +1295,24 @@ body[data-region="master"] .region-title { border-left-color: rgba(150, 80, 190,
 .mini-crystal[data-color="magenta"]::after     { color: #ffa0e0; }
 .mini-crystal[data-color="fuchsia"]     { background: rgba(168,32,120,0.85); }
 .mini-crystal[data-color="fuchsia"]::after     { color: #ff8fd0; }
+.mini-crystal[data-color="scarlet"]     { background: rgba(224,24,48,0.85); }
+.mini-crystal[data-color="scarlet"]::after     { color: #ffb0b8; }
+.mini-crystal[data-color="lime"]        { background: rgba(150,208,0,0.85); }
+.mini-crystal[data-color="lime"]::after        { color: #e0ffc0; }
+.mini-crystal[data-color="azure"]       { background: rgba(56,152,224,0.85); }
+.mini-crystal[data-color="azure"]::after       { color: #c8e8ff; }
+.mini-crystal[data-color="vermilion"]   { background: rgba(232,64,16,0.85); }
+.mini-crystal[data-color="vermilion"]::after   { color: #ffccb0; }
+.mini-crystal[data-color="gold"]        { background: rgba(216,160,16,0.85); }
+.mini-crystal[data-color="gold"]::after        { color: #ffe8a0; }
+.mini-crystal[data-color="maroon"]      { background: rgba(112,24,32,0.85); }
+.mini-crystal[data-color="maroon"]::after      { color: #d0a0a0; }
+.mini-crystal[data-color="emerald"]     { background: rgba(16,168,96,0.85); }
+.mini-crystal[data-color="emerald"]::after     { color: #a0ffd0; }
+.mini-crystal[data-color="rose"]        { background: rgba(216,88,120,0.85); }
+.mini-crystal[data-color="rose"]::after        { color: #ffd0d8; }
+.mini-crystal[data-color="turquoise"]   { background: rgba(32,184,176,0.85); }
+.mini-crystal[data-color="turquoise"]::after   { color: #b0ffff; }
 
 .mini-label {
   font-size: 8px;
@@ -1475,6 +1565,15 @@ body.high-contrast .help-mini-beaker {
   --indigo:    #4838d0;
   --magenta:   #c02098;
   --fuchsia:   #a82078;
+  --scarlet:   #e01830;
+  --lime:      #96d000;
+  --azure:     #3898e0;
+  --vermilion: #e84010;
+  --gold:      #d8a010;
+  --maroon:    #701820;
+  --emerald:   #10a860;
+  --rose:      #d85878;
+  --turquoise: #20b8b0;
 }
 
 .layer[data-color="crimson"]    { background: var(--crimson); }
@@ -1489,6 +1588,15 @@ body.high-contrast .help-mini-beaker {
 .layer[data-color="indigo"]      { background: var(--indigo); }
 .layer[data-color="magenta"]     { background: var(--magenta); }
 .layer[data-color="fuchsia"]     { background: var(--fuchsia); }
+.layer[data-color="scarlet"]     { background: var(--scarlet); }
+.layer[data-color="lime"]        { background: var(--lime); }
+.layer[data-color="azure"]       { background: var(--azure); }
+.layer[data-color="vermilion"]   { background: var(--vermilion); }
+.layer[data-color="gold"]        { background: var(--gold); }
+.layer[data-color="maroon"]      { background: var(--maroon); }
+.layer[data-color="emerald"]     { background: var(--emerald); }
+.layer[data-color="rose"]        { background: var(--rose); }
+.layer[data-color="turquoise"]   { background: var(--turquoise); }
 
 .reaction-cell[data-color="crimson"]    { background: var(--crimson); }
 .reaction-cell[data-color="amber"]      { background: var(--amber); }
@@ -1502,3 +1610,12 @@ body.high-contrast .help-mini-beaker {
 .reaction-cell[data-color="indigo"]     { background: var(--indigo); }
 .reaction-cell[data-color="magenta"]    { background: var(--magenta); }
 .reaction-cell[data-color="fuchsia"]    { background: var(--fuchsia); }
+.reaction-cell[data-color="scarlet"]    { background: var(--scarlet); }
+.reaction-cell[data-color="lime"]       { background: var(--lime); }
+.reaction-cell[data-color="azure"]      { background: var(--azure); }
+.reaction-cell[data-color="vermilion"]  { background: var(--vermilion); }
+.reaction-cell[data-color="gold"]       { background: var(--gold); }
+.reaction-cell[data-color="maroon"]     { background: var(--maroon); }
+.reaction-cell[data-color="emerald"]    { background: var(--emerald); }
+.reaction-cell[data-color="rose"]       { background: var(--rose); }
+.reaction-cell[data-color="turquoise"]  { background: var(--turquoise); }
