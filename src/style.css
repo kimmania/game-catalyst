@@ -475,6 +475,28 @@ body.show-layer-labels .layer-label,
   z-index: 2;
 }
 
+/* Dark border for light colors so crystal outline stays visible */
+.beaker .layer.layer-crystal[data-color="saffron"],
+.beaker .layer.layer-crystal[data-color="amber"],
+.beaker .layer.layer-crystal[data-color="gold"],
+.beaker .layer.layer-crystal[data-color="lime"],
+.beaker .layer.layer-crystal[data-color="chartreuse"] {
+  border-color: rgba(60, 45, 20, 0.75);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35),
+    0 0 0 1px rgba(60, 45, 20, 0.55),
+    inset 0 0 6px rgba(0, 0, 0, 0.12);
+}
+
+body.show-layer-labels .beaker .layer.layer-crystal[data-color="saffron"]::after,
+body.show-layer-labels .beaker .layer.layer-crystal[data-color="amber"]::after,
+body.show-layer-labels .beaker .layer.layer-crystal[data-color="gold"]::after,
+body.show-layer-labels .beaker .layer.layer-crystal[data-color="lime"]::after,
+body.show-layer-labels .beaker .layer.layer-crystal[data-color="chartreuse"]::after {
+  color: rgba(60, 45, 20, 0.9);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
 /* Crystal formation animation */
 .layer-crystal.forming {
   animation: crystal-form 0.45s ease-out;
