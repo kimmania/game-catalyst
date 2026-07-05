@@ -51,6 +51,7 @@ export interface SaveData {
     music: boolean;
     reducedMotion: boolean;
     highContrast: boolean;
+    showLabels: boolean;
   };
   grimoire: string[];
   hasSeenIntro: boolean;

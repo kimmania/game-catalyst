@@ -14,6 +14,7 @@ export function getDefaultSave(): SaveData {
       music: true,
       reducedMotion: false,
       highContrast: false,
+      showLabels: false,
     },
     grimoire: [],
     hasSeenIntro: false,
@@ -31,7 +32,11 @@ export function loadSave(): SaveData {
     if (data.version !== SAVE_VERSION) {
       return migrateSave(data);
     }
-    return { ...getDefaultSave(), ...data };
+    const merged = { ...getDefaultSave(), ...data };
+    if (typeof merged.settings.showLabels !== 'boolean') {
+      merged.settings.showLabels = getDefaultSave().settings.showLabels;
+    }
+    return merged;
   } catch {
     return getDefaultSave();
   }

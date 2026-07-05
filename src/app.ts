@@ -7,7 +7,7 @@ import {
   hasValidMoves,
   createGameState,
 } from './engine/game-logic';
-import { REACTION_PAIRS, COLOR_NAME, REACTION_LORE, getReaction } from './engine/constants';
+import { REACTION_PAIRS, COLOR_NAME, COLOR_ID, REACTION_LORE, getReaction } from './engine/constants';
 import type { GameState, SaveData, LevelData, Beaker } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { fetchPuzzleBank, getLevelById, deriveTier } from './engine/puzzles';
@@ -66,6 +66,7 @@ const els = {
   musicToggle: () => document.getElementById('music-toggle') as HTMLButtonElement,
   motionToggle: () => document.getElementById('motion-toggle') as HTMLButtonElement,
   contrastToggle: () => document.getElementById('contrast-toggle') as HTMLButtonElement,
+  labelsToggle: () => document.getElementById('labels-toggle') as HTMLButtonElement,
   resetProgressBtn: () => document.getElementById('reset-progress-btn') as HTMLButtonElement,
   resetConfirmBtn: () => document.getElementById('reset-confirm-btn') as HTMLButtonElement,
   levelCompleteOverlay: () => document.getElementById('level-complete-overlay')!,
@@ -224,6 +225,7 @@ function showMap() {
 function applyBodyClasses() {
   document.body.classList.toggle('high-contrast', !!saveData.settings.highContrast);
   document.body.classList.toggle('reduced-motion', !!saveData.settings.reducedMotion);
+  document.body.classList.toggle('show-layer-labels', !!saveData.settings.showLabels);
 }
 
 function bindEvents() {
@@ -242,6 +244,7 @@ function bindEvents() {
     showOverlay('settings-overlay');
   });
   els.helpBtn().addEventListener('click', () => {
+    renderHelpVisuals(saveData.settings.showLabels);
     showOverlay('help-overlay');
   });
   els.mapReturn().addEventListener('click', () => {
@@ -254,6 +257,7 @@ function bindEvents() {
     showOverlay('settings-overlay');
   });
   els.mapHelp().addEventListener('click', () => {
+    renderHelpVisuals(saveData.settings.showLabels);
     showOverlay('help-overlay');
   });
 
@@ -277,6 +281,7 @@ function bindEvents() {
   bindToggle(els.musicToggle(), 'music');
   bindToggle(els.motionToggle(), 'reducedMotion');
   bindToggle(els.contrastToggle(), 'highContrast');
+  bindToggle(els.labelsToggle(), 'showLabels');
 
   els.resetProgressBtn().addEventListener('click', () => {
     els.resetProgressBtn().classList.add('hidden');
@@ -417,24 +422,13 @@ function bindToggle(btn: HTMLButtonElement, key: keyof SaveData['settings']) {
     if (key === 'reducedMotion') {
       document.body.classList.toggle('reduced-motion', !!saveData.settings.reducedMotion);
     }
+    if (key === 'showLabels') {
+      document.body.classList.toggle('show-layer-labels', !!saveData.settings.showLabels);
+    }
     if (key === 'music') {
       updateMusicState();
     }
   });
-}
-
-function updateMusicState() {
-  if (saveData.settings.music) {
-    void startMusic();
-  } else {
-    stopMusic();
-  }
-}
-
-function syncToggleUI(btn: HTMLButtonElement, value: boolean) {
-  btn.setAttribute('aria-checked', String(value));
-  const label = btn.querySelector('.toggle-label');
-  if (label) label.textContent = value ? 'On' : 'Off';
 }
 
 function syncSettingsUI() {
@@ -443,6 +437,21 @@ function syncSettingsUI() {
   syncToggleUI(els.musicToggle(), saveData.settings.music);
   syncToggleUI(els.motionToggle(), saveData.settings.reducedMotion);
   syncToggleUI(els.contrastToggle(), saveData.settings.highContrast);
+  syncToggleUI(els.labelsToggle(), saveData.settings.showLabels);
+}
+
+function syncToggleUI(btn: HTMLButtonElement, value: boolean) {
+  btn.setAttribute('aria-checked', String(value));
+  const label = btn.querySelector('.toggle-label');
+  if (label) label.textContent = value ? 'On' : 'Off';
+}
+
+function updateMusicState() {
+  if (saveData.settings.music) {
+    void startMusic();
+  } else {
+    stopMusic();
+  }
 }
 
 function showOverlay(id: string) {
@@ -500,7 +509,7 @@ async function startLevel(levelId: string) {
   if (!saveData.hasSeenHelp) {
     saveData.hasSeenHelp = true;
     persistSave();
-    renderHelpVisuals();
+    renderHelpVisuals(saveData.settings.showLabels);
     showOverlay('help-overlay');
   }
 }
@@ -528,6 +537,16 @@ function renderBoard() {
   previousBeakers = state.beakers.map((b) => ({ layers: [...b.layers], crystals: [...b.crystals] }));
   container.innerHTML = '';
 
+  function layerLabel(color: string): HTMLElement {
+    const label = document.createElement('span');
+    label.className = 'layer-label';
+    const name = COLOR_NAME[color] ?? color;
+    const id = COLOR_ID[color];
+    label.textContent = id !== undefined ? `${name} ${id}` : name;
+    label.setAttribute('aria-hidden', 'true');
+    return label;
+  }
+
   state.beakers.forEach((beaker, idx) => {
     const b = document.createElement('div');
     b.className = 'beaker';
@@ -550,6 +569,7 @@ function renderBoard() {
       cEl.className = 'layer layer-crystal';
       if (animateSolidify && beakerChanged) cEl.classList.add('forming');
       cEl.dataset.color = c;
+      cEl.appendChild(layerLabel(c));
       b.appendChild(cEl);
     }
 
@@ -562,6 +582,7 @@ function renderBoard() {
       if (animateCatalyst && beakerChanged && li >= beaker.layers.length - 2) {
         l.classList.add('splitting');
       }
+      l.appendChild(layerLabel(layer));
       b.appendChild(l);
     }
 

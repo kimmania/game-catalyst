@@ -387,8 +387,49 @@ body.reduced-motion .beaker.invalid {
   position: absolute;
   inset: 0;
   border-radius: 6px;
+  z-index: 0;
   background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, rgba(255,255,255,0.1) 40%, rgba(255,255,255,0.22) 60%, rgba(0,0,0,0.12) 100%);
   pointer-events: none;
+}
+
+.layer-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: clamp(7px, 2vw, 10px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: #fff;
+  text-shadow:
+    0 1px 2px rgba(0,0,0,0.85),
+    0 0 4px rgba(0,0,0,0.6);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+
+.layer[data-color="saffron"] .layer-label,
+.layer[data-color="amber"] .layer-label,
+.layer[data-color="gold"] .layer-label,
+.layer[data-color="lime"] .layer-label,
+.layer[data-color="chartreuse"] .layer-label {
+  text-shadow:
+    0 1px 2px rgba(0,0,0,0.95),
+    0 0 4px rgba(0,0,0,0.7);
+}
+
+.layer-crystal .layer-label {
+  font-size: clamp(6px, 1.7vw, 9px);
+}
+
+body.show-layer-labels .layer-label,
+.layer.show-label {
+  opacity: 1;
 }
 
 /* Crystals (permanent solidifications) */
@@ -1485,6 +1526,13 @@ body.high-contrast .help-mini-beaker {
 .settings-row span {
   font-size: 0.95rem;
   color: #d8b898;
+}
+
+.settings-hint {
+  font-size: 0.82rem;
+  color: #a08058;
+  margin: 4px 0 8px;
+  line-height: 1.4;
 }
 
 .settings-divider {

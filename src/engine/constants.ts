@@ -34,6 +34,8 @@ export type Intermediate = typeof INTERMEDIATES[number];
 
 export type GameColor = Primary | Intermediate | string;
 
+export const COLORS = [...PRIMARIES, ...INTERMEDIATES] as const;
+
 export const COLOR_NAME: Record<string, string> = {
   crimson: 'Crimson',
   amber: 'Amber',
@@ -57,6 +59,11 @@ export const COLOR_NAME: Record<string, string> = {
   rose: 'Rose',
   turquoise: 'Turquoise',
 };
+
+export const COLOR_ID: Record<string, number> = {};
+COLORS.forEach((color, index) => {
+  COLOR_ID[color] = index + 1;
+});
 
 export function isPrimary(color: string): color is Primary {
   return PRIMARIES.includes(color as Primary);
