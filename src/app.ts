@@ -12,7 +12,7 @@ import type { GameState, SaveData, LevelData, Beaker } from './engine/types';
 import { loadSave, saveSave, getDefaultSave, completeLevel, clearSave } from './engine/storage';
 import { fetchPuzzleBank, getLevelById, deriveTier } from './engine/puzzles';
 import { renderHelpVisuals } from './engine/renderHelpVisuals';
-import { play, startMusic, stopMusic, refreshSettings, listenForAudioUnlock } from './engine/audio';
+import { play, refreshSettings, listenForAudioUnlock } from './engine/audio';
 
 const SAVE_DEBOUNCE = 500;
 let saveTimer: ReturnType<typeof setTimeout> | null = null;
@@ -63,7 +63,6 @@ const els = {
   settingsOverlay: () => document.getElementById('settings-overlay')!,
   settingsClose: () => document.getElementById('settings-close')!,
   soundToggle: () => document.getElementById('sound-toggle') as HTMLButtonElement,
-  musicToggle: () => document.getElementById('music-toggle') as HTMLButtonElement,
   motionToggle: () => document.getElementById('motion-toggle') as HTMLButtonElement,
   contrastToggle: () => document.getElementById('contrast-toggle') as HTMLButtonElement,
   labelsToggle: () => document.getElementById('labels-toggle') as HTMLButtonElement,
@@ -278,7 +277,6 @@ function bindEvents() {
   els.grimoireClose().addEventListener('click', () => hideOverlay('grimoire-overlay'));
 
   bindToggle(els.soundToggle(), 'sound');
-  bindToggle(els.musicToggle(), 'music');
   bindToggle(els.motionToggle(), 'reducedMotion');
   bindToggle(els.contrastToggle(), 'highContrast');
   bindToggle(els.labelsToggle(), 'showLabels');
@@ -425,16 +423,12 @@ function bindToggle(btn: HTMLButtonElement, key: keyof SaveData['settings']) {
     if (key === 'showLabels') {
       document.body.classList.toggle('show-layer-labels', !!saveData.settings.showLabels);
     }
-    if (key === 'music') {
-      updateMusicState();
-    }
   });
 }
 
 function syncSettingsUI() {
   refreshSettings();
   syncToggleUI(els.soundToggle(), saveData.settings.sound);
-  syncToggleUI(els.musicToggle(), saveData.settings.music);
   syncToggleUI(els.motionToggle(), saveData.settings.reducedMotion);
   syncToggleUI(els.contrastToggle(), saveData.settings.highContrast);
   syncToggleUI(els.labelsToggle(), saveData.settings.showLabels);
@@ -444,14 +438,6 @@ function syncToggleUI(btn: HTMLButtonElement, value: boolean) {
   btn.setAttribute('aria-checked', String(value));
   const label = btn.querySelector('.toggle-label');
   if (label) label.textContent = value ? 'On' : 'Off';
-}
-
-function updateMusicState() {
-  if (saveData.settings.music) {
-    void startMusic();
-  } else {
-    stopMusic();
-  }
 }
 
 function showOverlay(id: string) {
@@ -475,8 +461,6 @@ async function startLevel(levelId: string) {
   saveData = { ...saveData, progress: { ...saveData.progress, unlocked: Array.from(new Set(saveData.progress.unlocked)) } };
   persistSave();
   keyboardIndex = 0;
-
-  startMusic();
 
   const tier = deriveTier(levelId);
   document.body.dataset.tier = tier;

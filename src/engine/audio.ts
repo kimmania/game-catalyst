@@ -43,7 +43,6 @@ export function listenForAudioUnlock() {
   unlockAttached = true;
   const handler = () => {
     unlockAudio();
-    if (settings.music && !isMusicPlaying) startMusic();
   };
   document.addEventListener('pointerdown', handler, { once: true });
   document.addEventListener('keydown', handler, { once: true });
@@ -242,65 +241,4 @@ function playReaction() {
   sparkle.disconnect();
   sparkle.connect(filter).connect(c.destination);
   sparkle.start();
-}
-
-// Ambient music drone
-let musicNodes: (OscillatorNode | GainNode)[] | null = null;
-let isMusicPlaying = false;
-
-export function startMusic() {
-  const c = ctx();
-  if (!c) return;
-  if (isMusicPlaying) return;
-  if (!settings.music) return;
-
-  unlockAudio();
-  isMusicPlaying = true;
-
-  const drone1 = c.createOscillator();
-  drone1.type = 'sine';
-  drone1.frequency.value = 65.41; // C2
-
-  const drone2 = c.createOscillator();
-  drone2.type = 'triangle';
-  drone2.frequency.value = 98.0; // G2
-
-  const lfo = c.createOscillator();
-  lfo.type = 'sine';
-  lfo.frequency.value = 0.12;
-
-  const lfoGain = c.createGain();
-  lfoGain.gain.value = 2.5;
-
-  const masterGain = c.createGain();
-  masterGain.gain.value = 0.0;
-  masterGain.gain.linearRampToValueAtTime(0.06, c.currentTime + 1.5);
-
-  drone1.connect(masterGain);
-  drone2.connect(masterGain);
-  lfo.connect(lfoGain);
-  lfoGain.connect(drone2.detune);
-  masterGain.connect(c.destination);
-
-  drone1.start();
-  drone2.start();
-  lfo.start();
-
-  musicNodes = [drone1, drone2, lfo, masterGain];
-}
-
-export function stopMusic() {
-  if (!isMusicPlaying || !musicNodes) return;
-  const c = ctx();
-  musicNodes.forEach((node) => {
-    try {
-      if (node instanceof OscillatorNode) {
-        node.stop(c.currentTime + 0.1);
-      }
-    } catch {
-      // ignore
-    }
-  });
-  isMusicPlaying = false;
-  musicNodes = null;
 }
